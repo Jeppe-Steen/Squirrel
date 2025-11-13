@@ -1,6 +1,7 @@
 <script setup>
 import hero from '../components/hero.vue'
 import welcome from '../components/welcome.vue'
+import treatments from '../components/treatments.vue'
 </script>
 
 
@@ -10,7 +11,8 @@ import welcome from '../components/welcome.vue'
   </header>
   <main class="main">
     <section class="main__container">
-          <welcome class="welcome"/>
+          <welcome />
+          <treatments />
     </section>
   </main>
   <footer class="footer">
