@@ -14,7 +14,7 @@
     justify-content: center;
     width: 100%;
     height: 30vh;
-    background-color: #ECDEBF;
+    background-color: #f8eed6;
     text-align: center;
 }
 h2 {

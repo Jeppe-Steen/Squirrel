@@ -22,7 +22,6 @@
     width: 100%;
     height: 80vh;
     background-color: white;
-    box-shadow: 0 2px 6px #00000030;
     grid-template-areas: "a b";
     grid-template-columns: 1fr 1fr;
 }
@@ -50,7 +49,8 @@
 .hero__sub-header {
     font-size: 1.5rem;
     font-style: italic;
-    font-family: "Momo Signature", cursive;
+    font-family: "Cedarville Cursive", cursive;
+    text-transform: inherit;
 }
 
 .hero__img-container {
@@ -77,5 +77,6 @@
         #dddddd20 200px,
         #dddddd20 400px
     );
+        box-shadow: 0 2px 6px #00000030;
 }
 </style>
