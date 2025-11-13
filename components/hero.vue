@@ -16,8 +16,9 @@
     </section>
 </template>
 
-<style>
-.hero__main {
+<style lang="scss">
+.hero {
+&__main {
     display: grid;
     width: 100%;
     height: 80vh;
@@ -25,17 +26,17 @@
     grid-template-areas: "a b";
     grid-template-columns: 1fr 1fr;
 }
-.hero__logo-container{
+&__logo-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.hero__logo {
+&__logo {
     width: 300px;
     margin-bottom: 10px;
 }
-.hero__header {
+&__header {
     text-transform: uppercase;
     background: radial-gradient(#D2B379, #A17A46);
     -webkit-background-clip: text;
@@ -44,25 +45,25 @@
     font-size: 2rem;
     font-style: bold;
 }
-.hero__sub-header {
+&__sub-header {
     font-size: 1.5rem;
     font-style: italic;
     font-family: "Cedarville Cursive", cursive;
     text-transform: inherit;
 }
 
-.hero__img-container {
+&__img-container {
     grid-area: b;
     /* background-color: bisque; */
     overflow: hidden;
 }
 
-.hero__img {
+&__img {
     height: 100%;
     transform: scale(-1, 1);
 }
 
-.hero__stripes {
+&__stripes {
     position: absolute;
     top: 0;
     left: 0;
@@ -76,5 +77,6 @@
         #dddddd20 400px
     );
         box-shadow: 0 2px 6px #00000030;
+}
 }
 </style>

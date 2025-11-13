@@ -13,8 +13,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 30vh;
-    background-color: #f8eed6;
+    padding: 100px 0;
     text-align: center;
 }
 h2 {
