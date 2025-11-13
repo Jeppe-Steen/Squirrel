@@ -30,8 +30,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    grid-area: a;
-    /* background-color: lightgoldenrodyellow; */
 }
 .hero__logo {
     width: 300px;

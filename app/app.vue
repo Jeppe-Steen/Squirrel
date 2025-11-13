@@ -6,11 +6,15 @@ import treatments from '../components/treatments.vue'
 
 
 <template>
-  <main class="main_app">
-    <hero/>
-    <welcome/>
-    <treatments/>
+  <header class="header">
+        <hero/>
+  </header>
+  <main class="main">
+    <welcome class="welcome"/>
   </main>
+  <footer class="footer">
+
+  </footer>
 </template>
 
 <style>
@@ -21,8 +25,15 @@ import treatments from '../components/treatments.vue'
   font-family: 'Open sans', sans-serif;
 }
 
-.main_app {
+.header {
   width: 100%;
   height: fit-content;
+}
+
+.main{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
 }
 </style>
