@@ -13,7 +13,7 @@
         <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
         <div class="treatments__container">
             <ul>
-                <li>lorem</li>
+                <li> heeey</li>
                 <li>lorem</li>
                 <li>lorem</li>
                 <li>lorem</li>
@@ -24,13 +24,20 @@
     </section>
 </template>
 
-<style>
-    .treatmens__main {
+<style lang="scss">
+    .treatmens {
+        &__main {
         width: 100%;
         height: 70vh;
         display: flex;
         align-items: center;
         flex-direction: column;
         padding-top: 80px;
+        }
+
+        &__container {
+            width: 100px;
+            height: 100px;
+        }
     }
 </style>
