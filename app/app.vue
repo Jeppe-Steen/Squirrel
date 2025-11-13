@@ -1,6 +1,7 @@
 <script setup>
 import hero from '../components/hero.vue'
 import welcome from '../components/welcome.vue'
+import treatments from '../components/treatments.vue'
 </script>
 
 
@@ -8,6 +9,7 @@ import welcome from '../components/welcome.vue'
   <main class="main_app">
     <hero/>
     <welcome/>
+    <treatments/>
   </main>
 </template>
 
