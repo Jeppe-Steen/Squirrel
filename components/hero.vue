@@ -21,7 +21,7 @@
 &__main {
     display: grid;
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     background-color: white;
     grid-template-areas: "a b";
     grid-template-columns: 1fr 1fr;
@@ -53,12 +53,15 @@
 }
 
 &__img-container {
+    position: relative;
     grid-area: b;
     /* background-color: bisque; */
     overflow: hidden;
 }
 
 &__img {
+    position: absolute;
+    right: 0;
     height: 100%;
     transform: scale(-1, 1);
 }
@@ -68,7 +71,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     background: repeating-linear-gradient(
         135deg,
         transparent,

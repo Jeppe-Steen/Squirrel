@@ -1,13 +1,41 @@
+<script setup>
+const treatments = [
+    {
+        name: "Akupunktur",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nemo dolor, corrupti ab molestias blanditiis esse facilis aliquid, ipsa voluptatibus vel quae obcaecati? Facere nulla quidem voluptatibus aut provident aspernatur.",
+        image: "Akupunktur"
+    },
+    {
+        name: "Moxa",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nemo dolor, corrupti ab molestias blanditiis esse facilis aliquid, ipsa voluptatibus vel quae obcaecati? Facere nulla quidem voluptatibus aut provident aspernatur.",
+        image: "moxa"
+    },
+    {
+        name: "Auriculoterapi",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nemo dolor, corrupti ab molestias blanditiis esse facilis aliquid, ipsa voluptatibus vel quae obcaecati? Facere nulla quidem voluptatibus aut provident aspernatur.",
+        image: "ear"
+    },
+    {
+        name: "TENS",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nemo dolor, corrupti ab molestias blanditiis esse facilis aliquid, ipsa voluptatibus vel quae obcaecati? Facere nulla quidem voluptatibus aut provident aspernatur.",
+        image: "tens"
+    },
+    {
+        name: "Cupping & GuaSha",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nemo dolor, corrupti ab molestias blanditiis esse facilis aliquid, ipsa voluptatibus vel quae obcaecati? Facere nulla quidem voluptatibus aut provident aspernatur.",
+        image: "fire_cupping"
+    }
+]
+</script>
 <template>
     <section class="treatments__main">
         <h2>Her kan du se mere om hvad jeg tilbyder af behandlinger</h2>
         <div class="treatments__container">
             <ul class="left">
-                <li>Nåleakupunktur</li>
-                <li>Moxa/varmene urter</li>
-                <li>Auriculoterapi/øre akupunktur</li>
-                <li>TENS</li>
-                <li>Fire cupping og moving cupping</li>
+                <li v-for="{name, image} in treatments">
+                    <h3>{{ name }}</h3>
+                    <img :src="`../assets/image/${image}.jpg`" :alt="name">
+                </li>
             </ul>
             <div class="right">
                 <div></div>
@@ -34,10 +62,7 @@
         }
     }
     &__container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
         width:100%;
-        grid-template-areas: 'left right';
 
         .left {
             grid-area: left;
@@ -50,15 +75,24 @@
         ul {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
+            text-align: center;
 
             li {
-                margin: 10px;
-                width: fit-content;
-                padding: 20px;
+                margin: 0 10px;
+                width: calc(100% / 5);
                 background-color: lightgreen;
+                height: fit-content;
                 
                 list-style: none;
+
+                h3 {
+                    margin-bottom: 10px;
+                    background-color: #C0DEED;
+                    padding: 10px;
+                }
+                img {
+                    width: 100%;
+                }
             }
         }
     }
