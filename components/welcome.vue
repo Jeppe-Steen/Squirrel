@@ -17,7 +17,6 @@ const text = generalText.data.welcome;
         padding: 50px 0;
 
         h2 {
-            font-size: 2rem;
             margin-bottom: 10px;
         }
         p {

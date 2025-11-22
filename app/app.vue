@@ -2,6 +2,7 @@
 import hero from '../components/hero.vue'
 import welcome from '../components/welcome.vue'
 import ccm from '../components/ccm.vue'
+import treatments from '../components/treatments.vue'
 </script>
 
 
@@ -11,12 +12,13 @@ import ccm from '../components/ccm.vue'
   </header>
   <main class="main">
     <section class="fixed-background">
-      <div class="fixed-background--first"></div>
+      <div></div>
     </section>
 
     <section class="main__container">
       <welcome/>
       <ccm/>
+      <treatments/>
     </section>
   </main>
   <footer class="footer">
@@ -37,6 +39,10 @@ $darkGreen:#778873;
   font-family: 'Open sans', sans-serif;
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
 .header {
   width: 100%;
   height: fit-content;
@@ -53,16 +59,17 @@ $darkGreen:#778873;
     width: 60%;
     min-height: 1000px;
     height: fit-content;
-    background-color: rgba(211, 211, 211, 0.127);
+    // background-color: rgba(211, 211, 211, 0.127);
+    background-color: transparent;
     z-index: 90;
   }
 
   .fixed-background {
 
-    &--first {
+    &:nth-child(1){
       width: 100%;
       position: absolute;
-      height: 70vh;
+      height: 60vh;
       background-color: $lightestGreen;
       top: 60vh;
       left: 0;

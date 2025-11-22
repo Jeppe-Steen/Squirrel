@@ -49,7 +49,6 @@ const text = generalText.data.hero;
         font-style: bold;
     }
     &__sub-header {
-        font-size: 1.5rem;
         font-style: italic;
         font-family: "Cedarville Cursive", cursive;
         text-transform: inherit;

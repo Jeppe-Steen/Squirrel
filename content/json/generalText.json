@@ -10,7 +10,7 @@
             }
         },
         "welcome": {
-            "header": "Welkommen!",
+            "header": "Velkommen!",
             "text": "Velkommen til klinik Egernbo. Har du gået med tanken om at prøve akupunktur, enten af ren nygerighed, eller i håbet om en alternativ vej til at få det bedre fysisk eller mentalt? Så læs endeligt videre, du er kommet til det rette sted. Som en af de få i Nordjylland der er uddannet indenfor CCM, den originale tilgang til akupunktur, tilbyder jeg en holistisk tilgang til mine klienter, hvor man ikke bare symptombehandler, men tager udgangspunkt i det hele menneske, for at kunne behandle roden til de sygdomme der er opstået. En metode der fandtes før den vestlige tilgang til behandlinger opstod."
         },
         "CCM": {
@@ -19,6 +19,97 @@
                 "Klassisk Kinesisk Medicin (CCM), er den oprindelige akupunkturlære, hvor Traditionel Kinesisk Medicin (TCM), som de fleste akupunktører praktiserer, er tilpasset mere den vestlige tilgang til sygdom, som vi kender den i vores sunhedssystem, udviklet i 1950’erne i Kina som en moderne, statslig standardisering af de gamle kinesiske metoder. Hvor der er mere fokus på diagnose og behandling, frem for spiritualitet, som spiller en stor rolle i de helt gamle tekster omkring akupunktur.",
                 "CCM er den oprindelig akupunktur, som tager udgangspunkt i de gamle skrifter. Kort sagt er CCM den oprindelige, klassiske og mere spirituelle form for kinesisk medicin, tættere på de gamle kilder."
             ]
+        },
+        "treatments": {
+            "header" : "Behandlinger som jeg tilbyder",
+            "treatments": [
+                {
+                    "name": "Akupunktur",
+                    "description": [
+                        "Akupunktur er anvendelse af små tynde nåle, som typisk indføres i meridianbanerne i kroppen, for at opnå stimulering af akupunkturpunkterne, for på den måde at fremme kroppens balance.",
+                        "Kroppen har mange mikrosystemer, som man ved brug af akupunktur kan stimulere, for at behandle forskellige tilstande.",
+                        "Akupunktur er godt for mange ting, men især:",
+                        [
+                            "Uddrivelse af varme",
+                            "Bevæge (sætte gang i kroppen)",
+                            "Smertelindring og meget mere."
+                        ],
+                        "Ved stimulering af akupunkturpunkter kan man genoprette energiubalancer i livsenergien (Qi)."
+                    ]
+                },
+                {
+                    "name": "Moxa",
+                    "description": [
+                        "På kinesisk består ordet for akupunktur, af to symboler ”Zhen Jiu”. Zhen betyder nål (akupunkturbehandling). Jiu betyder moxa (moxabehandling).",
+                        "Moxa kaldes også for Livets Ild, hvilket passer meget godt, da det har mange anvendelsesmetoder, herunder:",
+                        [
+                            "Styrker de indre organer og deres funktioner.",
+                            "Afhjælper svaghed.",
+                            "Støtter qi (liv) og uddriver patogener"
+                        ],
+                        "ndenfor kinesisk medicin anvendes moxa i mange citater, bl.a. ",
+                        "”For sygdomme som ikke egner sig til behandling med nåle, brug moxa”",
+                        "som citeret fra ”Ling Shu”. Så kort sagt så er der ingen akupunktur uden moxa. Moxa er den bedste teknik til at nære kroppen."
+                    ]
+                },
+                {
+                    "name": "Auriculoterapi",
+                    "description": [
+                        "Auriculoterapi er en anderledes form for nåleterapi, da det hele foregår i øret. Øret, ligesom så mange andre steder på kroppen, er et mikrosystem der afspejler resten af kroppens tilstand, og ligeledes kan man også behandle hele kroppen i øret alene. Her anvendes ligeledes nåle som til akupunktur (bare kortere), samt ørefrø og permanåle.",
+                        "Fordelene ved auriculoterapi er bl.a. at behandlingen kan forlænges ved brug af ørefrø og permanåle, da klienten beholder dem i efter behandlingen. Derudover er det en måde at få behandling på, hvis man er nervøs for rigtig akupunktur.",
+                        "Auriculoterapi anvender jeg ofte kun som supplement til akupunkturbehandlingerne."
+                    ]
+                },
+                {
+                    "name": "TENS",
+                    "description": [
+                        "TENS står for Transkutan Elektrisk Nerve Stimulation, som er anvendelse af lav frekvens strøm der via elektroder kobles til akupunkturnålene for at stimulerer nålene og dermed øge effekten.",
+                        "TENS anvendes ved kroniske tilstande og gamle stagnationer der kræver lidt ekstra for at blive frigivet."
+                    ]
+                },
+                {
+                    "name": "Cupping",
+                    "description": [
+                        "Jeg anvender både fire cupping og moving cupping til behandling af muskelsmerter og spændinger.",
+                        "Fire cupping er anvendelse af glaskopper, som ved brug af ild man kortvarigt sætter ind i koppen, som efterfølgende påsættes klientens hud, hvorved det danner et vaccum der suger huden op i glaskoppen. Dette er rigtig godt til at løsne stagnationer i kroppen, som fx ved gamle skader eller muskelspændinger.",
+                        "Moving cupping, er anvendelse af glaskopper med en sugebold på, hvorved man kan lave vaccum i koppen og dernæst bevæge koppen rundt på huden, og dermed løsne op i vævet. Det er en form for dybdegående bindevævsmassage."
+                    ]
+                }
+            ]
+        },
+        "Helps": {
+            "header": "",
+            "text": [
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                [
+                    "Stress, tankemylder, overtænkning",
+                    "Vrede, irritabilitet",
+                    "Depression",
+                    "Symptomer ved overgangsalder",
+                    "Uro i sind og krop",
+                    "Smerter i nakke, skulder og ryg (kronisk/akut)",
+                    "Iskiassmerter, lændesmerter",
+                    "Diverse ledsmerter, tennisalbue",
+                    "Dystonier/skævheder",
+                    "Fordøjelsesproblemer forstoppelse/diarré",
+                    "Infertilitet",
+                    "Og meget mere.."
+                ],
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            ]
+        },
+        "prices": {
+            "treatments": [
+                {"name": "første konsultation", "price": "500 DKK"},
+                {"name": "Alm. behandling", "price": "450 DKK"},
+                {"name": "Moving cupping/gua sha", "price": "500 DKK"}
+            ],
+            "extra": {
+                "header": "Tillæg til behandlinger",
+                "treatments": [
+                    {"name": "Moxa", "price": "50 DKK"}
+                ]
+            }
         }
     }
 }
