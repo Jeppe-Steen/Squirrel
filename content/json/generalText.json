@@ -1,0 +1,24 @@
+{
+    "data": {
+        "hero": {
+            "header": {
+                "prime": "Klinik Egernbo",
+                "sub": "Akupuntur"
+            },
+            "button": {
+                "text": "Herunder kan du læse mere om klinikken og hvad jeg kan tilbyde dig"
+            }
+        },
+        "welcome": {
+            "header": "Welkommen!",
+            "text": "Velkommen til klinik Egernbo. Har du gået med tanken om at prøve akupunktur, enten af ren nygerighed, eller i håbet om en alternativ vej til at få det bedre fysisk eller mentalt? Så læs endeligt videre, du er kommet til det rette sted. Som en af de få i Nordjylland der er uddannet indenfor CCM, den originale tilgang til akupunktur, tilbyder jeg en holistisk tilgang til mine klienter, hvor man ikke bare symptombehandler, men tager udgangspunkt i det hele menneske, for at kunne behandle roden til de sygdomme der er opstået. En metode der fandtes før den vestlige tilgang til behandlinger opstod."
+        },
+        "CCM": {
+            "header": "Klassisk Kinesisk Medicin",
+            "text": [
+                "Klassisk Kinesisk Medicin (CCM), er den oprindelige akupunkturlære, hvor Traditionel Kinesisk Medicin (TCM), som de fleste akupunktører praktiserer, er tilpasset mere den vestlige tilgang til sygdom, som vi kender den i vores sunhedssystem, udviklet i 1950’erne i Kina som en moderne, statslig standardisering af de gamle kinesiske metoder. Hvor der er mere fokus på diagnose og behandling, frem for spiritualitet, som spiller en stor rolle i de helt gamle tekster omkring akupunktur.",
+                "CCM er den oprindelig akupunktur, som tager udgangspunkt i de gamle skrifter. Kort sagt er CCM den oprindelige, klassiske og mere spirituelle form for kinesisk medicin, tættere på de gamle kilder."
+            ]
+        }
+    }
+}
