@@ -1,5 +1,7 @@
 <script setup>
 import hero from '../components/hero.vue'
+import welcome from '../components/welcome.vue'
+import ccm from '../components/ccm.vue'
 </script>
 
 
@@ -8,8 +10,13 @@ import hero from '../components/hero.vue'
         <hero/>
   </header>
   <main class="main">
+    <section class="fixed-background">
+      <div class="fixed-background--first"></div>
+    </section>
+
     <section class="main__container">
-          <welcome />
+      <welcome/>
+      <ccm/>
     </section>
   </main>
   <footer class="footer">
@@ -18,6 +25,11 @@ import hero from '../components/hero.vue'
 </template>
 
 <style lang="scss">
+$lightestGreen:#F1F3E0;
+$lightGreen:#D2DCB6;
+$green:#A1BC98;
+$darkGreen:#778873;
+
 * {
   margin: 0;
   padding: 0;
@@ -36,10 +48,26 @@ import hero from '../components/hero.vue'
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-color:#f8eed6;;
 
   &__container {
-    width: 80%;
+    width: 60%;
+    min-height: 1000px;
+    height: fit-content;
+    background-color: rgba(211, 211, 211, 0.127);
+    z-index: 90;
+  }
+
+  .fixed-background {
+
+    &--first {
+      width: 100%;
+      position: absolute;
+      height: 70vh;
+      background-color: $lightestGreen;
+      top: 60vh;
+      left: 0;
+      z-index: 0;
+    }
   }
 }
 </style>
