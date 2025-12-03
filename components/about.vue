@@ -25,10 +25,10 @@ const text = generalText.data.about;
 
         article {
             position: absolute;
-            right: 100px;
+            right: 50px;
             height: 100%;
-            width: 40%;
-            background-color: #ffffff80;
+            width: 55%;
+            background-color: #ffffff90;
             padding: 60px 20px;
             
             h2, p {
