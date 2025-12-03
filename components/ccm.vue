@@ -20,7 +20,6 @@ const text = generalText.data.CCM;
             margin-bottom: 10px;
         }
         p {
-            font-size: 1rem;
             &:not(:last-child) {
                 margin-bottom: 20px;
             }

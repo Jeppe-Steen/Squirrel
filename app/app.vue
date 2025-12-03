@@ -3,6 +3,10 @@ import hero from '../components/hero.vue'
 import welcome from '../components/welcome.vue'
 import ccm from '../components/ccm.vue'
 import treatments from '../components/treatments.vue'
+import description from '../components/description.vue'
+import prices from '../components/prices.vue'
+import slideshow from '../components/slideshow.vue'
+import about from '../components/about.vue'
 </script>
 
 
@@ -12,13 +16,17 @@ import treatments from '../components/treatments.vue'
   </header>
   <main class="main">
     <section class="fixed-background">
-      <div></div>
+      <div class="first"></div>
     </section>
 
     <section class="main__container">
       <welcome/>
       <ccm/>
       <treatments/>
+      <description/>
+      <prices/>
+      <!-- <slideshow/> -->
+       <about/>
     </section>
   </main>
   <footer class="footer">
@@ -43,6 +51,18 @@ h2 {
   font-size: 1.5rem;
 }
 
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
 .header {
   width: 100%;
   height: fit-content;
@@ -59,14 +79,14 @@ h2 {
     width: 60%;
     min-height: 1000px;
     height: fit-content;
-    // background-color: rgba(211, 211, 211, 0.127);
     background-color: transparent;
     z-index: 90;
   }
 
   .fixed-background {
+    height:max-content;
 
-    &:nth-child(1){
+    .first{
       width: 100%;
       position: absolute;
       height: 60vh;
@@ -76,5 +96,12 @@ h2 {
       z-index: 0;
     }
   }
+}
+
+footer {
+  height: 20vh;
+  background-color: $lightGreen;
+  margin-top: 50px;
+  width: 100%;
 }
 </style>

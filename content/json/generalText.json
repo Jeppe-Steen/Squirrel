@@ -77,39 +77,47 @@
                 }
             ]
         },
-        "Helps": {
-            "header": "",
+        "description": {
+            "header": "Hvad kan akupunktur hjælpe med?",
             "text": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                [
-                    "Stress, tankemylder, overtænkning",
-                    "Vrede, irritabilitet",
-                    "Depression",
-                    "Symptomer ved overgangsalder",
+                { "type": "paragraph", "text": "Akupunktur er en af verdens ældste behandlingsformer og anvendes i dag bredt som en effektiv, naturlig og holistisk tilgang til både fysiske og mentale udfordringer. I klinikken arbejder vi ud fra et helhedsorienteret perspektiv, hvor vi ser kroppen som en samlet enhed. Når der opstår ubalance – fysisk, følelsesmæssigt eller mentalt – viser det sig ofte i form af smerter, uro, stress eller andre symptomer."},
+                { "type": "paragraph", "text": "Med akupunktur stimuleres kroppens energisystem via udvalgte punkter, hvilket fremmer blodcirkulation, dæmper inflammation, reducerer spændinger og hjælper nervesystemet tilbage i en mere rolig og reguleret tilstand. For mange giver behandlingen både øjeblikkelig afspænding og langsigtet forandring."},
+                { "type": "paragraph", "text": "Vi tilbyder trygge, professionelle og individuelt tilpassede behandlingsforløb, hvor vi sammen arbejder på at skabe balance i både krop og sind — uanset om du søger smertelindring, mental ro eller støtte til kroppens hormonelle og indre funktioner."},
+                { "type": "header", "text": "Akupunktur kan blandt andet afhjælpe:"},
+                { "type": "list", "text": [
+                    "Stress, tankemylder og overtænkning",
+                    "Vrede og irritabilitet",
+                    "Depression og lavt energiniveau",
+                    "Symptomer i forbindelse med overgangsalderen",
                     "Uro i sind og krop",
-                    "Smerter i nakke, skulder og ryg (kronisk/akut)",
-                    "Iskiassmerter, lændesmerter",
-                    "Diverse ledsmerter, tennisalbue",
-                    "Dystonier/skævheder",
-                    "Fordøjelsesproblemer forstoppelse/diarré",
-                    "Infertilitet",
-                    "Og meget mere.."
-                ],
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    "Smerter i nakke, skuldre og ryg (både kroniske og akutte)",
+                    "Iskiassmerter og lændesmerter",
+                    "Ledsmerter, herunder tennisalbue",
+                    "Dystonier og kropslige skævheder",
+                    "Fordøjelsesproblemer som forstoppelse og diarré",
+                    "Infertilitet og hormonelle ubalancer",
+                    "Og meget mere…"
+                ]},
+                { "type": "header", "text": "En behandling der tager udgangspunkt i dig"},
+                { "type": "paragraph", "text": "I klinikken sætter vi god tid af til hver session. Før første behandling gennemgår vi dine symptomer, din hverdag og din generelle sundhedstilstand, så forløbet kan målrettes netop dig. Selve behandlingen foregår i rolige omgivelser, hvor du kan slappe af og give kroppen plads til at arbejde."},
+                { "type": "paragraph", "text": "Uanset om du kommer for at få hjælp til smerter, stress, hormonelle forandringer eller kroniske ubalancer, er målet altid det samme: at skabe varig forbedring, øget velvære og en stærkere indre balance."}            
             ]
         },
         "prices": {
             "treatments": [
-                {"name": "første konsultation", "price": "500 DKK"},
-                {"name": "Alm. behandling", "price": "450 DKK"},
-                {"name": "Moving cupping/gua sha", "price": "500 DKK"}
-            ],
-            "extra": {
-                "header": "Tillæg til behandlinger",
-                "treatments": [
-                    {"name": "Moxa", "price": "50 DKK"}
-                ]
-            }
+                {"name": "Første konsultation", "price": "850 DKK"},
+                {"name": "Alm. behandling", "price": "750 DKK"},
+                {"name": "Moving cupping", "price": "850 DKK"},
+                {"name": "Gua sha", "price": "850 DKK"}
+            ]
+        },
+        "about": {
+            "header": "Om mig!",
+            "text": [
+                "Mit navn er Frederikke, jeg er uddannet akupunktør fra Danmarks Akupunktur Uddannelse i Odder, den eneste skole i Danmark som underviser og uddanner indenfor Klassisk Kinesisk Medicin (CCM).",
+                "Jeg er uddannet bioanalytiker, så nåle ligger ikke fjernt fra min hverdag, anvendelsen er bare blevet anderledes. Jeg valgte at uddanne mig til akupunktør efter en længere overvejelse, og da muligheden opstod, sprang jeg til med det samme - den bedste beslutning karrieremæssigt jeg har taget. Arbejdet som akupunktør, er et arbejde hvor man hver dag kan mærke at man gør en forskel: klienter der vender tilbage, og føler at det problem de kom med er lindret og glæder sig til at komme igen.",
+                "Jeg forstår godt folk der siger at akupunktur er noget hokus-pokus, det følte jeg virkeligt også i starten. Men efter at have fået forståelsen for hvordan det virker, samt prøvet det på egen..."
+            ]
         }
     }
 }
