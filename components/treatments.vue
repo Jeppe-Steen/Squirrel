@@ -20,10 +20,14 @@ const selectTreatment = async (index) => {
             <ul class="treatments__container--list">
                 <li v-for="(treatments, index) in text.treatments" @click="selectTreatment(index)" :class="{selected: selectedTreatment === index}"> <p>{{ treatments.name }}</p> </li>
             </ul>
+
             <div class="treatments__container--description">
                 <h3>{{ text.treatments[selectedTreatment].name }}</h3>
                 <div v-for="selectedText in text.treatments[selectedTreatment].description">
-                    <p> {{ selectedText }}</p>
+                    <p v-if="!Array.isArray(selectedText)"> {{ selectedText }}</p>
+                    <ul v-else-if="Array.isArray(selectedText)">
+                        <li v-for="value in selectedText"> {{ value }}</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -82,8 +86,12 @@ $darkGreen:#778873;
         &--description {
             width: 70%;
             
-            p:not(:last-child) {
-             margin-bottom: 10px;
+            p, ul, h3 {
+             margin-bottom: 5px;
+            }
+
+            ul {
+                padding-left: 20px;
             }
         }
     }
