@@ -14,6 +14,7 @@ import about from '../components/about.vue'
   <header class="header">
         <hero/>
   </header>
+
   <main class="main">
     <section class="fixed-background">
       <div class="first"></div>
@@ -22,15 +23,15 @@ import about from '../components/about.vue'
     <section class="main__container">
       <welcome/>
       <ccm/>
-      <treatments/>
-      <description/>
-      <prices/>
+      <!-- <treatments/> -->
+      <!-- <description/> -->
+      <!-- <prices/> -->
       <!-- <slideshow/> -->
-       <about/>
+      <!-- <about/> -->
     </section>
   </main>
-  <footer class="footer">
 
+  <footer class="footer">
   </footer>
 </template>
 
@@ -76,11 +77,15 @@ p {
   flex-direction: column;
 
   &__container {
-    width: 60%;
+    width: 100%;
     min-height: 1000px;
     height: fit-content;
     background-color: transparent;
     z-index: 90;
+
+    // large screens
+    @media (min-width: 1200px) { width: 60%; };
+
   }
 
   .fixed-background {
@@ -91,9 +96,15 @@ p {
       position: absolute;
       height: 60vh;
       background-color: $lightestGreen;
-      top: 60vh;
+      top: 50vh;
       left: 0;
       z-index: 0;
+
+      // large screens
+      @media (min-width: 1200px) {
+        height: 60vh;
+        top: 60vh;
+      };
     }
   }
 }

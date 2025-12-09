@@ -14,7 +14,14 @@ const text = generalText.data.CCM;
     .ccm__main {
         width: 100%;
         height: fit-content;
-        padding: 20px 0 50px 0;
+        padding: 50px 20px;
+        text-align: center;
+
+         // large screens
+        @media (min-width: 1200px) {
+            padding: 20px 0 50px 0;
+            text-align: unset;
+        };
 
         h2 {
             margin-bottom: 10px;

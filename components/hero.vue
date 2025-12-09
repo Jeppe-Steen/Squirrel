@@ -22,23 +22,34 @@ const text = generalText.data.hero;
 <style lang="scss">
 .hero {
     &__main {
-        display: grid;
+        display: flex;
         width: 100%;
-        height: 60vh;
+        height: 50vh;
         background-color: white;
-        grid-template-areas: "a b";
-        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+
+        // large screens
+        @media (min-width: 1200px) {
+            height: 60vh;
+            display: grid;
+            grid-template-areas: "a b";
+            grid-template-columns: 1fr 1fr;
+        };
     }
+    
     &__logo-container{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     &__logo {
         width: 300px;
         margin-bottom: 10px;
     }
+
     &__header {
         text-transform: uppercase;
         background: radial-gradient(#D2B379, #A17A46);
@@ -48,6 +59,7 @@ const text = generalText.data.hero;
         font-size: 2rem;
         font-style: bold;
     }
+    
     &__sub-header {
         font-style: italic;
         font-family: "Cedarville Cursive", cursive;
@@ -55,10 +67,13 @@ const text = generalText.data.hero;
     }
 
     &__img-container {
+        display: none;
         position: relative;
         grid-area: b;
-        /* background-color: bisque; */
         overflow: hidden;
+
+        // large screens
+        @media (min-width: 1200px) { display: unset; };
     }
 
     &__img {
@@ -73,7 +88,7 @@ const text = generalText.data.hero;
         top: 0;
         left: 0;
         width: 100%;
-        height: 60vh;
+        height: 50vh;
         background: repeating-linear-gradient(
             135deg,
             transparent,
@@ -83,6 +98,9 @@ const text = generalText.data.hero;
         );
         box-shadow: 0 2px 6px #00000030;
         z-index: 900;
+
+        // large screens
+        @media (min-width: 1200px) { height: 60vh; };
     }
 }
 </style>
