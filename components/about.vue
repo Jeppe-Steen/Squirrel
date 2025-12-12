@@ -5,7 +5,11 @@ const text = generalText.data.about;
 
 <template>
     <section class="about">
-        <div class="first"> <img src="../assets/image/Akupunktur.jpg"/> </div>
+        <div class="first">
+            <div class="container">
+
+            </div>
+        </div>
         <div class="second">
             <h2>Om mig!</h2>
             <p>Mit navn er Frederikke, jeg er uddannet akupunktør fra Danmarks Akupunktur Uddannelse i Odder, den eneste skole i Danmark som underviser og uddanner indenfor Klassisk Kinesisk Medicin (CCM).</p>
@@ -30,7 +34,7 @@ const text = generalText.data.about;
         'a'
         'b' 
         'c';
-        grid-template-columns: fit-content%;
+        grid-template-columns: 400px;
         grid-template-rows: auto auto;
         padding: 0 20px;
         
@@ -40,7 +44,7 @@ const text = generalText.data.about;
             'a b' 
             'c c';
             grid-template-columns: 50% 50%;
-            grid-template-rows: 400px fit-content;
+            grid-template-rows: 400px 400px;
             padding: unset;
         };
 
@@ -53,16 +57,25 @@ const text = generalText.data.about;
             display:flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
+            background-color: red;
+
+            .container {
+                background-color:lightblue;
+
+                height: 80%;
+                width: 40&;
+            }
 
             img {
                 width: 100%;
-                height: fit-content%;
+                height: fit-content;
                 border-radius: 50px;
                 box-shadow: 0 2px 6px #00000030;
                 margin-bottom: 40px;
 
                  @media (min-width: 1200px) {
-                    width: 80%;
+                    width: 80;
                     height: 80%;
                     margin-bottom: unset;
                  }
