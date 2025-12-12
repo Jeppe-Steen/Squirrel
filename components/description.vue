@@ -29,6 +29,7 @@ const text = generalText.data.description;
 
         h2 {
             margin-bottom: 10px;
+            text-align:center;
         }
 
         h3 {

@@ -15,6 +15,8 @@ const selectTreatment = async (index) => {
 
 <template>
     <section class="treatments">
+        <span class="ancor" id="behandlinger"></span>
+
         <h2>{{ text.header }}</h2>
         <div class="treatments__container">
             <ul class="treatments__container--list">
@@ -53,6 +55,13 @@ $darkGreen:#778873;
     @media (min-width: 1200px) { 
             border-radius: 20px;
     };
+
+    .ancor {
+        display: block;
+        position: relative;
+        top: -100px;
+        visibility: hidden;
+    }
 
     h2 {
         text-align: center;

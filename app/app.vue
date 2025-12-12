@@ -1,15 +1,42 @@
 <script setup>
 import hero from '../components/hero.vue'
 import welcome from '../components/welcome.vue'
-import ccm from '../components/ccm.vue'
 import treatments from '../components/treatments.vue'
 import description from '../components/description.vue'
 import personaldata from '../components/personaldata.vue'
 import agreements from '../components/agreements.vue'
+
+import { ref } from 'vue';
+
+const active = ref(false)
+
+
+onMounted(() => {
+  window.addEventListener("scroll", () => {
+    if(window.scrollY >= 100) {
+      active.value = true;
+      return;
+    }
+
+    active.value = false;
+    return;
+
+  })
+})
 </script>
 
 
 <template>
+  <nav :class="{'scrolled': active}">
+    <ul>
+      <li><a href="#behandlinger">Behandlinger</a></li>
+      <li><a href="#">Priser</a></li>
+      <li><a href="#">Anmeldelser</a></li>
+      <li><a href="#">Kontakt</a></li>
+      <li><a href="#">FAQ</a></li>
+    </ul>
+  </nav>
+
   <header class="header">
         <hero/>
   </header>
@@ -21,7 +48,6 @@ import agreements from '../components/agreements.vue'
 
     <section class="main__container">
       <welcome/>
-      <ccm/>
       <treatments/>
       <description/>
       <personaldata />
@@ -44,6 +70,50 @@ $darkGreen:#778873;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open sans', sans-serif;
+}
+
+nav {
+  position:fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  // background-color: rgba(255, 255, 255, 0.347);
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+
+  &.scrolled {
+    background-color: $darkGreen;
+    box-shadow: 0 2px 6px #00000030;
+  }
+  
+  &:hover {
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+
+    li {
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 h2 {
@@ -98,7 +168,7 @@ p {
 
       // large screens
       @media (min-width: 1200px) {
-        height: 75vh;
+        height: 45vh;
         top: 60vh;
       };
     }
