@@ -43,6 +43,7 @@ const text = generalText.data.hero;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        grid-area: a;
     }
 
     &__logo {
@@ -71,18 +72,21 @@ const text = generalText.data.hero;
         position: relative;
         grid-area: b;
         overflow: hidden;
+        height: 100%;
 
         // large screens
         @media (min-width: 1200px) {
             display: unset;
-         };
-    }
+        };
 
-    &__img {
-        position: absolute;
-        right: 0;
-        height: 100%;
-        transform: scale(-1, 1);
+        img {
+            height: 100%;
+            transform: scale(-1, 1);
+            position:absolute;
+            bottom: 0;
+            right: 0;
+        }
+
     }
 
     &__stripes {
