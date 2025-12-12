@@ -30,17 +30,17 @@ const text = generalText.data.about;
         'a'
         'b' 
         'c';
-        grid-template-columns: 100%;
+        grid-template-columns: fit-content%;
         grid-template-rows: auto auto;
         padding: 0 20px;
-
+        
         // large screens
         @media (min-width: 1200px) {
             grid-template-areas: 
             'a b' 
             'c c';
             grid-template-columns: 50% 50%;
-            grid-template-rows: 400px 250px;
+            grid-template-rows: 400px fit-content;
             padding: unset;
         };
 

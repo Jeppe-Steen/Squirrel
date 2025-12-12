@@ -120,6 +120,31 @@
                 "Min klinik er beliggende på sandmosevej 11, 9440 Aabybro, omringet af natur, fugle og en masse egern, deraf navnet.",
                 "Jeg glæder mig til at møde dig og til at vi sammen kan finde en vej ud af din problematik, om det er fysisk, mentalt, kronisk, akut eller noget helt andet."
             ]
+        },
+        "personaldata": {
+            "header": "Persondatapolitik",
+            "text": [
+                { "type": "paragraph", "text": "Som akupunktør laver jeg journalføring, med personfølsomme oplysninger om mine klienter, det betyder:"},
+                { "type": "list", "text": [
+                    "Ved mail/SMS korrespondance vil jeg opbevare dine mailoplysninger, samt andre oplysninger du giver via mail, indtil det står klar om du ønsker mine ydelser eller ej.",
+                    "Ved et forløb hos mig, vil vi ved første behandling gennemgå dine problematikker, jeg vil yderligere spørge ind til nogle forskellige symptomer, sygdomshistorik, etc. samt andet som er relevant for at yde den mest relevante og korrekte behandling. Ved efterfølgende behandlinger noteres udviklingen i sygdommen/problematikken samt resultaterne som følge af forudgående behandling."
+                ]},
+                { "type": "paragraph", "text": "Desuden opbevarer jeg følgende informationer: navn, adresse, tlf. nr., mailadresse samt personnummer."},
+                { "type": "paragraph", "text": "Persondataforordningen giver den registrerede en række rettigheder, og de vigtigste rettigheder er:"},
+                { "type": "list", "text": [
+                    "Retten til at modtage oplysning om en behandling af sine personoplysninger (oplysningspligt).",
+                    "Retten til at få indsigt i sine personoplysninger (indsigtspligt).",
+                    "Retten til at få urigtige personoplysninger berigtiget (retten til berigtigelse).",
+                    "Retten til at få sine personoplysninger slettet (retten til at blive glemt).",
+                    "Retten til at gøre indsigelse mod at personoplysninger anvendes til direkte markedsføring.",
+                    "Retten til at gøre indsigelse (f.eks. klage til Datatilsynet).",
+                    "Retten til at flytte sine personoplysninger (dataportabilitet)."
+                ]}
+            ]
+        },
+        "agreement": {
+            "header": "Samtykkeerklæring",
+            "text": "Som kunde, skal du underskrive en samtykkerklæring ved 1. behandling. Erklæringen opbevares fysisk i aflåst skab. Samtykket kan til en hver tid trækkes tilbage, desuden opbevarer jeg journaler i 5 år, hvorefter de makuleres, hvis du ikke fortsat er kunde hos mig."
         }
     }
 }

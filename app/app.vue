@@ -7,6 +7,8 @@ import description from '../components/description.vue'
 import prices from '../components/prices.vue'
 import slideshow from '../components/slideshow.vue'
 import about from '../components/about.vue'
+import personaldata from '../components/personaldata.vue'
+import agreements from '../components/agreements.vue'
 </script>
 
 
@@ -28,6 +30,8 @@ import about from '../components/about.vue'
       <!-- <prices/> -->
       <!-- <slideshow/> -->
       <about/>
+      <personaldata />
+      <agreements />
     </section>
   </main>
 
