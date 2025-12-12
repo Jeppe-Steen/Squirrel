@@ -4,9 +4,6 @@ import welcome from '../components/welcome.vue'
 import ccm from '../components/ccm.vue'
 import treatments from '../components/treatments.vue'
 import description from '../components/description.vue'
-import prices from '../components/prices.vue'
-import slideshow from '../components/slideshow.vue'
-import about from '../components/about.vue'
 import personaldata from '../components/personaldata.vue'
 import agreements from '../components/agreements.vue'
 </script>
@@ -27,9 +24,6 @@ import agreements from '../components/agreements.vue'
       <ccm/>
       <treatments/>
       <description/>
-      <!-- <prices/> -->
-      <!-- <slideshow/> -->
-      <about/>
       <personaldata />
       <agreements />
     </section>
