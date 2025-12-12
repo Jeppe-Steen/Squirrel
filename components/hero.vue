@@ -73,7 +73,9 @@ const text = generalText.data.hero;
         overflow: hidden;
 
         // large screens
-        @media (min-width: 1200px) { display: unset; };
+        @media (min-width: 1200px) {
+            display: unset;
+         };
     }
 
     &__img {

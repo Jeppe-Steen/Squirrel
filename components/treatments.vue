@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import generalText from "../content/json/generalText.json";
 const text = generalText.data.treatments;
 const selectedTreatment = ref(0);
@@ -42,12 +42,17 @@ $darkGreen:#778873;
 .treatments {
     width: 100%;
     height: fit-content;
-    border-radius: 20px;
+    border-radius: 0px;
     box-shadow: 0 0 10px 5px #00000010;
     background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    // large screens
+    @media (min-width: 1200px) { 
+            border-radius: 20px;
+    };
 
     h2 {
         text-align: center;
@@ -56,14 +61,24 @@ $darkGreen:#778873;
 
     &__container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 20px;
         margin: 20px;
         min-height: 300px;
 
+        // large screens
+        @media (min-width: 1200px) { 
+            flex-direction: row;
+        };
+
         &--list {
-            width: 30%;
+            width: 100%;
             padding: 0 20px;
+
+             // large screens
+            @media (min-width: 1200px) { 
+                width: 30%;
+            };
 
             li {
                 list-style: none;
@@ -84,7 +99,12 @@ $darkGreen:#778873;
         }
 
         &--description {
-            width: 70%;
+            width: 100%;
+
+            // large screens
+            @media (min-width: 1200px) { 
+                width: 70%;
+            };
             
             p, ul, h3 {
              margin-bottom: 5px;

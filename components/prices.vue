@@ -25,13 +25,13 @@ $darkGreen:#778873;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        flex-direction: row;
+        flex-direction: column;
         gap: 30px;
 
         article {
             height: 100%;
             border-radius: 20px;
-            width: calc(100% / 4);
+            width: 80%;
             background-color: white;
             box-shadow: 0 0 10px 5px #00000010;
             display: flex;

@@ -23,11 +23,11 @@ import about from '../components/about.vue'
     <section class="main__container">
       <welcome/>
       <ccm/>
-      <!-- <treatments/> -->
-      <!-- <description/> -->
+      <treatments/>
+      <description/>
       <!-- <prices/> -->
       <!-- <slideshow/> -->
-      <!-- <about/> -->
+      <about/>
     </section>
   </main>
 
@@ -82,10 +82,8 @@ p {
     height: fit-content;
     background-color: transparent;
     z-index: 90;
-
-    // large screens
-    @media (min-width: 1200px) { width: 60%; };
-
+    
+    @media (min-width: 1200px) {  width: 60%; };
   }
 
   .fixed-background {
@@ -94,7 +92,7 @@ p {
     .first{
       width: 100%;
       position: absolute;
-      height: 60vh;
+      height: 120vh;
       background-color: $lightestGreen;
       top: 50vh;
       left: 0;
@@ -102,7 +100,7 @@ p {
 
       // large screens
       @media (min-width: 1200px) {
-        height: 60vh;
+        height: 75vh;
         top: 60vh;
       };
     }
