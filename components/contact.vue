@@ -6,7 +6,7 @@ import ancor from './reuseable/ancor.vue'
     <section class="contact">
         <ancor path="kontakt"/>
         <h2>Skriv til mig her!</h2>  
-        <form name="contact" data-netlify="true" onsubmit="return false">
+        <form name="contact" onsubmit="return false">
             <input placeholder="Fulde navn" type="text" name="Full name">
             <input placeholder="Email" type="email" name="email">
             <textarea placeholder="Besked som fortæller om din problemstilling" name="" id="" cols="30" rows="10"></textarea>
