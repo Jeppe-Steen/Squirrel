@@ -19,6 +19,7 @@ import ancor from './reuseable/ancor.vue';
                         <li>Varighed ca. 60 min</li>
                     </ul>
                 </div>
+                <a class="contact" href="#contact">Skriv her</a>
             </article>
 
             <article>
@@ -31,6 +32,7 @@ import ancor from './reuseable/ancor.vue';
                         <li>Varighed ca. 45 min</li>
                     </ul>
                 </div>
+                <a class="contact" href="#contact">Skriv her</a>
             </article>
         </div>
     </section>
@@ -58,6 +60,7 @@ $darkGreen:#778873;
         justify-content: center;
         gap: 50px;
         margin-top: 50px;
+        position: relative;
 
         // large screens
         @media (min-width: 1200px) {  
@@ -70,7 +73,7 @@ $darkGreen:#778873;
             display:flex;
             flex-direction: column;
             align-items: center;
- box-shadow: 0 0 10px 5px #00000010;
+            box-shadow: 0 0 10px 5px #00000010;
             background-color: white;
 
             // large screens
@@ -80,7 +83,8 @@ $darkGreen:#778873;
             };
 
         &:first-child {
-            background-color: $green;
+            background-color: $darkGreen;
+            color: white;
         }
 
             h2 {
@@ -99,6 +103,18 @@ $darkGreen:#778873;
                     list-style: none;
                 }
             }
+        }
+
+        .contact {
+            width: 200px;
+            color: black;
+            text-decoration: none;
+            background-color: $lightGreen;
+            position: absolute;
+            bottom: 20px;
+            box-shadow: 0 0 10px 5px #00000010;
+            text-align:center;
+            padding: 10px;
         }
     }
 }

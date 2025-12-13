@@ -8,6 +8,7 @@ import agreements from '../components/agreements.vue';
 import gallery from '../components/gallery.vue';
 import prices from '../components/prices.vue';
 import about from '../components/about.vue';
+import contact from '../components/contact.vue';
 
 import { ref } from 'vue';
 
@@ -35,7 +36,7 @@ onMounted(() => {
       <li><a href="#behandlinger">Behandlinger</a></li>
       <li><a href="#priser">Priser</a></li>
       <li><a href="#">Anmeldelser</a></li>
-      <li><a href="#">Kontakt</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
       <li><a href="#">FAQ</a></li>
     </ul>
   </nav>
@@ -57,6 +58,7 @@ onMounted(() => {
       <gallery/>
       <prices/>
       <about/>
+      <contact/>
       <personaldata />
       <agreements />
     </section>
