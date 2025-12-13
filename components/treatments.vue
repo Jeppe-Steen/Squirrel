@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import generalText from "../content/json/generalText.json";
+import ancor from './reuseable/ancor.vue';
 const text = generalText.data.treatments;
 const selectedTreatment = ref(0);
 
@@ -15,7 +16,7 @@ const selectTreatment = async (index) => {
 
 <template>
     <section class="treatments">
-        <span class="ancor" id="behandlinger"></span>
+        <ancor path="behandlinger"/>
 
         <h2>{{ text.header }}</h2>
         <div class="treatments__container">
@@ -42,26 +43,22 @@ $green:#A1BC98;
 $darkGreen:#778873;
 
 .treatments {
+    margin-top: 50px;
     width: 100%;
     height: fit-content;
     border-radius: 0px;
-    box-shadow: 0 0 10px 5px #00000010;
+ box-shadow: 0 0 10px 5px #00000010;
     background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
 
     // large screens
-    @media (min-width: 1200px) { 
-            border-radius: 20px;
+    @media (min-width: 1200px) {
+        margin-top: 0;
+        border-radius: 20px;
     };
 
-    .ancor {
-        display: block;
-        position: relative;
-        top: -100px;
-        visibility: hidden;
-    }
 
     h2 {
         text-align: center;

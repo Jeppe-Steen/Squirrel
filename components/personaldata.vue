@@ -26,6 +26,7 @@ const text = generalText.data.personaldata;
         };
 
         h2 {
+            text-align:center;
             margin-bottom: 10px;
         }
 

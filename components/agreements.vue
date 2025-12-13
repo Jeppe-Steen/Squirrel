@@ -21,6 +21,7 @@ const text = generalText.data.agreement;
 
         h2 {
             margin-bottom: 10px;
+            text-align:center;
         }
 
         p {

@@ -55,7 +55,7 @@ const text = generalText.data.hero;
         text-transform: uppercase;
         background: radial-gradient(#D2B379, #A17A46);
         -webkit-background-clip: text;
-                background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 2rem;
         font-style: bold;
@@ -102,7 +102,7 @@ const text = generalText.data.hero;
             #dddddd20 200px,
             #dddddd20 400px
         );
-        box-shadow: 0 2px 6px #00000030;
+        box-shadow: 0 0 10px 5px #00000010;
         z-index: 900;
 
         // large screens

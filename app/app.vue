@@ -1,10 +1,13 @@
 <script setup>
-import hero from '../components/hero.vue'
-import welcome from '../components/welcome.vue'
-import treatments from '../components/treatments.vue'
-import description from '../components/description.vue'
-import personaldata from '../components/personaldata.vue'
-import agreements from '../components/agreements.vue'
+import hero from '../components/hero.vue';
+import welcome from '../components/welcome.vue';
+import treatments from '../components/treatments.vue';
+import description from '../components/description.vue';
+import personaldata from '../components/personaldata.vue';
+import agreements from '../components/agreements.vue';
+import gallery from '../components/gallery.vue';
+import prices from '../components/prices.vue';
+import about from '../components/about.vue';
 
 import { ref } from 'vue';
 
@@ -30,7 +33,7 @@ onMounted(() => {
   <nav :class="{'scrolled': active}">
     <ul>
       <li><a href="#behandlinger">Behandlinger</a></li>
-      <li><a href="#">Priser</a></li>
+      <li><a href="#priser">Priser</a></li>
       <li><a href="#">Anmeldelser</a></li>
       <li><a href="#">Kontakt</a></li>
       <li><a href="#">FAQ</a></li>
@@ -44,12 +47,16 @@ onMounted(() => {
   <main class="main">
     <section class="fixed-background">
       <div class="first"></div>
+      <div class="secound"></div>
     </section>
 
     <section class="main__container">
       <welcome/>
       <treatments/>
       <description/>
+      <gallery/>
+      <prices/>
+      <about/>
       <personaldata />
       <agreements />
     </section>
@@ -74,20 +81,22 @@ $darkGreen:#778873;
 }
 
 nav {
+  display: none;
   position:fixed;
   top: 0;
   width: 100%;
   height: 60px;
-  // background-color: rgba(255, 255, 255, 0.347);
   z-index: 999;
 
-  display: flex;
   align-items: center;
   padding: 0 100px;
 
+  // large screens
+  @media (min-width: 1200px) {  display: flex; };
+
   &.scrolled {
     background-color: $darkGreen;
-    box-shadow: 0 2px 6px #00000030;
+    box-shadow: 0 0 10px 5px #00000010;
   }
   
   &:hover {
@@ -152,6 +161,7 @@ p {
     background-color: transparent;
     z-index: 90;
     
+    // large screens
     @media (min-width: 1200px) {  width: 60%; };
   }
 
@@ -171,6 +181,22 @@ p {
       @media (min-width: 1200px) {
         height: 45vh;
         top: 60vh;
+      };
+    }
+
+    .secound{
+      width: 100%;
+      position: absolute;
+      height: 120vh;
+      background-color: $lightestGreen;
+      top: 4950px;
+      left: 0;
+      z-index: 0;
+
+      // large screens
+      @media (min-width: 1200px) {
+        height: 80vh;
+        top: 2500px;
       };
     }
   }
