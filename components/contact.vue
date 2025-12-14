@@ -6,10 +6,10 @@ import ancor from './reuseable/ancor.vue'
     <section class="contact">
         <ancor path="kontakt"/>
         <h2>Skriv til mig her!</h2>  
-        <form action="https://formsubmit.co/rosendahl-98@hotmail.com" method="POST">
-            <input placeholder="Fulde navn" type="text" name="Fullname">
-            <input placeholder="Email" type="email" name="email">
-            <textarea placeholder="Besked som fortæller om din problemstilling" name="" id="" cols="30" rows="10"></textarea>
+        <form action="https://formspree.io/f/mpwvnyej" method="POST">
+            <input placeholder="Fulde navn" type="text" name="Fullname" required>
+            <input placeholder="Email" type="email" name="email" required>
+            <textarea placeholder="Besked som fortæller om din problemstilling" name="message" cols="30" rows="10" required></textarea>
             <button type="submit">Send beskeden</button>
         </form>
     </section>
