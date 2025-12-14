@@ -20,13 +20,8 @@ const text = generalText.data.description;
 
 <style lang="scss">
     .description {
-        padding: 50px 20px;
-
-        // large screens
-        @media (min-width: 1200px) { 
-            padding: 50px 0;
-        };
-
+        margin-top: 50px;
+        
         h2 {
             margin-bottom: 10px;
             text-align:center;

@@ -18,13 +18,8 @@ const text = generalText.data.personaldata;
 
 <style lang="scss">
 .personaldata {
-        padding: 50px 20px;
-
-        // large screens
-        @media (min-width: 1200px) { 
-            padding: 50px 0;
-        };
-
+    margin-top: 50px;
+    
         h2 {
             text-align:center;
             margin-bottom: 10px;

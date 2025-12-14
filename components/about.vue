@@ -31,7 +31,6 @@ const array = [
         'a' 'b';
         grid-template-columns: 100%;
         gap: 50px;
-        padding: 0 20px;
         
         // large screens
         @media (min-width: 1200px) {
@@ -49,7 +48,7 @@ const array = [
 
             img {
                 width: 100%;
-                box-shadow: 0 0 10px 5px #00000010;
+                box-shadow: 0 0 10px 5px #00000030;
             }
         }
 

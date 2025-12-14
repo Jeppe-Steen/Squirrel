@@ -9,6 +9,7 @@ import gallery from '../components/gallery.vue';
 import prices from '../components/prices.vue';
 import about from '../components/about.vue';
 import contact from '../components/contact.vue';
+import FAQ from '../components/FAQ.vue';
 
 import { ref } from 'vue';
 
@@ -35,9 +36,9 @@ onMounted(() => {
     <ul>
       <li><a href="#behandlinger">Behandlinger</a></li>
       <li><a href="#priser">Priser</a></li>
-      <li><a href="#">Anmeldelser</a></li>
+      <!-- <li><a href="#">Anmeldelser</a></li> -->
       <li><a href="#kontakt">Kontakt</a></li>
-      <li><a href="#">FAQ</a></li>
+      <li><a href="#FAQ">FAQ</a></li>
     </ul>
   </nav>
 
@@ -59,6 +60,7 @@ onMounted(() => {
       <prices/>
       <about/>
       <contact/>
+      <FAQ />
       <personaldata />
       <agreements />
     </section>
@@ -98,7 +100,7 @@ nav {
 
   &.scrolled {
     background-color: $darkGreen;
-    box-shadow: 0 0 10px 5px #00000010;
+    box-shadow: 0 0 10px 5px #00000030;
   }
   
   &:hover {
@@ -162,9 +164,10 @@ p {
     height: fit-content;
     background-color: transparent;
     z-index: 90;
+    padding: 0 20px;
     
     // large screens
-    @media (min-width: 1200px) {  width: 60%; };
+    @media (min-width: 1200px) {  width: 60%; padding: unset; };
   }
 
   .fixed-background {

@@ -102,7 +102,7 @@ const text = generalText.data.hero;
             #dddddd20 200px,
             #dddddd20 400px
         );
-        box-shadow: 0 0 10px 5px #00000010;
+        box-shadow: 0 0 10px 5px #00000030;
         z-index: 900;
 
         // large screens

@@ -73,7 +73,7 @@ $darkGreen:#778873;
             display:flex;
             flex-direction: column;
             align-items: center;
-            box-shadow: 0 0 10px 5px #00000010;
+            box-shadow: 0 0 10px 5px #00000030;
             background-color: white;
 
             // large screens
@@ -112,7 +112,7 @@ $darkGreen:#778873;
             background-color: $lightGreen;
             position: absolute;
             bottom: 20px;
-            box-shadow: 0 0 10px 5px #00000010;
+            box-shadow: 0 0 10px 5px #00000030;
             text-align:center;
             padding: 10px;
         }

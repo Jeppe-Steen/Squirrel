@@ -47,7 +47,7 @@ $darkGreen:#778873;
     width: 100%;
     height: fit-content;
     border-radius: 0px;
- box-shadow: 0 0 10px 5px #00000010;
+    box-shadow: 0 0 10px 5px #00000030;
     background-color: white;
     display: flex;
     align-items: center;
