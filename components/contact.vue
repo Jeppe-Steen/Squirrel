@@ -6,8 +6,8 @@ import ancor from './reuseable/ancor.vue'
     <section class="contact">
         <ancor path="kontakt"/>
         <h2>Skriv til mig her!</h2>  
-        <form name="contact" onsubmit="return false">
-            <input placeholder="Fulde navn" type="text" name="Full name">
+        <form action="https://formsubmit.co/rosendahl-98@hotmail.com" method="POST">
+            <input placeholder="Fulde navn" type="text" name="Fullname">
             <input placeholder="Email" type="email" name="email">
             <textarea placeholder="Besked som fortæller om din problemstilling" name="" id="" cols="30" rows="10"></textarea>
             <button type="submit">Send beskeden</button>
