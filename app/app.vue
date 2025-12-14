@@ -11,19 +11,7 @@ import about from '../components/about.vue';
 import contact from '../components/contact.vue';
 import FAQ from '../components/FAQ.vue';
 
-import { ref, useHead } from 'vue';
-
-const title = ref('Klinik Egernbo Akupunktur')
-const description = ref('Velkommen til klinik Egernbo. Har du gået med tanken om at prøve akupunktur, enten af ren nygerighed, eller i håbet om en alternativ vej til at få det bedre fysisk eller mentalt? Så læs endeligt videre, du er kommet til det rette sted. Som en af de få i Nordjylland der er uddannet indenfor CCM, den originale tilgang til akupunktur, tilbyder jeg en holistisk tilgang til mine klienter, hvor man ikke bare symptombehandler, men tager udgangspunkt i det hele menneske, for at kunne behandle roden til de sygdomme der er opstået. En metode der fandtes før den vestlige tilgang til behandlinger opstod.')
-useHead({
-  title,
-  meta: [{
-    name: 'description',
-    content: description,
-  }],
-})
-
-
+import { ref } from 'vue';
 
 const active = ref(false)
 
@@ -44,6 +32,14 @@ onMounted(() => {
 
 
 <template>
+  <Head>
+      <Title>Klinik Egernbo Akupunktur</Title>
+      <Meta
+        name="description"
+        content="Velkommen til klinik Egernbo. Har du gået med tanken om at prøve akupunktur, enten af ren nygerighed, eller i håbet om en alternativ vej til at få det bedre fysisk eller mentalt? Så læs endeligt videre, du er kommet til det rette sted. Som en af de få i Nordjylland der er uddannet indenfor CCM, den originale tilgang til akupunktur, tilbyder jeg en holistisk tilgang til mine klienter, hvor man ikke bare symptombehandler, men tager udgangspunkt i det hele menneske, for at kunne behandle roden til de sygdomme der er opstået. En metode der fandtes før den vestlige tilgang til behandlinger opstod."
+      />
+    </Head>
+
   <nav :class="{'scrolled': active}">
     <ul>
       <li><a href="#behandlinger">Behandlinger</a></li>
