@@ -101,6 +101,9 @@ nav {
   &.scrolled {
     background-color: $darkGreen;
     box-shadow: 0 0 10px 5px #00000030;
+    a {
+      color:white;
+    }
   }
   
   &:hover {

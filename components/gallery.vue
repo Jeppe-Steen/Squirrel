@@ -17,6 +17,7 @@
     .gallery{
         width: 100%;
         height: fit-content;
+        margin-top: 50px;
         
         .container {
             width: 100%;

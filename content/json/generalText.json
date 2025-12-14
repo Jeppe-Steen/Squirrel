@@ -145,6 +145,13 @@
         "agreement": {
             "header": "Samtykkeerklæring",
             "text": "Som kunde, skal du underskrive en samtykkerklæring ved 1. behandling. Erklæringen opbevares fysisk i aflåst skab. Samtykket kan til en hver tid trækkes tilbage, desuden opbevarer jeg journaler i 5 år, hvorefter de makuleres, hvis du ikke fortsat er kunde hos mig."
+        },
+        "FAQ": {
+            "header": "Ofte stillede spørgsmål",
+            "questions": [
+                {"header": "Hvad er CCM?", "text": "Klassisk Kinesisk Medicin (CCM), er den oprindelige akupunkturlære, hvor Traditionel Kinesisk Medicin (TCM), som de fleste akupunktører praktiserer, er tilpasset mere den vestlige tilgang til sygdom, som vi kender den i vores sunhedssystem, udviklet i 1950’erne i Kina som en moderne, statslig standardisering af de gamle kinesiske metoder."},
+                {"header": "Er auriculoterapi det samme som NADA-behandling?", "text": "Nej, det er ikke det samme, NADA er en behandlingsform som har fokus på 5 primærpunkter, som har til formål at reducere stress, angst, uro, søvnproblemer og abstinenser. Som oftes anvendt i psykiatrien. Auriculoterapi dækker bl.a. disse punkter, men derudover er der mere specifikke punkter til behandling af smerter, overgangsalder, fertilitet, etc."}
+            ]
         }
     }
 }

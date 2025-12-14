@@ -19,7 +19,7 @@ import ancor from './reuseable/ancor.vue';
                         <li>Varighed ca. 60 min</li>
                     </ul>
                 </div>
-                <a class="contact" href="#contact">Skriv her</a>
+                <a class="contact" href="#kontakt">Skriv her</a>
             </article>
 
             <article>
@@ -32,7 +32,7 @@ import ancor from './reuseable/ancor.vue';
                         <li>Varighed ca. 45 min</li>
                     </ul>
                 </div>
-                <a class="contact" href="#contact">Skriv her</a>
+                <a class="contact" href="#kontakt">Skriv her</a>
             </article>
         </div>
     </section>
@@ -75,6 +75,7 @@ $darkGreen:#778873;
             align-items: center;
             box-shadow: 0 0 10px 5px #00000030;
             background-color: white;
+            position: relative;
 
             // large screens
             @media (min-width: 1200px) {  

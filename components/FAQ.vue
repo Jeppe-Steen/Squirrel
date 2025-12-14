@@ -1,30 +1,17 @@
 <script setup>
 import ancor from './reuseable/ancor.vue';
+import generalText from "../content/json/generalText.json";
+const text = generalText.data.FAQ;
 </script>
 
 <template>
     <section class="faq">
         <ancor path="FAQ" />
-        <h2>Ofte Stillede spørgsmål</h2>
+        <h2>{{ text.header }}</h2>
         <div class="container">
-            <article class="question">
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nobis maiores perferendis, ipsam suscipit, veniam optio, voluptatem ipsa magnam quis velit asperiores nostrum iure similique quaerat explicabo doloribus facere aut.</p>
-            </article>
-
-            <article class="question">
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nobis maiores perferendis, ipsam suscipit, veniam optio, voluptatem ipsa magnam quis velit asperiores nostrum iure similique quaerat explicabo doloribus facere aut.</p>
-            </article>
-
-            <article class="question">
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nobis maiores perferendis, ipsam suscipit, veniam optio, voluptatem ipsa magnam quis velit asperiores nostrum iure similique quaerat explicabo doloribus facere aut.</p>
-            </article>
-
-            <article class="question">
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nobis maiores perferendis, ipsam suscipit, veniam optio, voluptatem ipsa magnam quis velit asperiores nostrum iure similique quaerat explicabo doloribus facere aut.</p>
+            <article v-for="item in text.questions" class="question">
+                <h3>{{item.header}}</h3>
+                <p>{{ item.text }}</p>
             </article>
         </div>
     </section>
@@ -55,6 +42,10 @@ import ancor from './reuseable/ancor.vue';
             background-color: white;
             box-shadow: 0 0 10px 5px #00000030;
             padding: 20px;
+
+            h3 {
+                margin-bottom: 10px;
+            }
         }
     }
 }
