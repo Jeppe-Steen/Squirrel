@@ -259,15 +259,35 @@ p {
 
 footer {
   height: fit-content;
-  padding: 50px;
+  padding: 20px;
   background-color: $lightGreen;
   margin-top: 50px;
   width: 100%;
 
+  // large screens
+  @media (min-width: 1200px) {
+    padding: 50px;
+  };
+
   section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+
+     // large screens
+    @media (min-width: 1200px) {
+          flex-direction: row;
+    };
+
+     article {
+      margin-bottom: 50px;
+
+      @media (min-width: 1200px) {
+        margin: unset;
+        width: 30%;
+      }
+    }
+
   }
 
   li {
@@ -282,7 +302,12 @@ footer {
   }
 
   iframe {
-    height: 300px;
+    height: unset;
+    width: 100%;
+
+    @media (min-width: 1200px) {
+      height: 300px;
+    }
   }
 }
 </style>
