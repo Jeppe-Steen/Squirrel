@@ -259,7 +259,7 @@ p {
 
 footer {
   height: fit-content;
-  padding: 20px;
+  padding: 50px;
   background-color: $lightGreen;
   margin-top: 50px;
   width: 100%;
