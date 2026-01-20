@@ -6,7 +6,7 @@ const text = generalText.data.FAQ;
 
 <template>
     <section class="faq">
-        <ancor path="FAQ" />
+        <ancor path="faq" />
         <h2>{{ text.header }}</h2>
         <div class="container">
             <article v-for="item in text.questions" class="question">

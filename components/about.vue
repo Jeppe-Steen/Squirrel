@@ -1,4 +1,5 @@
 <script setup>
+import ancor from './reuseable/ancor.vue';
 const array = [
     "Mit navn er Frederikke, jeg er uddannet akupunktør fra Danmarks Akupunktur Uddannelse i Odder, den eneste skole i Danmark som underviser og uddanner indenfor Klassisk Kinesisk Medicin (CCM).",
     "Jeg er uddannet bioanalytiker, så nåle ligger ikke fjernt fra min hverdag, anvendelsen er bare blevet anderledes. Jeg valgte at uddanne mig til akupunktør efter en længere overvejelse, og da muligheden opstod, sprang jeg til med det samme - den bedste beslutning karrieremæssigt jeg har taget.",
@@ -12,6 +13,7 @@ const array = [
 <template>
     <section class="about">
         <div class="me">
+            <ancor path="om" />
             <img src="../assets/image/me.jpg" />
         </div>
         <div class="text">

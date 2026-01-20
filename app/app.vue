@@ -33,10 +33,10 @@ onMounted(() => {
 
 <template>
   <Head>
-      <Title>Klassisk Kinesisk Akupunktur | Klinik Egernbo Akupunktur</Title>
+      <Title>Klassisk Kinesisk Akupunktur | Klinik Egernbo Akupunktur | Aabybro</Title>
       <Meta
         name="description"
-        content="Velkommen til klinik Egernbo. Har du gået med tanken om at prøve akupunktur, enten af ren nygerighed, eller i håbet om en alternativ vej til at få det bedre fysisk eller mentalt? Så læs endeligt videre, du er kommet til det rette sted. Som en af de få i Nordjylland der er uddannet indenfor CCM, den originale tilgang til akupunktur, tilbyder jeg en holistisk tilgang til mine klienter, hvor man ikke bare symptombehandler, men tager udgangspunkt i det hele menneske, for at kunne behandle roden til de sygdomme der er opstået. En metode der fandtes før den vestlige tilgang til behandlinger opstod."
+        content="Velkommen til klinik Egernbo. Har du gået med tanken om at prøve akupunktur, enten af ren nygerighed, eller i håbet om en alternativ vej til at få det bedre fysisk eller mentalt? Så læs endeligt videre, du er kommet til det rette sted. Som en af de få i Nordjylland der er uddannet indenfor CCM, den originale tilgang til akupunktur, tilbyder jeg en holistisk tilgang til mine klienter, hvor man ikke bare symptombehandler, men tager udgangspunkt i det hele menneske, for at kunne behandle roden til de sygdomme der er opstået. En metode der fandtes før den vestlige tilgang til behandlinger opstod. Vi er beliggede lidt uden for Aabybro så kontakt os endelig!"
       />
       <Meta
         name="viewport"
@@ -54,7 +54,7 @@ onMounted(() => {
       <li><a href="#priser">Priser</a></li>
       <!-- <li><a href="#">Anmeldelser</a></li> -->
       <li><a href="#kontakt">Kontakt</a></li>
-      <li><a href="#FAQ">FAQ</a></li>
+      <li><a href="#faq">FAQ</a></li>
     </ul>
   </nav>
 
@@ -83,6 +83,34 @@ onMounted(() => {
   </main>
 
   <footer class="footer">
+    <section class="footer_section">
+      <article>
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#behandlinger">Behandlinger jeg tilbyder</a></li>
+          <li><a href="#akupunktur">Hvad er akupunktur</a></li>
+          <li><a href="#priser">Priser</a></li>
+          <li><a href="#om">Om mig</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="#faq">Ofte stillede spørgsmål</a></li>
+          <li><a href="#persondatapolitik">Persondatapolitik</a></li>
+          <li><a href="#samtykke">Samtykkeerklæring</a></li>
+        </ul>
+      </article>
+      <article>
+        <h3>Oplysninger</h3>
+        <p>Sandmosevej 11, 9440 Aabybro</p>
+        <p>Tlf: 22 31 39 69</p>
+        <p>Mail: info@klinikegernboakupunktur.dk</p>
+        <p>CVR: 46094417</p>
+        <br />
+        <p>Mandag-fredag: 9:00 - 15:00</p>
+        <p>Lørdag-Søndag: Lukket</p>
+      </article>
+      <article>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2163.6064533883787!2d9.696345913228498!3d57.160883503077045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464925c8a65bab49%3A0xb1b741175a25d19e!2sSandmosevej%2011%2C%209440%20Aabybro!5e0!3m2!1sda!2sdk!4v1768941476115!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </article>
+    </section>
   </footer>
 </template>
 
@@ -227,9 +255,31 @@ p {
 }
 
 footer {
-  height: 20vh;
+  height: fit-content;
+  padding: 50px;
   background-color: $lightGreen;
   margin-top: 50px;
   width: 100%;
+
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  li {
+    list-style: circle;
+    &:hover {
+      list-style: unset;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+
+  iframe {
+    height: 300px;
+  }
 }
 </style>
