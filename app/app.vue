@@ -10,6 +10,7 @@ import prices from '../components/prices.vue';
 import about from '../components/about.vue';
 import contact from '../components/contact.vue';
 import FAQ from '../components/FAQ.vue';
+import conditions from '../components/conditions.vue';
 
 import { ref } from 'vue';
 
@@ -79,6 +80,7 @@ onMounted(() => {
       <FAQ />
       <personaldata />
       <agreements />
+      <conditions />
     </section>
   </main>
 
@@ -95,6 +97,7 @@ onMounted(() => {
           <li><a href="#faq">Ofte stillede spørgsmål</a></li>
           <li><a href="#persondatapolitik">Persondatapolitik</a></li>
           <li><a href="#samtykke">Samtykkeerklæring</a></li>
+          <li><a href="#handelsbetingelser">Handelsbetingelser</a></li>
         </ul>
       </article>
       <article>

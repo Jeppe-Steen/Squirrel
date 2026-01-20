@@ -1,19 +1,19 @@
 <script setup>
-import ancor from './reuseable/ancor.vue';
+import ancor from "./reuseable/ancor.vue";
 import generalText from "../content/json/generalText.json";
-const text = generalText.data.agreement;
+const text = generalText.data.conditions;
 </script>
 
 <template>
-    <section class="agreements">
-        <ancor path="samtykke" />
+    <section class="conditions">
+        <ancor path="handelsbetingelser" />
         <h2>{{text.header}}</h2>
         <p>{{ text.text }}</p>
     </section>
 </template>
 
 <style lang="scss">
-.agreements {
+.conditions {
         h2 {
             margin-bottom: 10px;
             text-align:center;
@@ -22,5 +22,4 @@ const text = generalText.data.agreement;
         p {
             margin-bottom: 10px;
         }
-    }
-</style>
+    }</style>

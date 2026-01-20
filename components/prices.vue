@@ -17,9 +17,14 @@ import ancor from './reuseable/ancor.vue';
                         <li>Samtale</li>
                         <li>Behandling</li>
                         <li>Varighed ca. 60 min</li>
+
+                        <br/>
+                        <li>
+                            <a href="#handelsbetingelser">Læs handelsbetingelserne her</a>
+                        </li>
                     </ul>
                 </div>
-                <a class="contact" href="#kontakt">Skriv her</a>
+                <a class="contact" href="#kontakt">Kontakt mig her</a>
             </article>
 
             <article>
@@ -30,9 +35,14 @@ import ancor from './reuseable/ancor.vue';
                     <ul>
                         <li>Behandling</li>
                         <li>Varighed ca. 45 min</li>
+
+                        <br/>
+                        <li>
+                            <a href="#handelsbetingelser">Læs handelsbetingelserne her</a>
+                        </li>
                     </ul>
                 </div>
-                <a class="contact" href="#kontakt">Skriv her</a>
+                <a class="contact" href="#kontakt">Kontakt mig her</a>
             </article>
         </div>
     </section>
@@ -76,6 +86,11 @@ $darkGreen:#778873;
             box-shadow: 0 0 10px 5px #00000030;
             background-color: white;
             position: relative;
+
+            a {
+                color: black;
+                font-weight: bold;
+            }
 
             // large screens
             @media (min-width: 1200px) {  
