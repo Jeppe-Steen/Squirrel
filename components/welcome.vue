@@ -18,7 +18,7 @@ const text = generalText.data.welcome;
         margin: 50px 0;
 
         h2 {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
     }
 </style>

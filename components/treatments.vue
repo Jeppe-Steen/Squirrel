@@ -1,39 +1,42 @@
 <script setup>
 import { ref } from 'vue'
 import generalText from "../content/json/generalText.json";
-import ancor from './reuseable/ancor.vue';
 const text = generalText.data.treatments;
 const selectedTreatment = ref(0);
 
-const selectTreatment = async (index) => {
-    return selectedTreatment.value = index;
+const selectTreatment = async (value) => {
+    return selectedTreatment.value = value;
 };
-
-
 
 </script>
 
 
 <template>
     <section class="treatments">
-        <ancor path="behandlinger"/>
-
         <h2>{{ text.header }}</h2>
         <div class="treatments__container">
-            <ul class="treatments__container--list">
-                <li v-for="(treatments, index) in text.treatments" @click="selectTreatment(index)" :class="{selected: selectedTreatment === index}"> <p>{{ treatments.name }}</p> </li>
-            </ul>
+            <article class="treatment" style="backgroundColor:#A1BC98" @click="selectTreatment(0)" :class="{active: selectedTreatment === 0}">
+                <h3>Akupunktur</h3>
+            </article>
 
-            <div class="treatments__container--description">
-                <h3>{{ text.treatments[selectedTreatment].name }}</h3>
-                <div v-for="selectedText in text.treatments[selectedTreatment].description">
-                    <p v-if="!Array.isArray(selectedText)"> {{ selectedText }}</p>
-                    <ul v-else-if="Array.isArray(selectedText)">
-                        <li v-for="value in selectedText"> {{ value }}</li>
-                    </ul>
-                </div>
-            </div>
+            <article class="treatment" style="backgroundColor:#92aa8a" @click="selectTreatment(1)" :class="{active: selectedTreatment === 1}">
+                <h3>Moxa</h3>
+            </article>
+            
+            <article class="treatment" style="backgroundColor:#7d9376" @click="selectTreatment(2)" :class="{active: selectedTreatment === 2}">
+                <h3>Auriculoterapi</h3>
+            </article>
+
+            <article class="treatment" style="backgroundColor:#63755d" @click="selectTreatment(3)" :class="{active: selectedTreatment === 3}">
+                <h3>TENS</h3>
+            </article>
+
+            <article class="treatment" style="backgroundColor:#4c5b47" @click="selectTreatment(4)" :class="{active: selectedTreatment === 4}">
+                <h3>Cupping</h3>
+            </article>
         </div>
+
+        <a>Læs mere om behandlingerne her!</a>
     </section>
 </template>
 <style lang="scss">
@@ -46,9 +49,6 @@ $darkGreen:#778873;
     margin-top: 50px;
     width: 100%;
     height: fit-content;
-    border-radius: 0px;
-    box-shadow: 0 0 10px 5px #00000030;
-    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -62,63 +62,62 @@ $darkGreen:#778873;
 
     h2 {
         text-align: center;
-        margin: 20px;
+        margin-bottom: 20px;
     }
 
     &__container {
         display: flex;
-        flex-direction: column;
-        gap: 20px;
-        margin: 20px;
-        min-height: 300px;
+        align-items:center;
+        flex-direction: row;
 
-        // large screens
-        @media (min-width: 1200px) { 
-            flex-direction: row;
-        };
+        width: 100%;
 
-        &--list {
-            width: 100%;
-            padding: 0 20px;
+        .treatment {
 
-             // large screens
-            @media (min-width: 1200px) { 
-                width: 30%;
-            };
-
-            li {
-                list-style: none;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                justify-content: center;
-                height: 40px;
-                width: 100%;
-                margin: 10px 0;
-                background-color: $lightestGreen;
+            &.active {
+                width: 40%;
+                background-color:lightblue !important;
+                
+                h3 {
+                    position: absolute;
+                    transform: rotate(0deg);
+                    bottom: 50px;
+                }
             }
 
-            .selected {
-                background-color: $green;
-            }
-        }
+            width: 20%;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
 
-        &--description {
-            width: 100%;
-
-            // large screens
-            @media (min-width: 1200px) { 
-                width: 70%;
-            };
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             
-            p, ul, h3 {
-             margin-bottom: 5px;
+            &:hover {
+                cursor: pointer;
             }
 
-            ul {
-                padding-left: 20px;
+            h3 {
+                transform: rotate(-90deg);
+                font-size: 2rem;
             }
+
+        }
+    }
+
+    a {
+        margin-top: 30px;
+        padding: 10px 50px;
+        background-color: $green;
+        border-radius: 20px;
+        text-decoration: none;
+        color: black;
+        box-shadow: 0 0 10px 5px #00000030;
+        
+        &:hover {
+            cursor: pointer;
         }
     }
 }

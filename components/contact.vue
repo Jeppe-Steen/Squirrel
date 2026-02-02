@@ -5,10 +5,12 @@ import ancor from './reuseable/ancor.vue'
 <template>
     <section class="contact">
         <ancor path="kontakt"/>
-        <h2>Skriv til mig her!</h2>  
+        <h2>Lyder dette som noget for som dig?</h2>
+        <h3>Så kontakt mig her - eller på TLF: 22 31 39 69</h3>
         <form action="https://formspree.io/f/mpwvnyej" method="POST">
             <input placeholder="Fulde navn" type="text" name="Fullname" required>
             <input placeholder="Email" type="email" name="email" required>
+            <input placeholder="Telefonnummer" type="tel" name="telephone" required>
             <textarea placeholder="Besked som fortæller om din problemstilling" name="message" cols="30" rows="10" required></textarea>
             <button type="submit">Send beskeden</button>
         </form>
@@ -28,6 +30,9 @@ $darkGreen:#778873;
     margin-top: 50px;
 
     h2 {
+        text-align: center;
+    }
+    h3 {
         text-align: center;
         margin-bottom: 20px;
     }
