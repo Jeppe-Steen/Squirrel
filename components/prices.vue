@@ -9,14 +9,14 @@ import ancor from './reuseable/ancor.vue';
 
         <div class="container">
              <article>
-                <h2>Første Samtale</h2>
+                <h2>Første konsultation</h2>
                 <p>850 DKK</p>
                 <div>
                     <h3>Indeholder</h3>
                     <ul>
                         <li>Samtale</li>
                         <li>Behandling</li>
-                        <li>Varighed ca. 60 min</li>
+                        <li>Varighed ca. 80 min</li>
 
                         <br/>
                         <li>
@@ -34,7 +34,7 @@ import ancor from './reuseable/ancor.vue';
                     <h3>Indeholder</h3>
                     <ul>
                         <li>Behandling</li>
-                        <li>Varighed ca. 45 min</li>
+                        <li>Varighed ca. 50 min</li>
 
                         <br/>
                         <li>

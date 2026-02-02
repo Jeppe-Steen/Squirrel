@@ -64,14 +64,15 @@
                     "name": "TENS",
                     "description": [
                         "TENS står for Transkutan Elektrisk Nerve Stimulation, som er anvendelse af lav frekvens strøm der via elektroder kobles til akupunkturnålene for at stimulerer nålene og dermed øge effekten.",
-                        "TENS anvendes ved kroniske tilstande og gamle stagnationer der kræver lidt ekstra for at blive frigivet."
+                        "TENS anvendes ved kroniske tilstande og gamle stagnationer der kræver lidt ekstra for at blive frigivet.",
+                        "TENS gør ikke ondt"
                     ]
                 },
                 {
                     "name": "Cupping",
                     "description": [
-                        "Jeg anvender både fire cupping og moving cupping til behandling af muskelsmerter og spændinger.",
-                        "Fire cupping er anvendelse af glaskopper, som ved brug af ild man kortvarigt sætter ind i koppen, som efterfølgende påsættes klientens hud, hvorved det danner et vaccum der suger huden op i glaskoppen. Dette er rigtig godt til at løsne stagnationer i kroppen, som fx ved gamle skader eller muskelspændinger.",
+                        "Der anvendes både fire cupping og moving cupping til behandling af muskelsmerter og spændinger.",
+                        "Fire cupping er anvendelse af glaskopper, som ved brug af ild, danner et vaccum når de påsættes huden. Dette er rigtig godt til at løsne stagnationer i kroppen, som fx ved gamle skader eller muskelspændinger.",
                         "Moving cupping, er anvendelse af glaskopper med en sugebold på, hvorved man kan lave vaccum i koppen og dernæst bevæge koppen rundt på huden, og dermed løsne op i vævet. Det er en form for dybdegående bindevævsmassage."
                     ]
                 }
@@ -82,7 +83,7 @@
             "text": [
                 { "type": "paragraph", "text": "Akupunktur er en af verdens ældste behandlingsformer og anvendes i dag bredt som en effektiv, naturlig og holistisk tilgang til både fysiske og mentale udfordringer. I klinikken arbejder vi ud fra et helhedsorienteret perspektiv, hvor vi ser kroppen som en samlet enhed. Når der opstår ubalance – fysisk, følelsesmæssigt eller mentalt – viser det sig ofte i form af smerter, uro, stress eller andre symptomer."},
                 { "type": "paragraph", "text": "Med akupunktur stimuleres kroppens energisystem via udvalgte punkter, hvilket fremmer blodcirkulation, dæmper inflammation, reducerer spændinger og hjælper nervesystemet tilbage i en mere rolig og reguleret tilstand. For mange giver behandlingen både øjeblikkelig afspænding og langsigtet forandring."},
-                { "type": "paragraph", "text": "Vi tilbyder trygge, professionelle og individuelt tilpassede behandlingsforløb, hvor vi sammen arbejder på at skabe balance i både krop og sind — uanset om du søger smertelindring, mental ro eller støtte til kroppens hormonelle og indre funktioner."},
+                { "type": "paragraph", "text": "I klinikken tilbydes trygge, professionelle og individuelt tilpassede behandlingsforløb, hvor vi sammen arbejder på at skabe balance i både krop og sind — uanset om du søger smertelindring, mental ro eller støtte til kroppens hormonelle og indre funktioner."},
                 { "type": "header", "text": "Akupunktur kan blandt andet afhjælpe:"},
                 { "type": "list", "text": [
                     "Stress, tankemylder og overtænkning",
@@ -99,7 +100,7 @@
                     "Og meget mere…"
                 ]},
                 { "type": "header", "text": "En behandling der tager udgangspunkt i dig"},
-                { "type": "paragraph", "text": "I klinikken sætter vi god tid af til hver session. Før første behandling gennemgår vi dine symptomer, din hverdag og din generelle sundhedstilstand, så forløbet kan målrettes netop dig. Selve behandlingen foregår i rolige omgivelser, hvor du kan slappe af og give kroppen plads til at arbejde."},
+                { "type": "paragraph", "text": "I klinikken sættes der god tid af til hver session. Før første behandling gennemgår vi dine symptomer, din hverdag og din generelle sundhedstilstand, så forløbet kan målrettes netop dig. Selve behandlingen foregår i rolige omgivelser, hvor du kan slappe af og give kroppen plads til at arbejde."},
                 { "type": "paragraph", "text": "Uanset om du kommer for at få hjælp til smerter, stress, hormonelle forandringer eller kroniske ubalancer, er målet altid det samme: at skabe varig forbedring, øget velvære og en stærkere indre balance."}            
             ]
         },
@@ -155,7 +156,7 @@
         },
         "conditions": {
             "header": "Handelsbetingelser",
-            "text": "Ved udeblivelse eller afmelding af tider minimum dagen inden behandlings tiden, vil der blive opkrævet et gebyr på 50 DKK"
+            "text": "Ved udeblivelse eller afmelding af tider minimum dagen inden behandlings tiden, vil der blive opkrævet et gebyr på 150 DKK eks. moms"
         }
     }
 }
