@@ -1,21 +1,21 @@
 <script setup>
-import Hero from '../../components/Hero.vue';
-import Welcome from '../../components/Welcome.vue';
-import Treatments from '../../components/Treatments.vue';
-import Description from '../../components/Description.vue';
-import Contact from '../../components/Contact.vue';
-import Gallery from '../../components/Gallery.vue';
+    import Hero from '../../components/Hero.vue';
+    import Welcome from '../../components/Welcome.vue';
+    import Treatments from '../../components/Treatments.vue';
+    import Description from '../../components/Description.vue';
+    import Contact from '../../components/Contact.vue';
+    import Gallery from '../../components/Gallery.vue';
 
 
-useHead({
-    title: "Akupunktur i Aabybro | Klinik Egernbo Akupunktur - Nordjylland",
-    meta: [
-        {
-            name: "description",
-            content: "Professionel akupunktør i Aabybro og Nordjylland. Helhedsorienteret behandling mod smerter, stress og ubalance",
-        }
-    ]
-});
+    useHead({
+        title: "Akupunktur i Aabybro | Klinik Egernbo Akupunktur - Nordjylland",
+        meta: [
+            {
+                name: "description",
+                content: "Professionel akupunktør i Aabybro og Nordjylland. Helhedsorienteret behandling mod smerter, stress og ubalance",
+            }
+        ]
+    });
 </script>
 
 <template>
