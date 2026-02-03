@@ -14,7 +14,7 @@ const array = [
     <section class="about">
         <div class="me">
             <ancor path="om" />
-            <img src="../assets/image/treatments/me_1.webp" alt="me"/>
+            <img src="../assets/image/treatments/me_1.webp" alt="me" loading="lazy" decoding="async"/>
         </div>
         <div class="text">
             <h2>Lidt om mig!</h2>
