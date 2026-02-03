@@ -20,11 +20,11 @@ import ancor from './reuseable/ancor.vue';
 
                         <br/>
                         <li>
-                            <a href="#handelsbetingelser">Læs handelsbetingelserne her</a>
+                            <NuxtLink to="/betingelser">Læs handelsbetingelserne her</NuxtLink>
                         </li>
                     </ul>
                 </div>
-                <a class="contact" href="#kontakt">Kontakt mig her</a>
+                <NuxtLink class="contact" to="/kontakt">Kontakt mig her</NuxtLink>
             </article>
 
             <article>
@@ -38,11 +38,11 @@ import ancor from './reuseable/ancor.vue';
 
                         <br/>
                         <li>
-                            <a href="#handelsbetingelser">Læs handelsbetingelserne her</a>
+                            <NuxtLink to="/betingelser">Læs handelsbetingelserne her</NuxtLink>
                         </li>
                     </ul>
                 </div>
-                <a class="contact" href="#kontakt">Kontakt mig her</a>
+                 <NuxtLink class="contact" to="/kontakt">Kontakt mig her</NuxtLink>
             </article>
         </div>
     </section>

@@ -1,5 +1,8 @@
 <script setup>
 import Hero from '../../components/Hero.vue';
+import Personaldata from '../../components/personaldata.vue';
+import Agreements from '../../components/agreements.vue';
+import Conditions from '../../components/conditions.vue';
 </script>
 
 <template>
@@ -7,7 +10,9 @@ import Hero from '../../components/Hero.vue';
         <header><Hero /></header>
 
         <section class="main__container">
-            Betingelser
+            <Personaldata />
+            <Agreements />
+            <Conditions />
         </section>
     </main>
 </template>

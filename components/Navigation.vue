@@ -22,6 +22,10 @@ onMounted(() => {
  <nav :class="{'scrolled': active}">
     <ul>
       <li>
+        <NuxtLink to="/">Forside</NuxtLink>
+      </li>
+      
+      <li>
         <NuxtLink to="/behandlinger">Behandlinger</NuxtLink>
       </li>
 

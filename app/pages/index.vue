@@ -29,7 +29,7 @@ useHead({
             <Welcome/>
             <Treatments />
             <Description />
-            <!-- <Gallery /> -->
+            <Gallery />
             <FAQ />
         </section>
     </main>

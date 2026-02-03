@@ -1,5 +1,6 @@
 <script setup>
 import Hero from '../../components/Hero.vue';
+import Prices from '../../components/prices.vue';
 </script>
 
 <template>
@@ -7,7 +8,7 @@ import Hero from '../../components/Hero.vue';
         <header><Hero /></header>
 
         <section class="main__container">
-            Priser
+            <Prices />
         </section>
     </main>
 </template>
