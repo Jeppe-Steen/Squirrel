@@ -9,11 +9,11 @@
 
 
     useHead({
-        title: "Akupunktur i Aabybro | Lokal akupunktør",
+        title: "Alternative behandlere i Jammerbugt | Akupunktur",
         meta: [
             {
                 name: "description",
-                content: "Søger du akupunktur i Aabybro? Klinik Egernbo tilbyder professionel akupunktur med fokus på krop og sind.",
+                content: "Alternative behandlere i Jammerbugt – professionel akupunktur og helhedsorienteret behandling i Aabybro.",
             }
         ]
     });

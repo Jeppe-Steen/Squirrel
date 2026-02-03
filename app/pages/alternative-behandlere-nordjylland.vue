@@ -9,11 +9,11 @@
 
 
     useHead({
-        title: "Akupunktur i Aabybro | Lokal akupunktør",
+        title: "Akupunktur i Aabybro | Klinik Egernbo Akupunktur - Nordjylland",
         meta: [
             {
                 name: "description",
-                content: "Søger du akupunktur i Aabybro? Klinik Egernbo tilbyder professionel akupunktur med fokus på krop og sind.",
+                content: "Professionel akupunktør i Aabybro og Nordjylland. Helhedsorienteret behandling mod smerter, stress og ubalance",
             }
         ]
     });

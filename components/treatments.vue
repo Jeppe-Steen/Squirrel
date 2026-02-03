@@ -36,7 +36,7 @@ const selectTreatment = async (value) => {
             </article>
         </div>
 
-        <a>Læs mere om behandlingerne her!</a>
+        <NuxtLink to="/behandlinger">Læs mere om behandlingerne her!</NuxtLink>
     </section>
 </template>
 <style lang="scss">

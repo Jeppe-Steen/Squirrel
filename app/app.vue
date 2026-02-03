@@ -25,6 +25,12 @@ $darkGreen:#778873;
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: 'Open sans', sans-serif;
+  src: url('/fonts/font.woff2');
+  font-display: swap;
+}
+
 h2 {
   font-size: 1.5rem;
 }

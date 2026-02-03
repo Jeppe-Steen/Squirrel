@@ -21,10 +21,29 @@ onMounted(() => {
 <template>
  <nav :class="{'scrolled': active}">
     <ul>
-      <li><a href="#behandlinger">Behandlinger</a></li>
-      <li><a href="#priser">Priser</a></li>
-      <li><a href="#kontakt">Kontakt</a></li>
-      <li><a href="#faq">FAQ</a></li>
+      <li>
+        <NuxtLink to="/behandlinger">Behandlinger</NuxtLink>
+      </li>
+
+      <li>
+        <NuxtLink to="/priser">Priser</NuxtLink>
+      </li>
+
+      <li>
+        <NuxtLink to="/kontakt">Kontakt</NuxtLink>
+      </li>
+
+      <li>
+        <NuxtLink to="/betingelser">Betingelser</NuxtLink>
+      </li>
+
+      <li>
+        <NuxtLink to="/om">Om Klinikken</NuxtLink>
+      </li> 
+
+      <li>
+        <NuxtLink to="/#faq">FAQ</NuxtLink>
+      </li>  
     </ul>
   </nav>
 </template>
