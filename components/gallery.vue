@@ -1,14 +1,16 @@
 <template>
     <section class="gallery">
         <div class="container">
-            <img src="../assets/image/treatments/AdobeStock_1.jpeg"/>
-            <img src="../assets/image/treatments/AdobeStock_2.jpeg"/>
-            <img src="../assets/image/treatments/AdobeStock_3.jpeg"/>
-            <img src="../assets/image/treatments/AdobeStock_4.jpeg"/>
-            <img src="../assets/image/treatments/AdobeStock_5.jpeg"/>
-            <img src="../assets/image/treatments/AdobeStock_6.jpeg"/>
-            <img src="../assets/image/treatments/AdobeStock_7.jpeg"/>
-            <img src="../assets/image/treatments/AdobeStock_1.jpeg"/>
+            <img src="../assets/image/treatments/ear.webp" alt="ear_acupuncture"/>
+            <img src="../assets/image/treatments/foot.webp" alt="foot_acupuncture"/>
+            <img src="../assets/image/treatments/fireCupping_1.webp" alt="fire_cupping"/>
+            <img src="../assets/image/treatments/head.webp" alt="head_acupuncture"/>
+            <img src="../assets/image/treatments/hand.webp" alt="hand_acupuncture"/>
+            <img src="../assets/image/treatments/stomach_2.webp" alt="stomach_acupuncture"/>
+            <img src="../assets/image/treatments/Pulse.webp" alt="pulse"/>
+            <img src="../assets/image/treatments/klinic_1.webp" alt=clinic""/>
+            <img src="../assets/image/treatments/klinic_2.webp" alt="clinic"/>
+            <img src="../assets/image/treatments/klinic_3.webp" alt="clinic"/>
             </div>
     </section>
 </template>
