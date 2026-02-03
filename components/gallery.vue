@@ -1,19 +1,34 @@
 <script setup>
+import ear_acupuncture from "../assets/image/treatments/ear.webp";
+import foot_acupuncture from "../assets/image/treatments/foot.webp";
+import fire_cupping from "../assets/image/treatments/fireCupping_1.webp";
+import head_acupuncture from "../assets/image/treatments/head.webp";
+import hand_acupuncture from "../assets/image/treatments/hand.webp";
+import stomach_acupuncture from "../assets/image/treatments/stomach_2.webp";
+import pulse from "../assets/image/treatments/Pulse.webp";
+import clinic_1 from "../assets/image/treatments/klinic_1.webp";
+import clinic_2 from "../assets/image/treatments/klinic_2.webp";
+import clinic_3 from "../assets/image/treatments/klinic_3.webp";
+
+const images = [
+    { src: ear_acupuncture, alt: "ear_acupuncture" },
+    { src: foot_acupuncture, alt: "foot_acupuncture" },
+    { src: fire_cupping, alt: "fire_cupping" },
+    { src: head_acupuncture, alt: "head_acupuncture" },
+    { src: hand_acupuncture, alt: "hand_acupuncture" },
+    { src: stomach_acupuncture, alt: "stomach_acupuncture" },
+    { src: pulse, alt: "pulse" },
+    { src: clinic_1, alt: "clinic_1" },
+    { src: clinic_2, alt: "clinic_2" },
+    { src: clinic_3, alt: "clinic_3" }
+];
+
 </script>
 
 <template>
     <section class="gallery">
         <div class="container">
-            <img src="../assets/image/treatments/ear.webp" alt="ear_acupuncture" loading="lazy" decoding="async"/>
-            <img src="../assets/image/treatments/foot.webp" alt="foot_acupuncture" loading="lazy" decoding="async"/>
-            <img src="../assets/image/treatments/fireCupping_1.webp" alt="fire_cupping" loading="lazy" decoding="async"/>
-            <img src="../assets/image/treatments/head.webp" alt="head_acupuncture" loading="lazy" decoding="async"/>
-            <img src="../assets/image/treatments/hand.webp" alt="hand_acupuncture" loading="lazy" decoding="async"/>
-            <img src="../assets/image/treatments/stomach_2.webp" alt="stomach_acupuncture" loading="lazy" decoding="async"/>
-            <img src="../assets/image/treatments/Pulse.webp" alt="pulse" loading="lazy" decoding="async"/>
-            <img src="../assets/image/treatments/klinic_1.webp" alt="clinic" loading="lazy" decoding="async"/>
-            <img src="../assets/image/treatments/klinic_2.webp" alt="clinic" loading="lazy" decoding="async"/>
-            <img src="../assets/image/treatments/klinic_3.webp" alt="clinic" loading="lazy" decoding="async"/>
+            <img v-for="(image, index) in images" :key="index" :src="image.src" :alt="image.alt" loading="lazy" decoding="async"/>
         </div>
     </section>
 </template>
@@ -38,7 +53,7 @@
 
             img {
                 width: 100%;
-                 box-shadow: 0 0 10px 5px #00000030;
+                box-shadow: 0 0 10px 5px #00000030;
             }
         }
     }
