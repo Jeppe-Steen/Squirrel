@@ -8,7 +8,7 @@
             <img src="../assets/image/treatments/hand.webp" alt="hand_acupuncture"/>
             <img src="../assets/image/treatments/stomach_2.webp" alt="stomach_acupuncture"/>
             <img src="../assets/image/treatments/Pulse.webp" alt="pulse"/>
-            <img src="../assets/image/treatments/klinic_1.webp" alt=clinic""/>
+            <img src="../assets/image/treatments/klinic_1.webp" alt="clinic"/>
             <img src="../assets/image/treatments/klinic_2.webp" alt="clinic"/>
             <img src="../assets/image/treatments/klinic_3.webp" alt="clinic"/>
             </div>
