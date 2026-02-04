@@ -1,11 +1,11 @@
 <script setup>
-import Hero from '../../components/Hero.vue';
+import Hero from '../../components/hero.vue';
 import About from '../../components/About.vue';
 </script>
 
 <template>
     <main class="main">
-        <!-- <header><Hero /></header> -->
+        <header><Hero /></header>
 
         <section class="main__container">
             <About />
