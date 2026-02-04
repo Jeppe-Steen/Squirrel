@@ -1,6 +1,6 @@
 <script setup>
 import Hero from '../../components/hero.vue';
-import About from '../../components/About.vue';
+import About from '../../components/about.vue';
 </script>
 
 <template>
