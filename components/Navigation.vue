@@ -31,31 +31,31 @@ const toggleMenu = (value) => {
  <nav class="navigation" :class="{'navigation__open': menuOpen}">
     <ul>
       <li>
-        <NuxtLink to="/">Forside</NuxtLink>
+        <NuxtLink to="/" @click="toggleMenu(false)">Forside</NuxtLink>
       </li>
       
       <li>
-        <NuxtLink to="/behandlinger">Behandlinger</NuxtLink>
+        <NuxtLink to="/behandlinger" @click="toggleMenu(false)">Behandlinger</NuxtLink>
       </li>
 
       <li>
-        <NuxtLink to="/priser">Priser</NuxtLink>
+        <NuxtLink to="/priser" @click="toggleMenu(false)">Priser</NuxtLink>
       </li>
 
       <li>
-        <NuxtLink to="/kontakt">Kontakt</NuxtLink>
+        <NuxtLink to="/kontakt" @click="toggleMenu(false)">Kontakt</NuxtLink>
       </li>
 
       <li>
-        <NuxtLink to="/betingelser">Betingelser</NuxtLink>
+        <NuxtLink to="/betingelser" @click="toggleMenu(false)">Betingelser</NuxtLink>
       </li>
 
       <li>
-        <NuxtLink to="/om">Om Klinikken</NuxtLink>
+        <NuxtLink to="/om" @click="toggleMenu(false)">Om Klinikken</NuxtLink>
       </li> 
 
       <li>
-        <NuxtLink to="/#faq">FAQ</NuxtLink>
+        <NuxtLink to="/#faq" @click="toggleMenu(false)">FAQ</NuxtLink>
       </li>  
     </ul>
   </nav>
@@ -142,7 +142,7 @@ $darkGreen:#778873;
       @media (min-width: 1200px) {
         font-size: 1rem;
       }
-      
+
       &:hover {
         cursor: pointer;
       }
