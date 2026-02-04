@@ -17,6 +17,12 @@
             }
         ]
     });
+
+    const welcomeText = {
+        header: "Alternative behandlere i Nordjylland",
+        text: "Alternative behandlingsformer i Nordjylland anvendes af mange, der ønsker en mere helhedsorienteret tilgang til sundhed. Klinik Egernbo Akupunktur tilbyder akupunktur som en central behandlingsform med fokus på både fysiske og mentale ubalancer."
+    };
+
 </script>
 
 <template>
@@ -27,7 +33,7 @@
     <main class="main">
 
         <section class="main__container">
-            <Welcome/>
+            <Welcome :text="welcomeText"/>
             <Treatments />
             <Description />
             <Gallery />

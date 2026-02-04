@@ -17,6 +17,12 @@
             }
         ]
     });
+    
+    const welcomeText = {
+        header: "Alternative behandlere i Jammerbugt",
+        text: "Alternative behandlere i Jammerbugt arbejder med kroppen som helhed. Hos Klinik Egernbo Akupunktur tilbyder vi akupunktur og andre alternative behandlingsformer, der understøtter kroppens naturlige balance og selvhelbredende evner. Mange vælger alternative behandlere som supplement eller alternativ til traditionel behandling – særligt ved kroniske eller tilbagevendende problemstillinger."
+    };  
+
 </script>
 
 <template>
@@ -27,7 +33,7 @@
     <main class="main">
 
         <section class="main__container">
-            <Welcome/>
+            <Welcome :text="welcomeText"/>
             <Treatments />
             <Description />
             <Gallery />

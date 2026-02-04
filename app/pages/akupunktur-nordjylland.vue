@@ -17,6 +17,11 @@
             }
         ]
     });
+
+    const welcomeText = {
+        header: "Akupunktur i Nordjylland",
+        text: "Akupunktur i Nordjylland vælges ofte af personer, der ønsker en mere helhedsorienteret tilgang til deres sundhed. Hos Klinik Egernbo Akupunktur i Aabybro modtager vi klienter fra hele Nordjylland, herunder Aalborg og Jammerbugt. Mange vælger at køre lidt længere for at få behandling i rolige omgivelser uden bystress, hvor der er tid og nærvær til den enkelte."
+    };
 </script>
 
 <template>
@@ -27,7 +32,7 @@
     <main class="main">
 
         <section class="main__container">
-            <Welcome/>
+            <Welcome :text="welcomeText"/>
             <Treatments />
             <Description />
             <Gallery />

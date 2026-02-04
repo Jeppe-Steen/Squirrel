@@ -17,6 +17,11 @@
             }
         ]
     });
+
+    const welcomeText = {
+        header: "Akupunktur i Aabybro",
+        text: "Søger du professionel akupunktur i Aabybro? Hos Klinik Egernbo Akupunktur tilbyder vi behandlinger baseret på klassisk kinesisk medicin med fokus på balance, ro og årsagsbehandling. Klinikken ligger i Aabybro og er et oplagt valg for dig, der ønsker en nærværende og personlig behandling uden stress og hast. Mange vælger akupunktur i Aabybro som et alternativ eller supplement til konventionel behandling – særligt ved længerevarende smerter, stress, søvnproblemer eller spændingstilstande."
+    };
 </script>
 
 <template>
@@ -27,7 +32,7 @@
     <main class="main">
 
         <section class="main__container">
-            <Welcome/>
+            <Welcome :text="welcomeText"/>
             <Treatments />
             <Description />
             <Gallery />

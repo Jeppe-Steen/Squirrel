@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 
 const active = ref(false)
+const menuOpen = ref(false)
 
 
 onMounted(() => {
@@ -16,10 +17,18 @@ onMounted(() => {
 
   })
 })
+
+const toggleMenu = (value) => {
+  console.log(value);
+  menuOpen.value = value;
+  return;
+}
+
 </script>
 
 <template>
- <nav :class="{'scrolled': active}">
+<div class="navigation-container" :class="{'scrolled': active & !menuOpen, 'navigation-container__open': menuOpen}" >
+ <nav class="navigation" :class="{'navigation__open': menuOpen}">
     <ul>
       <li>
         <NuxtLink to="/">Forside</NuxtLink>
@@ -50,6 +59,13 @@ onMounted(() => {
       </li>  
     </ul>
   </nav>
+
+  <div class="hidden_menu">
+    <p v-if="!menuOpen" class="hidden_menu--menu" @click="toggleMenu(true)">Menu</p>
+    <p v-if="menuOpen" class="hidden_menu--cross" @click="toggleMenu(false)">Luk</p>
+  </div>
+
+</div>
 </template>
 
 <style lang="scss">
@@ -59,19 +75,37 @@ $lightGreen:#D2DCB6;
 $green:#A1BC98;
 $darkGreen:#778873;
 
-nav {
-  display: none;
+.navigation-container {
   position:fixed;
   top: 0;
   width: 100%;
   height: 60px;
-  z-index: 999;
+  z-index: 990;
 
-  align-items: center;
+  
   padding: 0 100px;
+  display: flex;
 
-  // large screens
-  @media (min-width: 1200px) {  display: flex; };
+  &__open {
+    padding: unset;
+  }
+
+  .navigation {
+    display: none;
+
+    &__open {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      align-items: center;
+      justify-content: center; 
+      text-align: center; 
+      background-color: $lightGreen;
+    }
+
+    // large screens
+    @media (min-width: 1200px) {  display: flex; align-items: center; };
+  }
 
   &.scrolled {
     background-color: $darkGreen;
@@ -88,21 +122,64 @@ nav {
   ul {
     display: flex;
     align-items: center;
+    flex-direction: column; 
     list-style: none;
     font-weight: bold;
+    
+    //large screens
+    @media (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      flex-direction: row; 
+      list-style: none;
+      font-weight: bold;
+    }
 
     li {
+      font-size: 1.5rem;
+
+      //large screens
+      @media (min-width: 1200px) {
+        font-size: 1rem;
+      }
+      
       &:hover {
         cursor: pointer;
       }
 
       &:not(:last-child) {
-        margin-right: 50px;
+        margin-right: 0px;
+
+        //large screens
+        @media (min-width: 1200px) {
+          margin-right: 50px;
+        }
       }
 
       a {
         color: black;
         text-decoration: none;
+
+      }
+    }
+  }
+
+  .hidden_menu {
+    position: absolute;
+    left: 50px;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+
+    &--menu, &--cross {
+          font-size: 1rem;
+
+      // large screens
+      @media (min-width: 1200px) {
+        display: none;
       }
     }
   }

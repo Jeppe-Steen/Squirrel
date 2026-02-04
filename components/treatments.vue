@@ -36,7 +36,7 @@ const selectTreatment = async (value) => {
             </article>
         </div>
 
-        <NuxtLink to="/behandlinger">Læs mere om behandlingerne her!</NuxtLink>
+        <NuxtLink to="/behandlinger"><p class="treatment_link">Læs mere om behandlingerne her!</p></NuxtLink>
     </section>
 </template>
 <style lang="scss">
@@ -68,25 +68,18 @@ $darkGreen:#778873;
     &__container {
         display: flex;
         align-items:center;
-        flex-direction: row;
+        flex-direction: column;
+
+        // large screens
+        @media (min-width: 1200px) {
+            flex-direction: row;
+        };
 
         width: 100%;
 
         .treatment {
-
-            &.active {
-                width: 40%;
-                background-color:lightblue !important;
-                
-                h3 {
-                    position: absolute;
-                    transform: rotate(0deg);
-                    bottom: 50px;
-                }
-            }
-
-            width: 20%;
-            height: 400px;
+            width: 100%;
+            height: 100px;
             overflow: hidden;
             position: relative;
 
@@ -94,30 +87,75 @@ $darkGreen:#778873;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
+            // large screens
+            @media (min-width: 1200px) {
+                width: 20%;
+                height: 400px;
+            };
+
+            &.active {
+                width: 100%;
+                height: 200px;
+                background-color:lightblue !important;
+
+                // large screens
+                @media (min-width: 1200px) {
+                    height: 400px;
+                    width: 40%;
+                };
+                
+                h3 {
+                    position: absolute;
+                    transform: rotate(0deg);
+                    bottom: 50px;
+                }
+            }
             
             &:hover {
                 cursor: pointer;
             }
 
             h3 {
-                transform: rotate(-90deg);
-                font-size: 2rem;
+                transform: unset;
+                font-size: 1.5rem;  
+
+                // large screens
+                @media (min-width: 1200px) {
+                    transform: rotate(-90deg);
+                    font-size: 2rem;
+                };
             }
 
         }
     }
 
     a {
-        margin-top: 30px;
-        padding: 10px 50px;
-        background-color: $green;
-        border-radius: 20px;
         text-decoration: none;
-        color: black;
-        box-shadow: 0 0 10px 5px #00000030;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        width: 100%;  
+         
+        .treatment_link {
+            margin-top: 50px;
+            width: 100%;
+            padding: 10px 50px;
+            background-color: $green;
+            border-radius: 20px;
+
+            color: black;
+            text-align: center;
+            box-shadow: 0 0 10px 5px #00000030;
         
-        &:hover {
-            cursor: pointer;
+            &:hover {
+                cursor: pointer;
+            }
+
+            //large screens
+            @media (min-width: 1200px) {
+                width: 80%;
+            };
         }
     }
 }

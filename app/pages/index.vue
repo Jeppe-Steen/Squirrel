@@ -16,6 +16,12 @@ useHead({
         }
     ]
 });
+
+const welcomeText = {
+    header: "Velkommen til min klinik - Beliggende i hjertet af Nordjylland!",
+    text: "Hos Klinik Egernbo Akupunktur tilbyder vi professionel akupunktur baseret på klassisk kinesisk medicin. Klinikken er beliggende i Aabybro og hjælper klienter fra hele Nordjylland med både fysiske og mentale ubalancer i rolige og trygge omgivelser. Vores tilgang er helhedsorienteret og tager udgangspunkt i det enkelte menneske frem for kun symptomerne."
+};
+
 </script>
 
 <template>
@@ -26,9 +32,10 @@ useHead({
     <main class="main">
 
         <section class="main__container">
-            <Welcome/>
+            <Welcome :text="welcomeText"/>
             <Treatments />
             <Description />
+            <NuxtLink to="/kontakt"><p class="contact_link">Kontakt mig her!</p></NuxtLink>
             <Gallery />
             <FAQ />
         </section>
@@ -36,6 +43,11 @@ useHead({
 </template>
 
 <style lang="scss">
+$lightestGreen:#F1F3E0;
+$lightGreen:#D2DCB6;
+$green:#A1BC98;
+$darkGreen:#778873;
+
 header {
   width: 100%;
   height: fit-content;
@@ -58,6 +70,35 @@ header {
     
     // large screens
     @media (min-width: 1200px) {  width: 60%; padding: unset; };
+
+    a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        width: 100%;  
+
+        .contact_link {
+            margin-top: 50px;
+            width: 100%;
+            padding: 10px 50px;
+            background-color: $green;
+            border-radius: 20px;
+
+            color: black;
+            text-align: center;
+            box-shadow: 0 0 10px 5px #00000030;
+        
+            &:hover {
+                cursor: pointer;
+            }
+
+            //large screens
+            @media (min-width: 1200px) {
+                width: 40%;
+            };
+        }
+    }
   }
 }
 </style>

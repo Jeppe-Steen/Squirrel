@@ -1,12 +1,17 @@
 <script setup>
-import generalText from "../content/json/generalText.json";
-const text = generalText.data.welcome;
+const props = defineProps({
+    text: {
+        type: Object,
+        required: true
+    }
+});
+
 </script>
 
 <template>
     <section class="welcome__main">
-        <h2>{{ text.header }}</h2>
-        <p>{{ text.text }}</p>
+        <h2>{{ props.text.header }}</h2>
+        <p>{{ props.text.text }}</p>
     </section>
 </template>
 
