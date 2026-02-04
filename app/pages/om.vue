@@ -5,7 +5,7 @@ import About from '../../components/About.vue';
 
 <template>
     <main class="main">
-        <header><Hero /></header>
+        <!-- <header><Hero /></header> -->
 
         <section class="main__container">
             <About />
