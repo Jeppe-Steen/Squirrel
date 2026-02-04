@@ -1,8 +1,8 @@
 <script setup>
 import Hero from '../../components/Hero.vue';
-import Personaldata from '../../components/personaldata.vue';
-import Agreements from '../../components/agreements.vue';
-import Conditions from '../../components/conditions.vue';
+import Personaldata from '../../components/Personaldata.vue';
+import Agreements from '../../components/Agreements.vue';
+import Conditions from '../../components/Conditions.vue';
 </script>
 
 <template>
