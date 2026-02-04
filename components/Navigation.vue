@@ -19,7 +19,6 @@ onMounted(() => {
 })
 
 const toggleMenu = (value) => {
-  console.log(value);
   menuOpen.value = value;
   return;
 }
