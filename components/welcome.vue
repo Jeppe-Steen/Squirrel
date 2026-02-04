@@ -6,6 +6,8 @@ const props = defineProps({
     }
 });
 
+//tilføjer lige dette
+
 </script>
 
 <template>
