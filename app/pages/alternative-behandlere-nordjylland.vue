@@ -15,6 +15,23 @@
                 name: "description",
                 content: "Professionel akupunktør i Aabybro og Nordjylland. Helhedsorienteret behandling mod smerter, stress og ubalance",
             }
+        ],
+        script: [
+            {
+            type: 'application/ld+json',
+            children: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "MedicalBusiness",
+                "name": "Klinik Egernbo Akupunktur",
+                "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Sandmosevej 11",
+                "addressLocality": "Aabybro",
+                "postalCode": "9440",
+                "addressCountry": "DK"
+                }
+            })
+            }
         ]
     });
 

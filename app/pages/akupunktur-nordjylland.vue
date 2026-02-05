@@ -15,6 +15,23 @@
                 name: "description",
                 content: "Akupunktur i Nordjylland – mange vælger Klinik Egernbo i Aabybro for ro, kvalitet og helhedsorienteret behandling.",
             }
+        ],
+        script: [
+            {
+            type: 'application/ld+json',
+            children: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "MedicalBusiness",
+                "name": "Klinik Egernbo Akupunktur",
+                "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Sandmosevej 11",
+                "addressLocality": "Aabybro",
+                "postalCode": "9440",
+                "addressCountry": "DK"
+                }
+            })
+            }
         ]
     });
 
