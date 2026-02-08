@@ -17,6 +17,11 @@ useHead({
         {
           name: "color-scheme",
           content: "light"
+        },
+         {
+          name: "theme-color",
+          content: "#ffffff",
+          media: "(prefers-color-scheme: light)"
         }
     ],
     script: [
