@@ -1,10 +1,8 @@
 <script setup>
-import ancor from './reuseable/ancor.vue'
 </script>
 
 <template>
     <section class="contact">
-        <ancor path="kontakt"/>
         <h2>Lyder dette som noget for som dig?</h2>
         <h3>Så kontakt mig her - eller på TLF: 22 31 39 69</h3>
         <form action="https://formspree.io/f/mpwvnyej" method="POST">

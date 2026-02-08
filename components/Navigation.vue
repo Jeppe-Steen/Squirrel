@@ -136,6 +136,7 @@ $darkGreen:#778873;
 
     li {
       font-size: 1.5rem;
+      padding-bottom: 20px;
 
       //large screens
       @media (min-width: 1200px) {

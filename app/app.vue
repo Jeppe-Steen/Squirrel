@@ -2,6 +2,9 @@
   import Navigation from '../components/Navigation.vue';
   import Footer from '../components/Footer.vue';
   useHead({
+    htmlAttrs: {
+      lang: 'da'
+    },
     meta: [
         {
           name: "color-scheme",

@@ -3,7 +3,6 @@
     import Welcome from '../../components/Welcome.vue';
     import Treatments from '../../components/Treatments.vue';
     import Description from '../../components/Description.vue';
-    import Contact from '../../components/Contact.vue';
     import Gallery from '../../components/Gallery.vue';
     import FAQ from '../../components/FAQ.vue';
 
@@ -57,7 +56,6 @@
             <Treatments />
             <Description />
             <Gallery />
-            <Contact />
             <FAQ />
         </section>
     </main>

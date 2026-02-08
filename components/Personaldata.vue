@@ -1,12 +1,10 @@
 <script setup>
-import ancor from './reuseable/ancor.vue';
 import generalText from "../content/json/generalText.json";
 const text = generalText.data.personaldata;
 </script>
 
 <template>
     <section class="personaldata">
-        <ancor path="persondatapolitik" />
         <h2>{{text.header}}</h2>
         <div v-for="element in text.text">
             <h3 v-if="element.type === 'header'">{{ element.text }}</h3>

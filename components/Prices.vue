@@ -1,10 +1,8 @@
 <script setup>
-import ancor from './reuseable/ancor.vue';
 </script>
 
 <template>
     <section class="prices">
-        <ancor path="priser"/>
         <h2>Priser for behandlinger</h2>
 
         <div class="container">
