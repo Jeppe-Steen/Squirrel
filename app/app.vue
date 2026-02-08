@@ -1,6 +1,19 @@
 <script setup>
   import Navigation from '../components/Navigation.vue';
   import Footer from '../components/Footer.vue';
+  useHead({
+    meta: [
+        {
+          name: "color-scheme",
+          content: "light"
+        },
+        {
+          name: "theme-color",
+          content: "#ffffff",
+          media: "(prefers-color-scheme: light)"
+        }
+    ],
+  }); 
 </script>
 
 <template>
