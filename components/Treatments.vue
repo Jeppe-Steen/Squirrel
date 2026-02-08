@@ -31,7 +31,7 @@ const selectTreatment = async (value) => {
                 <h3>TENS</h3>
             </article>
 
-            <article class="treatment" style="backgroundColor:#4c5b47" @click="selectTreatment(4)" :class="{active: selectedTreatment === 4}">
+            <article class="treatment" style="backgroundColor:#51614b" @click="selectTreatment(4)" :class="{active: selectedTreatment === 4}">
                 <h3>Cupping</h3>
             </article>
         </div>
