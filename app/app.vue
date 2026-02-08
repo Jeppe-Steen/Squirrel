@@ -17,6 +17,10 @@ $lightGreen:#D2DCB6;
 $green:#A1BC98;
 $darkGreen:#778873;
 
+:root {
+  color-scheme: light;
+}
+
 * {
   margin: 0;
   padding: 0;
