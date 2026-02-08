@@ -14,6 +14,10 @@
             {
                 name: "description",
                 content: "Alternative behandlere i Jammerbugt – professionel akupunktur og helhedsorienteret behandling i Aabybro.",
+            },
+            {
+                name: "color-scheme",
+                content: "light"
             }
         ],
         script: [

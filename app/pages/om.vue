@@ -1,6 +1,19 @@
 <script setup>
 import Hero from '../../components/Hero.vue';
 import About from '../../components/About.vue';
+useHead({
+    title: 'Om klinikken',
+    meta: [
+        {
+            name: 'description',
+            content: 'Her finder du information om mig og klinikken.'
+        },
+        {
+          name: "color-scheme",
+          content: "light"
+        }
+    ]
+});
 </script>
 
 <template>

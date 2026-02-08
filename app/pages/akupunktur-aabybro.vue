@@ -14,6 +14,10 @@
             {
                 name: "description",
                 content: "Søger du akupunktur i Aabybro? Klinik Egernbo tilbyder professionel akupunktur med fokus på krop og sind.",
+            },
+            {
+                name: "color-scheme",
+                content: "light"
             }
         ],
         script: [

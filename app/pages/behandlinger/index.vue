@@ -2,6 +2,20 @@
 import Hero from '../../components/Hero.vue';
 import Treatment from '../../components/reuseable/Treatment.vue';
 
+useHead({
+    title: 'Behandlinger',
+    meta: [
+        {
+            name: 'description',
+            content: 'Her finder du en oversigt over de behandlinger jeg tilbyder.'
+        },
+        {
+          name: "color-scheme",
+          content: "light"
+        }
+    ]
+});
+
 const treatments = [
     {
         title: "Akupunktur",

@@ -1,6 +1,19 @@
 <script setup>
 import Hero from '../../components/Hero.vue';
 import Contact from '../../components/Contact.vue';
+useHead({
+    title: 'Kontakt',
+    meta: [
+        {
+            name: 'description',
+            content: 'Her finder du kontaktinformationer og hvordan du kan nå klinikken.'
+        },
+        {
+          name: "color-scheme",
+          content: "light"
+        }
+    ]
+});
 </script>
 
 <template>

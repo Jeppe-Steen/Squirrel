@@ -1,6 +1,20 @@
 <script setup>
 import Hero from '../../components/Hero.vue';
 import Prices from '../../components/Prices.vue';
+
+useHead({
+    title: 'Priser',
+    meta: [
+        {
+            name: 'description',
+            content: 'Her finder du priser på alle de behandlinger jeg tilbyder.'
+        },
+        {
+          name: "color-scheme",
+          content: "light"
+        }
+    ]
+});
 </script>
 
 <template>

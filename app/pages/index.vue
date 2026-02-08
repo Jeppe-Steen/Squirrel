@@ -13,6 +13,10 @@ useHead({
         {
             name: "description",
             content: "Professionel akupunktør i Aabybro og Nordjylland. Helhedsorienteret behandling mod smerter, stress og ubalance",
+        },
+        {
+          name: "color-scheme",
+          content: "light"
         }
     ],
     script: [

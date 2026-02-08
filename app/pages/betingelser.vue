@@ -3,6 +3,19 @@ import Hero from '../../components/Hero.vue';
 import Personaldata from '../../components/Personaldata.vue';
 import Agreements from '../../components/Agreements.vue';
 import Conditions from '../../components/Conditions.vue';
+useHead({
+    title: 'Betingelser',
+    meta: [
+        {
+            name: 'description',
+            content: 'Her finder du betingelser og privatlivspolitik.'
+        },
+        {
+          name: "color-scheme",
+          content: "light"
+        }
+    ]
+});
 </script>
 
 <template>

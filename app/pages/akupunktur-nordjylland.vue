@@ -14,6 +14,10 @@
             {
                 name: "description",
                 content: "Akupunktur i Nordjylland – mange vælger Klinik Egernbo i Aabybro for ro, kvalitet og helhedsorienteret behandling.",
+            },
+            {
+                name: "color-scheme",
+                content: "light"
             }
         ],
         script: [
