@@ -8,11 +8,11 @@ import FAQ from '../../components/FAQ.vue';
 
 
 useHead({
-    title: "Akupunktur i Aabybro | Klinik Egernbo Akupunktur - Nordjylland",
+    title: "Akupunktur i Aabybro | Klinik Egernbo Akupunktur – Nordjylland",
     meta: [
         {
             name: "description",
-            content: "Professionel akupunktør i Aabybro og Nordjylland. Helhedsorienteret behandling mod smerter, stress og ubalance",
+            content: "Professionel akupunktur i Aabybro & Nordjylland med helhedsorienteret behandling mod smerter, stress og ubalance. Book tid i dag.",
         },
         {
           name: "color-scheme",
@@ -44,8 +44,12 @@ useHead({
 });
 
 const welcomeText = {
-    header: "Velkommen til min klinik - Beliggende i hjertet af Nordjylland!",
-    text: "Hos Klinik Egernbo Akupunktur tilbyder vi professionel akupunktur baseret på klassisk kinesisk medicin. Klinikken er beliggende i Aabybro og hjælper klienter fra hele Nordjylland med både fysiske og mentale ubalancer i rolige og trygge omgivelser. Vores tilgang er helhedsorienteret og tager udgangspunkt i det enkelte menneske frem for kun symptomerne."
+    header: "Velkommen til Klinik Egernbo Akupunktur – din lokale akupunktør i Aabybro.",
+    text: [
+      "Hos os får du professionel, individuel behandling gennem klassisk kinesisk medicin (CCM), hvor vi arbejder med kroppen som en helhed for at skabe balance og lindring.",
+      "Akupunktur i Aabybro og Nordjylland hjælper mod en lang række ubalancer og symptomer – fra stress og uro til muskelsmerter, spændinger og søvnproblemer. Vores tilgang er holistisk, og hver behandling tilpasses dine behov, så du både oplever øjeblikkelig afspænding og langvarig forbedring.",
+      "Vi tilbyder akupunktur, moxa, auriculoterapi, TENS og cupping, alle med fokus på professionalisme, tryghed og resultater."
+    ]
 };
 
 </script>

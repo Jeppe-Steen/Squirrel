@@ -13,7 +13,7 @@ const props = defineProps({
 <template>
     <section class="welcome__main">
         <h2>{{ props.text.header }}</h2>
-        <p>{{ props.text.text }}</p>
+        <p v-for="(text, index) in props.text.text" :key="index">{{ text }}</p>
     </section>
 </template>
 
@@ -26,6 +26,10 @@ const props = defineProps({
 
         h2 {
             margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 10px;
         }
     }
 </style>
