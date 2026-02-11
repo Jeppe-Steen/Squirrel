@@ -20,6 +20,25 @@
 </script>
 
 <template>
+  <teleport to="head">
+    <component :is="'script'" type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Klinik Egernbo Akupunktur",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Sandmosevej 11",
+          "addressLocality": "Aabybro",
+          "postalCode": "9440",
+          "addressCountry": "DK"
+        },
+        "telephone": "22 31 39 69",
+        "url": "https://www.klinikegernboakupunktur.dk"
+      }
+    </component>
+  </teleport>
+  
     <NuxtLayout>
       <Navigation/>
       <NuxtPage />

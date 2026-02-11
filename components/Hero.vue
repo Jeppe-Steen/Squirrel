@@ -8,7 +8,7 @@ const text = generalText.data.hero;
     <section class="hero__main">
         <div class="hero__logo-container">
             <img class="hero__logo" src="../assets/svg/egernbo_logo_svg.svg" alt="klinik_egernbo_akupunktur" loading="eager" fetchpriority="high"/>
-            <h1 class="hero__header">{{ text.header.prime }}</h1>
+            <h2 class="hero__header">{{ text.header.prime }}</h2>
             <h2 class="hero__sub-header">{{ text.header.sub }}</h2>
         </div>
         <div class="hero__img-container">
