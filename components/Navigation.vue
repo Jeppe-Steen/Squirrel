@@ -141,6 +141,7 @@ $darkGreen:#778873;
       //large screens
       @media (min-width: 1200px) {
         font-size: 1rem;
+        margin-bottom: unset;
       }
 
       &:hover {
