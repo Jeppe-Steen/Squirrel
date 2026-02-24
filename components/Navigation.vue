@@ -1,22 +1,22 @@
 <script setup>
 import { ref } from 'vue';
 
-const active = ref(false)
+const active = ref(true)
 const menuOpen = ref(false)
 
 
-onMounted(() => {
-  window.addEventListener("scroll", () => {
-    if(window.scrollY >= 100) {
-      active.value = true;
-      return;
-    }
+// onMounted(() => {
+//   window.addEventListener("scroll", () => {
+//     if(window.scrollY >= 100) {
+//       active.value = true;
+//       return;
+//     }
 
-    active.value = false;
-    return;
+//     active.value = false;
+//     return;
 
-  })
-})
+//   })
+// })
 
 const toggleMenu = (value) => {
   menuOpen.value = value;
@@ -48,7 +48,9 @@ const toggleMenu = (value) => {
       <li>
         <NuxtLink to="/om" @click="toggleMenu(false)">Om Klinikken</NuxtLink>
       </li> 
-
+      <li>
+        <NuxtLink to="/Anmeldelser" @click="toggleMenu(false)">Anmeldelser</NuxtLink>
+      </li>
       <li>
         <NuxtLink to="/#faq" @click="toggleMenu(false)">FAQ</NuxtLink>
       </li>  

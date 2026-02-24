@@ -10,8 +10,13 @@ const props = defineProps({
 
 <template>
     <section class="welcome__main">
-        <h1>{{ props.text.header }}</h1>
-        <p v-for="(text, index) in props.text.text" :key="index">{{ text }}</p>
+        <h1 class="welcome__main--header">{{ props.text.header }}</h1>
+        <div class="welcome__main--text">
+            <p v-for="(text, index) in props.text.text" :key="index">{{ text }}</p>
+        </div> 
+        <div class="welcome__main--image">
+            <img src="../assets/image/treatments/fireCupping_1.webp" />
+        </div> 
     </section>
 </template>
 
@@ -21,18 +26,41 @@ const props = defineProps({
         height: fit-content;
         text-align: center;
         margin: 50px 0;
+        display: grid;
+        grid-template-areas: 
+            "header header"
+            "text image";
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
 
-        h1 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            width: 100%;
-            text-align: center;
+        &--header {
+            grid-area: header;
+
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: center;
+            }
         }
 
-        p {
-            margin-bottom: 10px;
-            width: 100%;
-            text-align:left;
+        &--text {
+            grid-area: text;
+            p {
+                margin-bottom: 10px;
+                width: 100%;
+                text-align:left;
+            }
+        }
+
+        &--image {
+            grid-area: image;
+            overflow: hidden;
+
+            img {
+                border-radius: 50px;
+                width: 100%;
+            }
         }
     }
 </style>

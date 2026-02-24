@@ -19,8 +19,6 @@ useHead({
 
 <template>
    <main class="main">
-        <header><Hero /></header>
-
         <section class="main__container">
             <Prices />
         </section>
@@ -28,11 +26,6 @@ useHead({
 </template>
 
 <style lang="scss">
-header {
-  width: 100%;
-  height: fit-content;
-}
-
 .main {
   width: 100%;
   height: fit-content;

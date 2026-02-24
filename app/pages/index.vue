@@ -1,9 +1,7 @@
 <script setup>
 import Hero from '../../components/Hero.vue';
 import Welcome from '../../components/Welcome.vue';
-import Treatments from '../../components/Treatments.vue';
 import Description from '../../components/Description.vue';
-import Gallery from '../../components/Gallery.vue';
 import FAQ from '../../components/FAQ.vue';
 import Reviews from '../../components/Reviews.vue';
 
@@ -39,12 +37,7 @@ const welcomeText = {
 </script>
 
 <template>
-    <header>
-        <Hero />
-    </header>
-
     <main class="main">
-
         <section class="main__container">
             <Welcome :text="welcomeText"/>
             <div class="link">
@@ -54,11 +47,13 @@ const welcomeText = {
                 <NuxtLink to="/priser"><h3>Se priser her</h3></NuxtLink>
             </div>
             <Reviews />
+            <div class="link">
+                <NuxtLink to="/anmeldelser"><h3>Læs flere anmeldelser her</h3></NuxtLink>
+            </div>
             <Description />
             <div class="link">
                 <NuxtLink to="/kontakt"><h3>Kontakt mig her!</h3></NuxtLink>
             </div>
-            <Gallery />
             <FAQ />
         </section>
     </main>
@@ -70,17 +65,13 @@ $lightGreen:#D2DCB6;
 $green:#A1BC98;
 $darkGreen:#778873;
 
-header {
-  width: 100%;
-  height: fit-content;
-}
-
 .main {
   width: 100%;
   height: fit-content;
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-top: 10vh;
 
   &__container {
     width: 100%;
@@ -95,9 +86,8 @@ header {
 
     .link {
         width: 100%;
-        background-color: $lightGreen;
+        background-color: $green;
         margin: 15px 0;
-        padding: 20px 0;
 
         a {
             text-align: center;
@@ -105,6 +95,11 @@ header {
             text-decoration: none;
             width: 100%;
             height: 100%;
+            
+            h3 {
+                font-weight: 500;
+                padding: 20px 0;
+            }
         }
     }
   }

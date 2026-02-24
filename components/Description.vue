@@ -9,9 +9,12 @@ const text = generalText.data.description;
         <div v-for="element in text.text">
             <h3 v-if="element.type === 'header'">{{ element.text }}</h3>
             <p v-else-if="element.type === 'paragraph'">{{ element.text }}</p>
-            <ul v-else-if="element.type === 'list'">
-                <li v-for="listItem in element.text">{{ listItem }}</li>
-            </ul>
+            <div class="list" v-else-if="element.type === 'list'">
+                <ul>
+                    <li v-for="listItem in element.text">{{ listItem }}</li>
+                </ul>
+                <img src="../assets/image/treatments/hand.webp" />
+            </div>
         </div>
 
 
@@ -24,7 +27,7 @@ const text = generalText.data.description;
         
         h2 {
             margin-bottom: 10px;
-            text-align:center;
+            text-align:left;
         }
 
         h3 {
@@ -35,9 +38,23 @@ const text = generalText.data.description;
             margin-bottom: 10px;
         }
 
-        ul {
-            padding-left: 20px; 
-            margin-bottom: 20px;
+        .list {
+            display: grid;
+            grid-template-areas: 
+                "list image";
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+
+            ul {
+                padding-left: 20px; 
+                margin-bottom: 20px;
+            }
+
+            img {
+                border-radius: 50px;
+                width: 100%;
+                overflow:hidden;
+            }
         }
     }
 </style>
