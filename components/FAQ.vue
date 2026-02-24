@@ -42,6 +42,7 @@ const text = generalText.data.FAQ;
             background-color: white;
             box-shadow: 0 0 10px 5px #00000030;
             padding: 20px;
+            height: fit-content;
 
             h3 {
                 margin-bottom: 10px;
