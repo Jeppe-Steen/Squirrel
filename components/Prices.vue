@@ -8,11 +8,12 @@
         <div class="container">
              <article>
                 <h2>Første konsultation</h2>
-                <p>850 DKK</p>
+                <p>650 DKK</p>
                 <div>
                     <h3>Indeholder</h3>
                     <ul>
-                        <li>Samtale</li>
+                        <li>Individuel Samtale</li>
+                        <li>Puls/tunge diagnose</li>
                         <li>Behandling</li>
                         <li>Varighed ca. 80 min</li>
 
@@ -27,7 +28,7 @@
 
             <article>
                 <h2>Alm. Behandling</h2>
-                <p>750 DKK</p>
+                <p>600 DKK</p>
                 <div>
                     <h3>Indeholder</h3>
                     <ul>
