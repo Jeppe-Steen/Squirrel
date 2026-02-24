@@ -5,6 +5,7 @@ import Treatments from '../../components/Treatments.vue';
 import Description from '../../components/Description.vue';
 import Gallery from '../../components/Gallery.vue';
 import FAQ from '../../components/FAQ.vue';
+import Reviews from '../../components/Reviews.vue';
 
 
 useHead({
@@ -46,9 +47,17 @@ const welcomeText = {
 
         <section class="main__container">
             <Welcome :text="welcomeText"/>
-            <Treatments />
+            <div class="link">
+                <NuxtLink class="test" to="/behandlinger"><h3>Se hvilke behandlinger jeg tilbyder her</h3></NuxtLink>
+            </div>
+            <div class="link">
+                <NuxtLink to="/priser"><h3>Se priser her</h3></NuxtLink>
+            </div>
+            <Reviews />
             <Description />
-            <NuxtLink to="/kontakt"><p class="contact_link">Kontakt mig her!</p></NuxtLink>
+            <div class="link">
+                <NuxtLink to="/kontakt"><h3>Kontakt mig her!</h3></NuxtLink>
+            </div>
             <Gallery />
             <FAQ />
         </section>
@@ -84,32 +93,18 @@ header {
     // large screens
     @media (min-width: 1200px) {  width: 60%; padding: unset; };
 
-    a {
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        width: 100%;  
+    .link {
+        width: 100%;
+        background-color: $lightGreen;
+        margin: 15px 0;
+        padding: 20px 0;
 
-        .contact_link {
-            margin-top: 50px;
-            width: 100%;
-            padding: 10px 50px;
-            background-color: $green;
-            border-radius: 20px;
-
-            color: black;
+        a {
             text-align: center;
-            box-shadow: 0 0 10px 5px #00000030;
-        
-            &:hover {
-                cursor: pointer;
-            }
-
-            //large screens
-            @media (min-width: 1200px) {
-                width: 40%;
-            };
+            color: black;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
         }
     }
   }

@@ -6,8 +6,6 @@ const props = defineProps({
     }
 });
 
-//tilføjer lige dette
-
 </script>
 
 <template>
@@ -27,10 +25,14 @@ const props = defineProps({
         h1 {
             font-size: 1.5rem;
             margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
         }
 
         p {
             margin-bottom: 10px;
+            width: 100%;
+            text-align:left;
         }
     }
 </style>
