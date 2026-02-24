@@ -1,9 +1,9 @@
 <script setup>
-import Hero from '../../components/Hero.vue';
 import Welcome from '../../components/Welcome.vue';
 import Description from '../../components/Description.vue';
 import FAQ from '../../components/FAQ.vue';
 import Reviews from '../../components/Reviews.vue';
+import Gallery from '../../components/Gallery.vue';
 
 
 useHead({
@@ -54,6 +54,7 @@ const welcomeText = {
             <div class="link">
                 <NuxtLink to="/kontakt"><h3>Kontakt mig her!</h3></NuxtLink>
             </div>
+            <Gallery />
             <FAQ />
         </section>
     </main>
