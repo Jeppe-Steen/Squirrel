@@ -71,15 +71,11 @@ $darkGreen:#778873;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 h3 {
   font-size: 1rem;
-}
-
-h4 {
-  font-size: 2rem;
 }
 
 p {

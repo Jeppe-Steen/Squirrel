@@ -2,7 +2,10 @@
 
 <template>
     <section class="reviews">
-        <h2>Hvad siger tidligere klienter?</h2>
+        <div class="reviews__header">
+            <h3>Hvad siger mine kunder?</h3>
+            <h2>Anmeldelser</h2>
+        </div>
         <div class="reviews__container">
             <article class="review">
                 <p>"Jeg har fået 5 behandlinger hos Frederikke. Det er et godt sted at komme, rolige lokaler og omgivelser. Frederikke har behandlet muskler og ar i mit lår efter et brækket lårben og 2 operationer. Selv om jeg var skeptisk, har det gjort en forskel, og kan virkelig anbefales."</p>
@@ -27,19 +30,31 @@ $green:#A1BC98;
 $darkGreen:#778873;
 
     .reviews {
+        margin: 40px 0;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 20px 0; 
+        display: grid;
+        grid-template-areas: 
+            "header header"
+            "container container";
+        gap: 40px; 
+        grid-template-columns: 1fr 1fr;
+
+        &__header {
+            grid-area: header;
+            text-align: left;
+
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
 
         &__container {
-            display: flex;
-            flex-direction: row;
-            padding: 20px 0;
-            gap: 20px;
+            grid-area: container;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
 
             .review {
-                width: 50%;
                 display: flex;
                 flex-direction: column;
                 background-color: white;

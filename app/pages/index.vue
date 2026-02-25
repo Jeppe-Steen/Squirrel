@@ -8,6 +8,30 @@ import Gallery from '../../components/Gallery.vue';
 
 useHead({
     title: "Akupunktur i Aabybro | Klinik Egernbo Akupunktur – Nordjylland",
+    link: [
+        {
+            rel: "canonical",
+            href: "https://klinikegernboakupunktur.dk/"
+        }
+    ],
+    script: [
+        {
+            type: "application/ld+json",
+            children: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "MedicalBusiness",
+                "name": "Klinik Egernbo Akupunktur",
+                "url": "https://klinikegernboakupunktur.dk/",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Sandmosevej 11",
+                    "addressLocality": "Aabybro",
+                    "postalCode": "9440",
+                    "addressCountry": "DK"
+                },
+            })
+        }
+    ],
     meta: [
         {
             name: "description",
@@ -26,7 +50,8 @@ useHead({
 });
 
 const welcomeText = {
-    header: "Velkommen til Klinik Egernbo Akupunktur – din lokale akupunktør i Aabybro.",
+    header: "Velkommen til Klinik Egernbo Akupunktur",
+    subheader: "Din lokale akupunktør i Aabybro.",
     text: [
       "Hos mig får du professionel, individuel behandling gennem klassisk kinesisk medicin (CCM), hvor vi arbejder med kroppen som en helhed for at skabe balance og lindring.",
       "Akupunktur i Aabybro og Nordjylland hjælper mod en lang række ubalancer og symptomer – fra stress og uro til muskelsmerter, spændinger og søvnproblemer. Vores tilgang er holistisk, og hver behandling tilpasses dine behov, så du både oplever øjeblikkelig afspænding og langvarig forbedring.",

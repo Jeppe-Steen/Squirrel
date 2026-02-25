@@ -10,7 +10,10 @@ const props = defineProps({
 
 <template>
     <section class="welcome__main">
-        <h1 class="welcome__main--header">{{ props.text.header }}</h1>
+        <div class="welcome__main--header">
+            <h2>{{ props.text.header }}</h2>
+            <h1>{{ props.text.subheader }}</h1>
+        </div>
         <div class="welcome__main--text">
             <p v-for="(text, index) in props.text.text" :key="index">{{ text }}</p>
         </div> 
@@ -31,14 +34,19 @@ const props = defineProps({
             "header header"
             "text image";
         grid-template-columns: 1fr 1fr;
-        gap: 30px;
+        gap: 40px;
 
         &--header {
             grid-area: header;
 
             h1 {
+                font-size: 2.5rem;
+                width: 100%;
+                text-align: center;
+            }
+
+            h2 {
                 font-size: 1.5rem;
-                margin-bottom: 20px;
                 width: 100%;
                 text-align: center;
             }
