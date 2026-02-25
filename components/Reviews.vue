@@ -1,4 +1,7 @@
-<script></script>
+<script setup>
+import { modal } from '../composable/model.js';
+const { showModal } = modal();
+</script>
 
 <template>
     <section class="reviews">
@@ -15,7 +18,7 @@
             <article class="review">
                 <p>"Jeg kontaktede Frederikke på baggrund af vores 16 årige datter Celina. Celina har skoliose, som blev "opdaget" for ca 3 år siden. Hun er efterskole elev og målvogter i håndbold på et ganske ok niveau.  Celina har det sidste halve år været præget af smerter i sin venstre lænd/ nedre ryg samt venstre ben ..."</p>
                 
-                <button class="read-more">Læs den fulde anmeldelse her</button>
+                <button class="read-more" @click="showModal(true)">Læs den fulde anmeldelse her</button>
                 <span>- Celina og Anne-Marie</span>
             </article>
         </div>
