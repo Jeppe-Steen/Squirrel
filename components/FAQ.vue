@@ -57,7 +57,7 @@ $darkGreen:#778873;
                 text-decoration: none;
 
                 p {
-                    background-color: $green;
+                    background-color: $lightGreen;
                     text-align:center;
                     padding: 10px;
                     margin-top:20px;
