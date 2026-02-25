@@ -61,6 +61,10 @@ const { show, showModal } = modal();
             p:not(:last-child) {
                 margin-bottom: 10px;
             }
+
+            p:last-child {
+                font-weight: bold;
+            }
         }
     }
 </style>
