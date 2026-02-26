@@ -4,12 +4,12 @@ const { showModal } = modal();
 </script>
 
 <template>
-    <section class="reviews">
-        <div class="reviews__header">
+    <section class="reviews-component">
+        <div class="reviews-component__header">
             <h3>Hvad siger mine kunder?</h3>
             <h2>Anmeldelser</h2>
         </div>
-        <div class="reviews__container">
+        <div class="reviews-component__container">
             <article class="review">
                 <p>"Jeg har fået 5 behandlinger hos Frederikke. Det er et godt sted at komme, rolige lokaler og omgivelser. Frederikke har behandlet muskler og ar i mit lår efter et brækket lårben og 2 operationer. Selv om jeg var skeptisk, har det gjort en forskel, og kan virkelig anbefales."</p>
                 <span>- Per</span>
@@ -26,13 +26,13 @@ const { showModal } = modal();
         </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $lightestGreen:#F1F3E0;
 $lightGreen:#D2DCB6;
 $green:#A1BC98;
 $darkGreen:#778873;
 
-    .reviews {
+    .reviews-component {
         margin: 40px 0;
         width: 100%;
         display: grid;

@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <section class="prices">
+    <section class="prices-component">
         <h2>Priser for behandlinger</h2>
 
         <div class="container">
@@ -47,13 +47,13 @@
     </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $lightestGreen:#F1F3E0;
 $lightGreen:#D2DCB6;
 $green:#A1BC98;
 $darkGreen:#778873;
 
-.prices {
+.prices-component {
     margin-top: 50px;
     width: 100%;
     height: fit-content;

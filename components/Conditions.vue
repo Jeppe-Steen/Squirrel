@@ -4,14 +4,14 @@ const text = generalText.data.conditions;
 </script>
 
 <template>
-    <section class="conditions">
+    <section class="conditions-component">
         <h2>{{text.header}}</h2>
         <p>{{ text.text }}</p>
     </section>
 </template>
 
-<style lang="scss">
-.conditions {
+<style lang="scss" scoped>
+.conditions-component {
         h2 {
             margin-bottom: 10px;
             text-align:center;

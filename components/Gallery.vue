@@ -26,20 +26,20 @@ const images = [
 </script>
 
 <template>
-    <section class="gallery">
-        <div class="container">
+    <section class="gallery-component">
+        <div class="gallery-component__container">
             <img v-for="(image, index) in images" :key="index" :src="image.src" :alt="image.alt" loading="lazy" decoding="async"/>
         </div>
     </section>
 </template>
 
-<style lang="scss">
-    .gallery{
+<style lang="scss" scoped>
+    .gallery-component {
         width: 100%;
         height: fit-content;
         margin-top: 50px;
         
-        .container {
+        &__container {
             width: 100%;
             height: fit-content;
             display: grid;

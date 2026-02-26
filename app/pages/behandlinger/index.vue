@@ -1,5 +1,4 @@
 <script setup>
-import Hero from '../../components/Hero.vue';
 import Treatment from '../../components/reuseable/Treatment.vue';
 
 useHead({
@@ -19,6 +18,7 @@ useHead({
 const treatments = [
     {
         title: "Akupunktur",
+        subTitle: "Nåle",
         text: [
           "Akupunktur er anvendelse af små tynde nåle, som typisk indføres i meridianbanerne i kroppen, for at opnå stimulering af akupunkturpunkterne, for på den måde at fremme kroppens balance.",
           "Kroppen har mange mikrosystemer, som man ved brug af akupunktur kan stimulere, for at behandle forskellige tilstande.",
@@ -32,6 +32,7 @@ const treatments = [
     },
     {
         title: "Moxa",
+        subTitle: "Røg",
         text: [
           "På kinesisk består ordet for akupunktur, af to symboler ”Zhen Jiu”. Zhen betyder nål (akupunkturbehandling). Jiu betyder moxa (moxabehandling).",
           "Moxa kaldes også for Livets Ild, hvilket passer meget godt, da det har mange anvendelsesmetoder, herunder:",
@@ -47,6 +48,7 @@ const treatments = [
     },
     {
         title: "Auriculoterapi",
+        subTitle: "Øre",
         text: [
           "Auriculoterapi er en anderledes form for nåleterapi, da det hele foregår i øret. Øret, ligesom så mange andre steder på kroppen, er et mikrosystem der afspejler resten af kroppens tilstand, og ligeledes kan man også behandle hele kroppen i øret alene. Her anvendes ligeledes nåle som til akupunktur (bare kortere), samt ørefrø og permanåle.",
           "Fordelene ved auriculoterapi er bl.a. at behandlingen kan forlænges ved brug af ørefrø og permanåle, da klienten beholder dem i efter behandlingen. Derudover er det en måde at få behandling på, hvis man er nervøs for rigtig akupunktur.",
@@ -55,6 +57,7 @@ const treatments = [
     },
     {
         title: "TENS",
+        subTitle: "Strøm",
         text: [
           "TENS står for Transkutan Elektrisk Nerve Stimulation, som er anvendelse af lav frekvens strøm der via elektroder kobles til akupunkturnålene for at stimulerer nålene og dermed øge effekten.",
           "TENS anvendes ved kroniske tilstande og gamle stagnationer der kræver lidt ekstra for at blive frigivet.",
@@ -63,6 +66,7 @@ const treatments = [
     },
     {
         title: "Cupping",
+        subTitle: "Ild",
         text: [
           "Der anvendes både fire cupping og moving cupping til behandling af muskelsmerter og spændinger.",
           "Fire cupping er anvendelse af glaskopper, som ved brug af ild, danner et vaccum når de påsættes huden. Dette er rigtig godt til at løsne stagnationer i kroppen, som fx ved gamle skader eller muskelspændinger.",
@@ -73,29 +77,31 @@ const treatments = [
 </script>
 
 <template>
-   <main class="main">
-        <section class="main__container">
-            <Treatment v-for="(item, index) in treatments" :key="index" :title="item.title" :text="item.text"/>
+   <main class="treatments">
+        <section class="treatments__container">
+            <Treatment v-for="(item, index) in treatments" :key="index" :title="item.title" :text="item.text" :subTitle="item.subTitle"/>
         </section>
     </main>
 </template>
 
-<style lang="scss">
-.main {
+<style lang="scss" scoped>
+.treatments {
   width: 100%;
   height: fit-content;
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-top: 10vh;
 
   &__container {
     width: 100%;
     min-height: 1000px;
     height: fit-content;
-    background-color: transparent;
-    z-index: 90;
-    padding: 0 20px;
-    
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
     // large screens
     @media (min-width: 1200px) {  width: 60%; padding: unset; };
   }

@@ -4,7 +4,7 @@ const text = generalText.data.personaldata;
 </script>
 
 <template>
-    <section class="personaldata">
+    <section class="personaldata-component">
         <h2>{{text.header}}</h2>
         <div v-for="element in text.text">
             <h3 v-if="element.type === 'header'">{{ element.text }}</h3>
@@ -16,8 +16,8 @@ const text = generalText.data.personaldata;
     </section>
 </template>
 
-<style lang="scss">
-.personaldata {
+<style lang="scss" scoped>
+.personaldata-component {
     margin-top: 50px;
     
         h2 {

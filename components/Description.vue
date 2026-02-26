@@ -4,7 +4,7 @@ const text = generalText.data.description;
 </script>
 
 <template>
-    <section class="description">
+    <section class="description-component">
         <article class="what">
             <header class="what__header">
                 <h3>Klassisk Kinesisk Medicin</h3>
@@ -58,8 +58,8 @@ const text = generalText.data.description;
     </section>
 </template>
 
-<style lang="scss">
-    .description {
+<style lang="scss" scoped>
+    .description-component {
         margin: 40px 0;
         
         .what {

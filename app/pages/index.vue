@@ -62,8 +62,8 @@ const welcomeText = {
 </script>
 
 <template>
-    <main class="main">
-        <section class="main__container">
+    <main class="frontpage">
+        <section class="frontpage__container">
             <Welcome :text="welcomeText"/>
             <div class="link">
                 <NuxtLink class="test" to="/behandlinger"><h3>Se hvilke behandlinger jeg tilbyder her</h3></NuxtLink>
@@ -85,13 +85,13 @@ const welcomeText = {
     </main>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $lightestGreen:#F1F3E0;
 $lightGreen:#D2DCB6;
 $green:#A1BC98;
 $darkGreen:#778873;
 
-.main {
+.frontpage {
   width: 100%;
   height: fit-content;
   align-items: center;

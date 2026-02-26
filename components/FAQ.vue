@@ -5,7 +5,7 @@ const text = generalText.data.FAQ;
 </script>
 
 <template>
-    <section class="faq">
+    <section class="faq-component">
         <ancor path="faq" />
         <h2>{{ text.header }}</h2>
         <div class="container">
@@ -18,12 +18,12 @@ const text = generalText.data.FAQ;
     </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $lightestGreen:#F1F3E0;
 $lightGreen:#D2DCB6;
 $green:#A1BC98;
 $darkGreen:#778873;
-.faq {
+.faq-component {
     margin-top: 50px;
     
     h2 {

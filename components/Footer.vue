@@ -1,6 +1,6 @@
 <template>
-    <footer class="footer">
-        <section class="footer_section">
+    <footer class="footer-component">
+        <section class="footer-component__section">
       <article>
         <h3>Links</h3>
         <ul>
@@ -33,14 +33,14 @@
   </footer>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 $lightestGreen:#F1F3E0;
 $lightGreen:#D2DCB6;
 $green:#A1BC98;
 $darkGreen:#778873;
 
-footer {
+.footer-component {
   height: fit-content;
   padding: 50px;
   background-color: $lightGreen;
@@ -52,7 +52,7 @@ footer {
     padding: 50px;
   };
 
-  section {
+  &__section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

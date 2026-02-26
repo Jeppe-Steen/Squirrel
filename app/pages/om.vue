@@ -17,21 +17,22 @@ useHead({
 </script>
 
 <template>
-    <main class="main">
-        <section class="main__container">
+    <main class="about">
+        <section class="about__container">
             <About />
         </section>
     </main>
 </template>
 
 
-<style lang="scss">
-.main {
+<style lang="scss" scoped>
+.about {
   width: 100%;
   height: fit-content;
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-top: 10vh;
 
   &__container {
     width: 100%;

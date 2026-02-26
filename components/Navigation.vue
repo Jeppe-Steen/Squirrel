@@ -26,7 +26,7 @@ const toggleMenu = (value) => {
 </script>
 
 <template>
-<div class="navigation-container" :class="{'scrolled': active & !menuOpen, 'navigation-container__open': menuOpen}" >
+<div class="navigation-component" :class="{'scrolled': active & !menuOpen, 'navigation-component__open': menuOpen}" >
  <nav class="navigation" :class="{'navigation__open': menuOpen}">
     <ul>
       <li>
@@ -48,9 +48,9 @@ const toggleMenu = (value) => {
       <li>
         <NuxtLink to="/om" @click="toggleMenu(false)">Om Klinikken</NuxtLink>
       </li> 
-      <li>
+      <!-- <li>
         <NuxtLink to="/Anmeldelser" @click="toggleMenu(false)">Anmeldelser</NuxtLink>
-      </li>
+      </li> -->
       <li>
         <NuxtLink to="/#faq" @click="toggleMenu(false)">FAQ</NuxtLink>
       </li>  
@@ -65,14 +65,14 @@ const toggleMenu = (value) => {
 </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 $lightestGreen:#F1F3E0;
 $lightGreen:#D2DCB6;
 $green:#A1BC98;
 $darkGreen:#778873;
 
-.navigation-container {
+.navigation-component {
   position:fixed;
   top: 0;
   width: 100%;

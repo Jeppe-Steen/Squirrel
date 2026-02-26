@@ -5,22 +5,22 @@ const text = generalText.data.hero;
 </script>
 
 <template>
-    <section class="hero__main">
-        <div class="hero__logo-container">
-            <img class="hero__logo" src="../assets/svg/egernbo_logo_svg.svg" alt="klinik_egernbo_akupunktur" loading="eager" fetchpriority="high"/>
-            <h2 class="hero__header">{{ text.header.prime }}</h2>
-            <h2 class="hero__sub-header">{{ text.header.sub }}</h2>
+    <section class="hero-component">
+        <div class="hero-component__logo-container">
+            <img class="hero-component__logo" src="../assets/svg/egernbo_logo_svg.svg" alt="klinik_egernbo_akupunktur" loading="eager" fetchpriority="high"/>
+            <h2 class="hero-component__header">{{ text.header.prime }}</h2>
+            <h2 class="hero-component__sub-header">{{ text.header.sub }}</h2>
         </div>
-        <div class="hero__img-container">
-            <img class="hero__img" src="../assets/image/hero-image.png" alt="neck_acupuncture" loading="eager" fetchpriority="high">
+        <div class="hero-component__img-container">
+            <img class="hero-component__img" src="../assets/image/hero-image.png" alt="neck_acupuncture" loading="eager" fetchpriority="high">
         </div>
 
-        <div class="hero__stripes"></div>
+        <div class="hero-component__stripes"></div>
     </section>
 </template>
 
-<style lang="scss">
-.hero {
+<style lang="scss" scoped>
+.hero-component {
     &__main {
         display: flex;
         width: 100%;

@@ -18,15 +18,15 @@ useHead({
 </script>
 
 <template>
-   <main class="main">
-        <section class="main__container">
+   <main class="prices">
+        <section class="prices__container">
             <Prices />
         </section>
     </main>
 </template>
 
-<style lang="scss">
-.main {
+<style lang="scss" scoped>
+.prices {
   width: 100%;
   height: fit-content;
   align-items: center;

@@ -9,22 +9,22 @@ const props = defineProps({
 </script>
 
 <template>
-    <section class="welcome__main">
-        <div class="welcome__main--header">
+    <section class="welcome__component">
+        <div class="welcome__component--header">
             <h2>{{ props.text.header }}</h2>
             <h1>{{ props.text.subheader }}</h1>
         </div>
-        <div class="welcome__main--text">
+        <div class="welcome__component--text">
             <p v-for="(text, index) in props.text.text" :key="index">{{ text }}</p>
         </div> 
-        <div class="welcome__main--image">
+        <div class="welcome__component--image">
             <img src="../assets/image/treatments/fireCupping_1.webp" />
         </div> 
     </section>
 </template>
 
-<style lang="scss">
-    .welcome__main {
+<style lang="scss" scoped>
+    .welcome__component {
         width: 100%;
         height: fit-content;
         text-align: center;

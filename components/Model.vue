@@ -6,7 +6,7 @@ const { show, showModal } = modal();
 </script>
 
 <template>
-    <section class="model" v-if="show">
+    <section class="model-component" v-if="show">
         <article>
             <header>
                 <h3>Anmeldelse</h3>
@@ -23,13 +23,13 @@ const { show, showModal } = modal();
     </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     $lightestGreen:#F1F3E0;
     $lightGreen:#D2DCB6;
     $green:#A1BC98;
     $darkGreen:#778873;
     
-    .model {
+    .model-component {
         position: fixed;
         top: 0;
         left: 0;

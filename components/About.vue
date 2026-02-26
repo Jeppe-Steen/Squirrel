@@ -10,7 +10,7 @@ const array = [
 </script>
 
 <template>
-    <section class="about">
+    <section class="about-component">
         <div class="me">
             <img src="../assets/image/treatments/me_1.webp" alt="me" loading="lazy" decoding="async"/>
         </div>
@@ -21,8 +21,8 @@ const array = [
     </section>
 </template>
 
-<style lang="scss">
-    .about {
+<style lang="scss" scoped>
+    .about-component {
         margin-top: 50px;
         width: 100%;
         height: fit-content;

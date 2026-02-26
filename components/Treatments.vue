@@ -12,9 +12,9 @@ const selectTreatment = async (value) => {
 
 
 <template>
-    <section class="treatments">
+    <section class="treatments-component">
         <h2>{{ text.header }}</h2>
-        <div class="treatments__container">
+        <div class="treatments-component__container">
             <article class="treatment" style="backgroundColor:#A1BC98" @click="selectTreatment(0)" :class="{active: selectedTreatment === 0}">
                 <h3>Akupunktur</h3>
             </article>
@@ -39,13 +39,14 @@ const selectTreatment = async (value) => {
         <NuxtLink to="/behandlinger"><p class="treatment_link">Læs mere om behandlingerne her!</p></NuxtLink>
     </section>
 </template>
-<style lang="scss">
+
+<style lang="scss" scoped>
 $lightestGreen:#F1F3E0;
 $lightGreen:#D2DCB6;
 $green:#A1BC98;
 $darkGreen:#778873;
 
-.treatments {
+.treatments-component {
     margin-top: 50px;
     width: 100%;
     height: fit-content;

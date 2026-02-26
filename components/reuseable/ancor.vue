@@ -4,11 +4,11 @@ const props = defineProps(['path']);
 </script>
 
 <template>
-    <span class="ancor" :id="props.path"></span>
+    <span class="ancor-component" :id="props.path"></span>
 </template>
 
-<style lang="scss">
-    .ancor {
+<style lang="scss" scoped>
+    .ancor-component {
         display: block;
         position: relative;
         top: -100px;

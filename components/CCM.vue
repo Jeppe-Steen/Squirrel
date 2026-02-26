@@ -4,14 +4,14 @@ const text = generalText.data.CCM;
 </script>
 
 <template>
-    <section class="ccm__main">
+    <section class="ccm-component">
         <h2>{{ text.header }}</h2>
         <p v-for="texts in text.text">{{ texts }}</p>
     </section>
 </template>
 
-<style lang="scss">
-    .ccm__main {
+<style lang="scss" scoped>
+    .ccm_compoenent {
         width: 100%;
         height: fit-content;
         padding: 50px 20px;

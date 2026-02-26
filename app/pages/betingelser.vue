@@ -19,8 +19,8 @@ useHead({
 </script>
 
 <template>
-    <main class="main">
-        <section class="main__container">
+    <main class="agreements">
+        <section class="agreements__container">
             <Personaldata />
             <Agreements />
             <Conditions />
@@ -29,9 +29,9 @@ useHead({
 </template>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 
-.main {
+.agreements {
   width: 100%;
   height: fit-content;
   align-items: center;
