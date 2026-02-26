@@ -12,7 +12,7 @@ const text = generalText.data.description;
             </header>
 
             <main class="what__main">
-                <p>Akupunktur er en af verdens ældste behandlingsformer og anvendes i dag bredt som en effektiv, naturlig og holistisk tilgang til både fysiske og mentale udfordringer. I klinikken arbejder vi ud fra et helhedsorienteret perspektiv, hvor vi ser kroppen som en samlet enhed. Når der opstår ubalance – fysisk, følelsesmæssigt eller mentalt – viser det sig ofte i form af smerter, uro, stress eller andre symptomer.</p>
+                <p>Akupunktur er en af verdens ældste behandlingsformer og anvendes i dag bredt som en effektiv, naturlig og holistisk tilgang til både fysiske og mentale udfordringer. I klinikken arbejder jeg ud fra et helhedsorienteret perspektiv, hvor vi ser kroppen som en samlet enhed. Når der opstår ubalance – fysisk, følelsesmæssigt eller mentalt – viser det sig ofte i form af smerter, uro, stress eller andre symptomer.</p>
                 <p>Med akupunktur stimuleres kroppens energisystem via udvalgte punkter, hvilket fremmer blodcirkulation, dæmper inflammation, reducerer spændinger og hjælper nervesystemet tilbage i en mere rolig og reguleret tilstand. For mange giver behandlingen både øjeblikkelig afspænding og langsigtet forandring.</p>
                 <p>I klinikken tilbydes trygge, professionelle og individuelt tilpassede behandlingsforløb, hvor vi sammen arbejder på at skabe balance i både krop og sind — uanset om du søger smertelindring, mental ro eller støtte til kroppens hormonelle og indre funktioner.</p>
             </main>
@@ -20,7 +20,7 @@ const text = generalText.data.description;
         
         <article class="for">
             <header class="for__header">
-                <h3>Hvad kan Akupunktur afhjælpe:</h3>
+                <h3>Hvad kan jeg behandle</h3>
                 <h2>Behandlinger</h2>
             </header>
 
@@ -47,11 +47,11 @@ const text = generalText.data.description;
         <article class="you">
             <header class="you__header">
                 <h3>En behandling der tager udgangspunkt i dig</h3>
-                <h2>Dig i centrum</h2>
+                <h2>Klienten i centrum</h2>
             </header>
 
             <main class="you__main">
-                <p>I klinikken sættes der god tid af til hver session. Før første behandling gennemgør vi dine symptomer, din hverdag og din generelle sundhedstilstand, så forløbet kan målrettes netop dig. Selve behandlingen foregår i rolige omgivelser, hvor du kan slappe af og give kroppen plads til at arbejde.</p>
+                <p>I klinikken sættes der god tid af til hver session. Før første behandling gennemgår vi dine symptomer, din hverdag og din generelle sundhedstilstand, så forløbet kan målrettes netop dig. Selve behandlingen foregår i rolige omgivelser, hvor du kan slappe af og give kroppen plads til at arbejde.</p>
                 <p>Uanset om du kommer for at få hjælp til smerter, stress, hormonelle forandringer eller kroniske ubalancer, er målet altid det samme: at skabe varig forbedring, øget velvære og en stærkere indre balance.</p>
             </main>
         </article>

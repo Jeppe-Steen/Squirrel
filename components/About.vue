@@ -35,8 +35,7 @@ const array = [
         // large screens
         @media (min-width: 1200px) {
             grid-template-columns: 35% 65%;
-            grid-template-areas: 'a b';
-            padding: unset;
+            grid-template-areas: 'image about';
             padding: unset;
         };
 

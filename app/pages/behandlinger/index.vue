@@ -32,7 +32,7 @@ const treatments = [
     },
     {
         title: "Moxa",
-        subTitle: "Røg",
+        subTitle: "Varmeterapi",
         text: [
           "På kinesisk består ordet for akupunktur, af to symboler ”Zhen Jiu”. Zhen betyder nål (akupunkturbehandling). Jiu betyder moxa (moxabehandling).",
           "Moxa kaldes også for Livets Ild, hvilket passer meget godt, da det har mange anvendelsesmetoder, herunder:",

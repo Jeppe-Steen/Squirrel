@@ -4,7 +4,7 @@
 <template>
     <section class="prices-component">
         <header class="prices-component__header">
-            <h3>Kontakt mig for yderligerer spørgsmål</h3>
+            <h3>Kontakt mig for yderligere spørgsmål</h3>
             <h1>Priser for behandlinger</h1>
         </header>
 

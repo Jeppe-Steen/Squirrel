@@ -54,7 +54,7 @@ const welcomeText = {
     subheader: "Din lokale akupunktør i Aabybro.",
     text: [
       "Hos mig får du professionel, individuel behandling gennem klassisk kinesisk medicin (CCM), hvor vi arbejder med kroppen som en helhed for at skabe balance og lindring.",
-      "Akupunktur i Aabybro og Nordjylland hjælper mod en lang række ubalancer og symptomer – fra stress og uro til muskelsmerter, spændinger og søvnproblemer. Vores tilgang er holistisk, og hver behandling tilpasses dine behov, så du både oplever øjeblikkelig afspænding og langvarig forbedring.",
+      "Akupunktur hjælper mod en lang række ubalancer og symptomer – fra stress og uro til muskelsmerter, spændinger og søvnproblemer. Min tilgang er holistisk, og hver behandling tilpasses dine behov, så du både oplever øjeblikkelig afspænding og langvarig forbedring.",
       "Jeg tilbyder akupunktur, moxa, auriculoterapi, TENS og cupping, alle med fokus på professionalisme, tryghed og resultater."
     ]
 };
@@ -72,9 +72,9 @@ const welcomeText = {
                 <NuxtLink to="/priser"><h3>Se priser her</h3></NuxtLink>
             </div>
             <Reviews />
-            <div class="link">
+            <!-- <div class="link">
                 <NuxtLink to="/anmeldelser"><h3>Læs flere anmeldelser her</h3></NuxtLink>
-            </div>
+            </div> -->
             <Description />
             <div class="link">
                 <NuxtLink to="/kontakt"><h3>Kontakt mig her!</h3></NuxtLink>
