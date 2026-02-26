@@ -76,6 +76,7 @@ const text = generalText.data.description;
 
         .for {
             margin-top: 30px;
+
             &__header {
                margin-bottom: 20px;
             }
@@ -83,9 +84,16 @@ const text = generalText.data.description;
             &__main {
                 display: grid;
                 grid-template-areas: 
-                    "list image";
-                grid-template-columns: 1fr 1fr;
+                    "list"
+                    "image";
+                grid-template-columns: 1fr;
                 gap: 20px;
+
+                @media (min-width: 1200px) {
+                    grid-template-areas: 
+                        "list image";
+                    grid-template-columns: 1fr 1fr;
+                }
 
                 ul {
                     padding-left: 20px; 

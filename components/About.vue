@@ -28,7 +28,7 @@ const array = [
         height: fit-content;
         display: grid;
         grid-template-areas: 
-        'a' 'b';
+        'image' 'about';
         grid-template-columns: 100%;
         gap: 50px;
         
@@ -41,7 +41,7 @@ const array = [
         };
 
         .me {
-            grid-area: a;
+            grid-area: image;
             display: flex;
             flex-direction: column;
             align-items:center;
@@ -53,7 +53,7 @@ const array = [
         }
 
         .text {
-            grid-area: b;
+            grid-area: about;
 
             h2, p:not(:last-child) {
                 margin-bottom: 20px;

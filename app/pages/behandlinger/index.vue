@@ -99,11 +99,17 @@ const treatments = [
     height: fit-content;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 40px;
+    padding: 20px;
 
     // large screens
-    @media (min-width: 1200px) {  width: 60%; padding: unset; };
+    @media (min-width: 1200px) {  
+      width: 60%;
+      padding: unset;
+      grid-template-columns: 1fr 1fr;
+      padding: 0;
+    };
   }
 }
 </style>

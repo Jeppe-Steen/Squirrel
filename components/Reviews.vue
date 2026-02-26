@@ -37,10 +37,17 @@ $darkGreen:#778873;
         width: 100%;
         display: grid;
         grid-template-areas: 
-            "header header"
-            "container container";
+            "header"
+            "container";
         gap: 40px; 
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+
+        @media (min-width: 1200px) {
+            grid-template-areas: 
+                "header header"
+                "container container"; 
+            grid-template-columns: 1fr 1fr;
+        }
 
         &__header {
             grid-area: header;
@@ -54,8 +61,12 @@ $darkGreen:#778873;
         &__container {
             grid-area: container;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 40px;
+
+            @media (min-width: 1200px) {
+                grid-template-columns: 1fr 1fr;
+            }
 
             .review {
                 display: flex;

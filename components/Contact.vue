@@ -27,12 +27,20 @@ $darkGreen:#778873;
 .contact-component {
     width: 100%;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 1fr;
     grid-template-areas: 
-        "header header"
-        "form map";
+        "header"
+        "form"
+        "map";
     margin-top: 50px;
     gap: 40px;
+
+    @media (min-width: 1200px) {
+        grid-template-columns: 60% 40%;
+        grid-template-areas: 
+            "header header"
+            "form map";
+    }
 
     &__header {
         grid-area: header;

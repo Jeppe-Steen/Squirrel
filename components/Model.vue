@@ -10,7 +10,7 @@ const { show, showModal } = modal();
         <article>
             <header>
                 <h3>Anmeldelse</h3>
-                <h3 @click="showModal(false)">x</h3>
+                <h3 @click="showModal(false)">Luk</h3>
             </header>
 
             <p>Jeg kontaktede Frederikke på baggrund af vores 16årige datter Celina. Celina har skoliose, som blev "opdaget" for ca 3 år siden. Hun er efterskole elev og målvogter i håndbold på et ganske ok niveau.  Celina har det sidste halve år været præget af smerter i sin venstre lænd/ nedre ryg samt venstre ben. Flere besøg hos Celinas faste fysioterapeut resulterede i, at han via lægen sendte Celina til ekstra MR og CT scanning.</p>
@@ -43,10 +43,17 @@ const { show, showModal } = modal();
         align-items: center;
 
         article {
-            width: 50%;
-            height: fit-content;
+            width: 100%;
+            height: 100vh;
             background-color: $lightGreen;
             padding: 40px;
+            overflow: scroll;
+
+            @media (min-width: 1200px) {
+                width: 50%;
+                overflow: scroll;
+                height: fit-content;
+            }
 
             header {
                 display:flex;

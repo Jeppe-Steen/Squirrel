@@ -32,7 +32,11 @@ useHead({
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: 10vh;
+  margin-top: 5vh;
+
+  @media (min-width) {
+    margin-top: 10vh;
+  }
 
   &__container {
     width: 100%;

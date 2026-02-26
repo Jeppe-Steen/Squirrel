@@ -31,10 +31,18 @@ const props = defineProps({
         margin: 50px 0;
         display: grid;
         grid-template-areas: 
-            "header header"
-            "text image";
-        grid-template-columns: 1fr 1fr;
+            "header"
+            "text"
+            "image";
+        grid-template-columns: 1fr;
         gap: 40px;
+
+        @media (min-width: 1200px) {
+            grid-template-areas: 
+                "header header"
+                "text image";
+            grid-template-columns: 1fr 1fr;  
+        }
 
         &--header {
             grid-area: header;
