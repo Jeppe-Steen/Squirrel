@@ -3,47 +3,44 @@
 
 <template>
     <section class="prices-component">
-        <h2>Priser for behandlinger</h2>
+        <header class="prices-component__header">
+            <h3>Kontakt mig for yderligerer spørgsmål</h3>
+            <h1>Priser for behandlinger</h1>
+        </header>
 
-        <div class="container">
-             <article>
-                <h2>Første konsultation</h2>
-                <p>650 DKK</p>
-                <div>
-                    <h3>Indeholder</h3>
-                    <ul>
-                        <li>Individuel Samtale</li>
-                        <li>Puls/tunge diagnose</li>
-                        <li>Behandling</li>
-                        <li>Varighed ca. 80 min</li>
+        <article class="price">
+            <header class="price__header">
+                <h3>Første konsultation</h3>
+                <h2>650 DKK</h2>
+            </header>
 
-                        <br/>
-                        <li>
-                            <NuxtLink to="/betingelser">Læs handelsbetingelserne her</NuxtLink>
-                        </li>
-                    </ul>
-                </div>
-                <NuxtLink class="contact" to="/kontakt">Kontakt mig her</NuxtLink>
-            </article>
+            <div class="price__container">
+                <h3>Dette indeholder:</h3>
+                <ul>
+                    <li>Individuel Samtale</li>
+                    <li>Puls/tunge diagnose</li>
+                    <li>Behandling</li>
+                    <li>Varighed ca. 80 min</li>
+                </ul>
+            </div>
+            <NuxtLink to="/kontakt"><p>Kontakt mig her</p></NuxtLink>
+        </article>
 
-            <article>
-                <h2>Alm. Behandling</h2>
-                <p>600 DKK</p>
-                <div>
-                    <h3>Indeholder</h3>
-                    <ul>
-                        <li>Behandling</li>
-                        <li>Varighed ca. 50 min</li>
+        <article class="price">
+            <header class="price__header">
+                <h3>Alm. Behandling</h3>
+                <h2>600 DKK</h2>
+            </header>
 
-                        <br/>
-                        <li>
-                            <NuxtLink to="/betingelser">Læs handelsbetingelserne her</NuxtLink>
-                        </li>
-                    </ul>
-                </div>
-                 <NuxtLink class="contact" to="/kontakt">Kontakt mig her</NuxtLink>
-            </article>
-        </div>
+            <div class="price__container">
+                <h3>Dette indeholder:</h3>
+                <ul>
+                    <li>Behandling</li>
+                    <li>Varighed ca. 50 min</li>
+                </ul>
+            </div>
+            <NuxtLink to="/kontakt"><p>Kontakt mig her</p></NuxtLink>
+        </article>
     </section>
 </template>
 
@@ -58,78 +55,35 @@ $darkGreen:#778873;
     width: 100%;
     height: fit-content;
 
-    h2 {
-        text-align: center;
-    }
+    .price {
+        width: 100%;
+        background-color: $lightGreen;
+        margin-top: 20px;
+        padding: 20px;
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
-        margin-top: 50px;
-        position: relative;
+        &__header {
+            margin-bottom: 10px;
+        }
 
-        // large screens
-        @media (min-width: 1200px) {  
-            flex-direction: row;
-        };
+        &__container {
+            ul {
+                list-style: none;
+            }
+        }
 
-        article {
-            width: 300px;
-            height: 400px;
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-            box-shadow: 0 0 10px 5px #00000030;
-            background-color: white;
-            position: relative;
+        a {
+            width: 100%;
+            text-decoration: none;
+            text-align: center;
 
-            a {
+            p {
+                background-color: $lightestGreen;
+                box-shadow: 0 0 10px 5px #00000030;
+                padding: 10px;
+                margin-top: 20px;
                 color: black;
                 font-weight: bold;
             }
-
-            // large screens
-            @media (min-width: 1200px) {  
-                width: 350px;
-                height: 450px;
-            };
-
-        &:first-child {
-            background-color: $darkGreen;
-            color: white;
-        }
-
-            h2 {
-                padding: 20px 0;
-            }
-
-            p {
-                font-size: 2.5rem;
-                padding: 20px 0;
-            }
-
-            div {
-                text-align:center;
-
-                ul {
-                    list-style: none;
-                }
-            }
-        }
-
-        .contact {
-            width: 200px;
-            color: black;
-            text-decoration: none;
-            background-color: $lightGreen;
-            position: absolute;
-            bottom: 20px;
-            box-shadow: 0 0 10px 5px #00000030;
-            text-align:center;
-            padding: 10px;
         }
     }
 }
