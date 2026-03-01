@@ -99,6 +99,7 @@ $darkGreen:#778873;
   flex-direction: column;
   margin-top: 10vh;
   background-color: white;
+  color-scheme: only light;
 
     @media (prefers-color-scheme: dark) {
         background: white;
