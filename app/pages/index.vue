@@ -100,6 +100,10 @@ $darkGreen:#778873;
   margin-top: 10vh;
   background-color: white;
 
+    @media (prefers-color-scheme: dark) {
+        background: white;
+    }
+
 
   &__container {
     width: 100%;
