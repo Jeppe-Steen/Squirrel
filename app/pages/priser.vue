@@ -33,6 +33,7 @@ useHead({
   display: flex;
   flex-direction: column;
   margin-top: 5vh;
+  background-color: white;
 
   @media (min-width) {
     margin-top: 10vh;

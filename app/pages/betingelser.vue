@@ -37,6 +37,7 @@ useHead({
   align-items: center;
   display: flex;
   flex-direction: column;
+  background-color: white;
 
   &__container {
     width: 100%;
