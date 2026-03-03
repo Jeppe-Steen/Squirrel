@@ -23,6 +23,10 @@ const { showModal } = modal();
             </article>
         </div>
 
+        <!-- <video class="reviews-component__video" controls poster="../assets/image/placeholder.png">
+            <source type="video/mp4">
+        </video> -->
+
         </section>
 </template>
 
@@ -38,14 +42,16 @@ $darkGreen:#778873;
         display: grid;
         grid-template-areas: 
             "header"
-            "container";
+            "container"
+            "video";
         gap: 40px; 
         grid-template-columns: 1fr;
 
         @media (min-width: 1200px) {
             grid-template-areas: 
                 "header header"
-                "container container"; 
+                "container container"
+                "video video";
             grid-template-columns: 1fr 1fr;
         }
 
@@ -87,6 +93,13 @@ $darkGreen:#778873;
                     }
                 }
             }
+        }
+
+        &__video {
+            grid-area: video;
+            width: 100%;
+            height: fit-content;
+            box-shadow: 0 0 10px 5px #00000030;
         }
     }
 </style>

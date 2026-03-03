@@ -92,6 +92,7 @@ const treatments = [
   display: flex;
   flex-direction: column;
   margin-top: 10vh;
+  background-color: white;
 
   &__container {
     width: 100%;
