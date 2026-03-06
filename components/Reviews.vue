@@ -10,7 +10,6 @@ const supabase = createClient(config.public.supabaseUrl, config.public.supabaseP
 async function getReviews() {
     let { data: reviews, error } = await supabase.from('reviews').select('*').eq('featured', true);
     if(!error) {
-        console.log(reviews);
         featuredReviews.value = reviews;
         return;
     }
@@ -23,8 +22,6 @@ onMounted(() => {
 })
 
 const handleClick = (data, bool) => {
-    console.log(data, bool);
-    
     setModalContent(data);
     showModal(bool);
 }
