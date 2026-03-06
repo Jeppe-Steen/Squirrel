@@ -27,7 +27,7 @@ const { showModal } = modal();
             <source type="video/mp4">
         </video> -->
 
-        <iframe class="reviews-component__video" src="www.youtube.com/embed/4B3eof7GcIg?controls=1"></iframe>
+        <iframe class="reviews-component__video" src="https://www.youtube.com/embed/4B3eof7GcIg?controls=1"></iframe>
     </section>
 </template>
 
