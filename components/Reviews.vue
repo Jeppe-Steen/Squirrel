@@ -27,7 +27,8 @@ const { showModal } = modal();
             <source type="video/mp4">
         </video> -->
 
-        </section>
+        <iframe class="reviews-component__video" src="www.youtube.com/embed/4B3eof7GcIg?controls=1"></iframe>
+    </section>
 </template>
 
 <style lang="scss" scoped>
@@ -99,7 +100,12 @@ $darkGreen:#778873;
             grid-area: video;
             width: 100%;
             height: fit-content;
+            min-height: 300px;
             box-shadow: 0 0 10px 5px #00000030;
+
+            @media (min-width: 1200px) {
+                min-height: 500px;
+            }
         }
     }
 </style>
