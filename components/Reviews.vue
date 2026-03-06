@@ -28,7 +28,7 @@ const showVideo = ref(false);
             <source type="video/mp4">
         </video> -->
 
-        <iframe v-if="showVideo" class="reviews-component__video" src="https://www.youtube.com/embed/4B3eof7GcIg?controls=1"></iframe>
+        <iframe v-if="showVideo" class="reviews-component__video" src="https://www.youtube.com/embed/ZsqNsdmy29c?controls=1"></iframe>
     </section>
 </template>
 
