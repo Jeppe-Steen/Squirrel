@@ -1,7 +1,33 @@
 <script setup>
+import { createClient } from '@supabase/supabase-js'
 import { modal } from '../composable/model.js';
-const { showModal } = modal();
-const showVideo = ref(false);
+const { showModal, setModalContent } = modal();
+const showVideo = ref(true);
+const featuredReviews = ref([]);
+
+const config = useRuntimeConfig();
+const supabase = createClient(config.public.supabaseUrl, config.public.supabasePublishableKey);
+async function getReviews() {
+    let { data: reviews, error } = await supabase.from('reviews').select('*').eq('featured', true);
+    if(!error) {
+        console.log(reviews);
+        featuredReviews.value = reviews;
+        return;
+    }
+
+    return;
+};
+
+onMounted(() => {
+    getReviews()
+})
+
+const handleClick = (data, bool) => {
+    console.log(data, bool);
+    
+    setModalContent(data);
+    showModal(bool);
+}
 </script>
 
 <template>
@@ -11,16 +37,10 @@ const showVideo = ref(false);
             <h2>Anmeldelser</h2>
         </div>
         <div class="reviews-component__container">
-            <article class="review">
-                <p>"Jeg har fået 5 behandlinger hos Frederikke. Det er et godt sted at komme, rolige lokaler og omgivelser. Frederikke har behandlet muskler og ar i mit lår efter et brækket lårben og 2 operationer. Selv om jeg var skeptisk, har det gjort en forskel, og kan virkelig anbefales."</p>
-                <span>- Per</span>
-            </article>
-            
-            <article class="review">
-                <p>"Jeg kontaktede Frederikke på baggrund af vores 16 årige datter Celina. Celina har skoliose, som blev "opdaget" for ca 3 år siden. Hun er efterskole elev og målvogter i håndbold på et ganske ok niveau.  Celina har det sidste halve år været præget af smerter i sin venstre lænd/ nedre ryg samt venstre ben ..."</p>
-                
-                <button class="read-more" @click="showModal(true)">Læs den fulde anmeldelse her</button>
-                <span>- Celina og Anne-Marie</span>
+            <article v-for="review in featuredReviews" :key="review.id" class="review">
+                <p>"{{ review.text[0].slice(0, 300) }}..."</p>
+                <button v-if="review.text[0].length > 300" class="read-more" @click="handleClick(review, true)">Læs den fulde anmeldelse her</button>
+                <span>- {{ review.name }}</span>
             </article>
         </div>
 
