@@ -8,8 +8,8 @@
           <li><NuxtLink to="/behandlinger">Behandlinger jeg tilbyder</NuxtLink></li>
           <li><NuxtLink to="/priser">Priser</NuxtLink></li>
           <li><NuxtLink to="/kontakt">Kontakt</NuxtLink></li>
-          <li><NuxtLink to="/betingelser">Betingelser</NuxtLink></li>
           <li><NuxtLink to="/om">Om klinikken</NuxtLink></li>
+          <li><NuxtLink to="/anmeldelser">Anmeldelser</NuxtLink></li>
           <li><NuxtLink to="/#faq">Ofte stillede spørgsmål</NuxtLink></li>
         </ul>
       </article>

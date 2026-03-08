@@ -49,7 +49,7 @@ const toggleMenu = (value) => {
         <NuxtLink to="/om" @click="toggleMenu(false)">Om Klinikken</NuxtLink>
       </li> 
       <li>
-        <NuxtLink to="/Anmeldelser" @click="toggleMenu(false)">Anmeldelser</NuxtLink>
+        <NuxtLink to="/anmeldelser" @click="toggleMenu(false)">Anmeldelser</NuxtLink>
       </li>
       <li>
         <NuxtLink to="/#faq" @click="toggleMenu(false)">FAQ</NuxtLink>
