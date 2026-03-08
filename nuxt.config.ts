@@ -14,10 +14,9 @@ export default defineNuxtConfig({
     // Raleway: { wght: [100, 400], ital: [100] }
   },
   runtimeConfig: {
-    apiSecret: "sb_publishable_SSMguEfCHmT0in20XuWNfQ_bts9oYOV",
     public: {
-      supabaseUrl: process.env.SUPABASE_URL || "https://jubotmfetssmyrqgvstl.supabase.co",
-      supabasePublishableKey: process.env.SUPABASE_KEY || "sb_publishable_SSMguEfCHmT0in20XuWNfQ_bts9oYOV",
+      supabaseUrl: "https://jubotmfetssmyrqgvstl.supabase.co",
+      supabasePublishableKey: "sb_publishable_SSMguEfCHmT0in20XuWNfQ_bts9oYOV",
     }
   }
 })
