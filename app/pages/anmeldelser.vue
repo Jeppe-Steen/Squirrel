@@ -134,6 +134,7 @@ $darkGreen:#778873;
                 margin-bottom: 10px;
                 flex-direction: column;
                 justify-content: unset;
+                height: fit-content;
 
                 @media (min-width: 1200px) {
                     flex-direction: row;
@@ -141,14 +142,16 @@ $darkGreen:#778873;
                 }
 
                 .left {
+                    height: fit-content;
                     p {
                         text-transform: capitalize;
                     }
                 }
                 .right {
+                    height: fit-content;
                     svg {
                         width: 20px;
-                        height: fit-content
+                        height: 20px;
                     }
                 }
             }
