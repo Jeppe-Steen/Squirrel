@@ -109,13 +109,22 @@ $darkGreen:#778873;
                 background-color: white;
                 box-shadow: 0 0 10px 5px #00000030;
                 padding: 20px;
-                height: 300px;
+                height: 350px;
+
+                @media (min-width: 1200px) {
+                    height: 300px;
+                }
 
                 &__header {
                     display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
                     margin-bottom: 10px;
+                    flex-direction: column;
+                    justify-content: unset;
+
+                    @media (min-width: 1200px) {
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
 
                     .left {
                         p {
