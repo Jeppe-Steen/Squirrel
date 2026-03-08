@@ -110,6 +110,7 @@ $darkGreen:#778873;
                 box-shadow: 0 0 10px 5px #00000030;
                 padding: 20px;
                 height: 350px;
+                overflow: hidden;
 
                 @media (min-width: 1200px) {
                     height: 300px;
@@ -120,6 +121,7 @@ $darkGreen:#778873;
                     margin-bottom: 10px;
                     flex-direction: column;
                     justify-content: unset;
+                    height: fit-content;
 
                     @media (min-width: 1200px) {
                         flex-direction: row;
@@ -127,14 +129,16 @@ $darkGreen:#778873;
                     }
 
                     .left {
+                        height: fit-content;
                         p {
                             text-transform: capitalize;
                         }
                     }
                     .right {
+                        height: fit-content;
                         svg {
                             width: 20px;
-                            height: fit-content
+                            height: 20px;
                         }
                     }
                 }
