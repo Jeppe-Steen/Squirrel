@@ -64,17 +64,17 @@ $lightGreen:#D2DCB6;
 $green:#A1BC98;
 $darkGreen:#778873;
 .reviews {
-  width: 100%;
-  height: fit-content;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  background-color: white;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: white;
 
-  @media (min-width) {
-    margin-top: 10vh;
-  }
+    @media (min-width) {
+        margin-top: 10vh;
+    }
 
   &__container {
     width: 100%;
@@ -123,6 +123,7 @@ $darkGreen:#778873;
             box-shadow: 0 0 10px 5px #00000030;
             padding: 20px;
             height: 350px;
+            overflow: hidden;
 
             @media (min-width: 1200px) {
                 height: 300px;
