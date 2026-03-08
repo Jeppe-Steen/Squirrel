@@ -47,7 +47,7 @@ const handleClick = (data, bool) => {
                     </div>
                 </header>
                 <p>"{{ review.text[0].slice(0, 200) }}..."</p>
-                <button v-if="review.text[0].length > 300" class="read-more" @click="handleClick(review, true)">Læs den fulde anmeldelse her</button>
+                <button v-if="review.text[0].length > 200" class="read-more" @click="handleClick(review, true)">Læs den fulde anmeldelse her</button>
             </article>
         </div>
 
