@@ -28,7 +28,7 @@ const images = [
 <template>
     <section class="gallery-component">
         <div class="gallery-component__container">
-            <img v-for="(image, index) in images" :key="index" :src="image.src" :alt="image.alt" loading="lazy" decoding="async"/>
+            <NuxtImg v-for="(image, index) in images" :key="index" :src="image.src" :alt="image.alt" loading="lazy" decoding="async"/>
         </div>
     </section>
 </template>

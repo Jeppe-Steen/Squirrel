@@ -18,7 +18,7 @@ const props = defineProps({
             <p v-for="(text, index) in props.text.text" :key="index">{{ text }}</p>
         </div> 
         <div class="welcome__component--image">
-            <img src="../assets/image/treatments/fireCupping_1.webp" />
+            <NuxtImg src="../assets/image/treatments/fireCupping_1.webp" />
         </div> 
     </section>
 </template>
