@@ -1,5 +1,5 @@
 <script setup>
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from '@supabase/supabase-js';
 import { modal } from '../composable/model.js';
 const { showModal, setModalContent } = modal();
 const showVideo = ref(true);

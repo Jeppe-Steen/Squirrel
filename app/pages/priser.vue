@@ -1,5 +1,4 @@
 <script setup>
-import Hero from '../../components/Hero.vue';
 import Prices from '../../components/Prices.vue';
 
 useHead({
@@ -15,6 +14,7 @@ useHead({
         }
     ]
 });
+
 </script>
 
 <template>

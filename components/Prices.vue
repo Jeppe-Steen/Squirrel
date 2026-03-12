@@ -1,4 +1,25 @@
 <script setup>
+import { createClient } from '@supabase/supabase-js';
+import PriceShell from './reuseable/PriceShell.vue';
+
+const allPrices = ref([]);
+
+const config = useRuntimeConfig();
+const supabase = createClient(config.public.supabaseUrl, config.public.supabasePublishableKey);
+async function getPrices() {
+    let { data: prices, error } = await supabase.from('prices').select('*');
+    if(!error) {
+        allPrices.value = prices;
+        return;
+    }
+
+    return;
+};
+
+onMounted(() => {
+    getPrices();
+})
+
 </script>
 
 <template>
@@ -8,39 +29,25 @@
             <h1>Priser for behandlinger</h1>
         </header>
 
-        <article class="price">
-            <header class="price__header">
-                <h3>Første konsultation</h3>
-                <h2>650 DKK</h2>
-            </header>
+        <h2 class="prices-component__subheading">Behandlinger</h2>
+        <div class="price-container">
+            <PriceShell v-for="price in allPrices.filter(price => price.type === 'general').reverse()" :key="price.id" v-bind="price" />
+        </div> 
 
-            <div class="price__container">
-                <h3>Dette indeholder:</h3>
-                <ul>
-                    <li>Individuel Samtale</li>
-                    <li>Puls/tunge diagnose</li>
-                    <li>Behandling</li>
-                    <li>Varighed ca. 80 min</li>
-                </ul>
-            </div>
-            <NuxtLink to="/kontakt"><p>Kontakt mig her</p></NuxtLink>
-        </article>
+        <h2 class="prices-component__subheading">Klippekort</h2>
+        <div class="price-container">
+            <PriceShell v-for="price in allPrices.filter(price => price.type === 'klippekort').reverse()" :key="price.id" v-bind="price" />
+        </div>
 
-        <article class="price">
-            <header class="price__header">
-                <h3>Alm. Behandling</h3>
-                <h2>600 DKK</h2>
-            </header>
+        <h2 class="prices-component__subheading">Cupping</h2>
+        <div class="price-container">
+            <PriceShell v-for="price in allPrices.filter(price => price.type === 'cupping')" :key="price.id" v-bind="price" />
+        </div>
 
-            <div class="price__container">
-                <h3>Dette indeholder:</h3>
-                <ul>
-                    <li>Behandling</li>
-                    <li>Varighed ca. 50 min</li>
-                </ul>
-            </div>
-            <NuxtLink to="/kontakt"><p>Kontakt mig her</p></NuxtLink>
-        </article>
+        <h2 class="prices-component__subheading">Rygestop</h2>
+        <div class="price-container">
+            <PriceShell v-for="price in allPrices.filter(price => price.type === 'rygestop').reverse()" :key="price.id" v-bind="price" />
+        </div>
     </section>
 </template>
 
@@ -55,35 +62,26 @@ $darkGreen:#778873;
     width: 100%;
     height: fit-content;
 
-    .price {
+    &__header {
+        grid-area: header;
+    }
+
+    &__subheading {
         width: 100%;
-        background-color: $lightGreen;
-        margin-top: 20px;
-        padding: 20px;
+        text-align: center;
+        background-color: $lightestGreen;
+        padding: 10px;
+        margin-top: 10px;
+    }
 
-        &__header {
-            margin-bottom: 10px;
-        }
+    .price-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 40px;
 
-        &__container {
-            ul {
-                list-style: none;
-            }
-        }
-
-        a {
-            width: 100%;
-            text-decoration: none;
-            text-align: center;
-
-            p {
-                background-color: $lightestGreen;
-                box-shadow: 0 0 10px 5px #00000030;
-                padding: 10px;
-                margin-top: 20px;
-                color: black;
-                font-weight: bold;
-            }
+        @media (min-width: 1200px) {
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
