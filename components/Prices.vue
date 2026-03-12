@@ -31,7 +31,7 @@ onMounted(() => {
 
         <h2 class="prices-component__subheading">Behandlinger</h2>
         <div class="price-container">
-            <PriceShell v-for="price in allPrices.filter(price => price.type === 'general').reverse()" :key="price.id" v-bind="price" />
+            <PriceShell v-for="price in allPrices.filter(price => price.type === 'general')" :key="price.id" v-bind="price" />
         </div> 
 
         <h2 class="prices-component__subheading">Klippekort</h2>
