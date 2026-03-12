@@ -12,7 +12,25 @@ useHead({
           name: "color-scheme",
           content: "light"
         }
-    ]
+    ],
+        script: [
+        {
+            type: "application/ld+json",
+            children: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "MedicalBusiness",
+                "name": "Klinik Egernbo Akupunktur",
+                "url": "https://klinikegernboakupunktur.dk/om",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Sandmosevej 11",
+                    "addressLocality": "Aabybro",
+                    "postalCode": "9440",
+                    "addressCountry": "DK"
+                },
+            })
+        }
+    ],
 });
 </script>
 

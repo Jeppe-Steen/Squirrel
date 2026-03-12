@@ -2,6 +2,39 @@
 import { createClient } from '@supabase/supabase-js'
 const publishedReviews = ref([]);
 
+useHead({
+    title: 'Anmeldelser',
+    meta: [
+        {
+            name: 'description',
+            content: 'Her finder du anmeldelser fra mine kunder.'
+        },
+        {
+          name: "color-scheme",
+          content: "light"
+        }
+    ],
+        script: [
+        {
+            type: "application/ld+json",
+            children: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "MedicalBusiness",
+                "name": "Klinik Egernbo Akupunktur",
+                "url": "https://klinikegernboakupunktur.dk/anmeldelser",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Sandmosevej 11",
+                    "addressLocality": "Aabybro",
+                    "postalCode": "9440",
+                    "addressCountry": "DK"
+                },
+            })
+        }
+    ],
+});
+
+
 import { modal } from '../composable/model.js';
 const { showModal, setModalContent } = modal();
 
