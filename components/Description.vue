@@ -40,7 +40,7 @@ const text = generalText.data.description;
                     <li>Og meget mere…</li>
                 </ul>
 
-                <img src="../assets/image/treatments/hand.webp" />
+                <img src="../assets/image/treatments/hand.webp" alt="billede_af_hånd" />
             </main>
         </article>
 

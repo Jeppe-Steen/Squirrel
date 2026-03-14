@@ -11,16 +11,16 @@ import clinic_2 from "../assets/image/treatments/klinic_2.webp";
 import clinic_3 from "../assets/image/treatments/klinic_3.webp";
 
 const images = [
-    { src: ear_acupuncture, alt: "ear_acupuncture" },
-    { src: foot_acupuncture, alt: "foot_acupuncture" },
-    { src: fire_cupping, alt: "fire_cupping" },
-    { src: head_acupuncture, alt: "head_acupuncture" },
-    { src: hand_acupuncture, alt: "hand_acupuncture" },
-    { src: stomach_acupuncture, alt: "stomach_acupuncture" },
-    { src: pulse, alt: "pulse" },
-    { src: clinic_1, alt: "clinic_1" },
-    { src: clinic_2, alt: "clinic_2" },
-    { src: clinic_3, alt: "clinic_3" }
+    { src: ear_acupuncture, alt: "Billede_af_øre_akupunktur" },
+    { src: foot_acupuncture, alt: "Billede_af_fod_akupunktur" },
+    { src: fire_cupping, alt: "Billede_af_ild_kupping" },
+    { src: head_acupuncture, alt: "Billede_af_hoved_akupunktur" },
+    { src: hand_acupuncture, alt: "Billede_af_hånd_akupunktur" },
+    { src: stomach_acupuncture, alt: "Billede_af_mave_akupunktur" },
+    { src: pulse, alt: "Billede_af_pulse_diagnose" },
+    { src: clinic_1, alt: "Billede_af_klinik" },
+    { src: clinic_2, alt: "Billede_af_klinik" },
+    { src: clinic_3, alt: "Billede_af_klinik" }
 ];
 
 </script>

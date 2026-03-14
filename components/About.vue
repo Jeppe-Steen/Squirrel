@@ -12,7 +12,7 @@ const array = [
 <template>
     <section class="about-component">
         <div class="me">
-            <img src="../assets/image/treatments/me_1.webp" alt="me" loading="lazy" decoding="async"/>
+            <img src="../assets/image/treatments/me_1.webp" alt="billede_af_mig" loading="lazy" decoding="async"/>
         </div>
         <div class="text">
             <h2>Lidt om mig!</h2>
