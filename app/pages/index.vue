@@ -4,7 +4,7 @@ import Description from '../../components/Description.vue';
 import FAQ from '../../components/FAQ.vue';
 import Reviews from '../../components/Reviews.vue';
 import Gallery from '../../components/Gallery.vue';
-
+import Button from '../../components/reuseable/Button.vue';
 
 useHead({
     title: "Akupunktur i Aabybro | Klinik Egernbo Akupunktur – Nordjylland",
@@ -65,20 +65,12 @@ const welcomeText = {
     <main class="frontpage">
         <section class="frontpage__container">
             <Welcome :text="welcomeText"/>
-            <div class="link">
-                <NuxtLink class="test" to="/behandlinger"><h3>Se hvilke behandlinger jeg tilbyder her</h3></NuxtLink>
-            </div>
-            <div class="link">
-                <NuxtLink to="/priser"><h3>Se priser her</h3></NuxtLink>
-            </div>
+            <Button path="/behandlinger" text="Se hvilke behandlinger jeg tilbyder her" />
+            <Button path="/priser" text="Se priser her" />
             <Reviews />
-            <!-- <div class="link">
-                <NuxtLink to="/anmeldelser"><h3>Læs flere anmeldelser her</h3></NuxtLink>
-            </div> -->
+            <Button path="/anmeldelser" text="Læs flere anmeldelser her" />
             <Description />
-            <div class="link">
-                <NuxtLink to="/kontakt"><h3>Kontakt mig her!</h3></NuxtLink>
-            </div>
+            <Button path="/kontakt" text="Kontakt mig her!" />
             <Gallery />
             <FAQ />
         </section>
