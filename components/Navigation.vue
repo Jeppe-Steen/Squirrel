@@ -62,6 +62,10 @@ const toggleMenu = (value) => {
     <p v-if="menuOpen" class="hidden_menu--cross" @click="toggleMenu(false)">Luk</p>
   </div>
 
+  <div class="mobile_contact">
+    <a href="tel:22312969">Ring op</a>
+  </div>
+
 </div>
 </template>
 
@@ -172,14 +176,42 @@ $darkGreen:#778873;
     align-items: center;
     justify-content: center;
     z-index: 999;
+    color: white;
 
     &--menu, &--cross {
-          font-size: 1rem;
+      font-size: 1rem;
 
       // large screens
       @media (min-width: 1200px) {
         display: none;
       }
+    }
+
+    &--cross {
+      color: black !important;
+    }
+  }
+
+  .mobile_contact {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    padding: 10px 30px;
+    border-radius: 10px;
+    transform: translateY(-50%);
+
+    background-color: $lightGreen;
+    box-shadow: 0 0 10px 5px #00000030;
+
+    // large screens
+    @media (min-width: 1200px) {
+      display: none;
+    }
+
+    a {
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
     }
   }
 }
