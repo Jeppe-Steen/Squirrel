@@ -16,6 +16,10 @@ export default defineNuxtConfig({
     // Optionally, you can add options for each font
     // Raleway: { wght: [100, 400], ital: [100] }
   },
+  site: { 
+    url: 'https://klinikegernboakupunktur.dk', 
+    name: 'Akupunktur i Aabybro | Klinik Egernbo Akupunktur – Nordjylland' 
+  },
   runtimeConfig: {
     public: {
       supabaseUrl: "https://jubotmfetssmyrqgvstl.supabase.co",
