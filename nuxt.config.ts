@@ -2,7 +2,10 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/google-fonts'],
+  modules: [
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap'],
   googleFonts: {
     families: {
       Roboto: true, // Basic usage
