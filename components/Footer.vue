@@ -67,7 +67,7 @@ $darkGreen:#778873;
       "map"
       "logos";
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 0.5fr auto;
+    grid-template-rows: 1fr 1fr 0.2fr auto auto;
     gap: 20px;
 
      // large screens
