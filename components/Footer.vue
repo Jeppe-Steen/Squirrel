@@ -31,6 +31,10 @@
         <article class="map">
           <iframe title="google_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2163.6064533883787!2d9.696345913228498!3d57.160883503077045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464925c8a65bab49%3A0xb1b741175a25d19e!2sSandmosevej%2011%2C%209440%20Aabybro!5e0!3m2!1sda!2sdk!4v1768941476115!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </article>
+
+        <article class="logos">
+          <img src="../assets/image/RAB.png" alt="RAB" />
+        </article>
     </section>
   </footer>
 </template>
@@ -60,15 +64,19 @@ $darkGreen:#778873;
       "links"
       "contact"
       "."
-      "map";
+      "map"
+      "logos";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 0.5fr auto;
+    gap: 20px;
 
      // large screens
     @media (min-width: 1200px) {
-      grid-template-areas: "links contact . map";
+      grid-template-areas: 
+      "links contact . map"
+      "logos logos logos logos";
       grid-template-columns: 1fr 1fr 0.5fr 1.5fr;
-      grid-template-rows: 1fr;
+      grid-template-rows: 1fr auto;
     };
     
     .links {
@@ -99,6 +107,20 @@ $darkGreen:#778873;
 
         @media (min-width: 1200px) {
           height: 300px;
+        }
+      }
+    }
+
+    .logos {
+      grid-area: logos;
+
+      img {
+        width: 100%;
+        height: unset;
+
+        @media (min-width: 1200px) {
+          height: 130px;
+          width: unset;
         }
       }
     }
