@@ -1,4 +1,5 @@
 <script setup>
+import Button from './reuseable/Button.vue';
 </script>
 
 <template>
@@ -7,6 +8,15 @@
             <h2>Lyder dette som noget for som dig?</h2>
             <h1>Så tøv ikke med at kontakte mig</h1>
         </header>
+        
+        <Button class="contact-component__book" path="https://klinik-egernbo-akupunktur.planway.com/" text="Book tid online her!" />
+        
+        <div class="contact-component__divider">
+            <div class="string"></div>
+            <p>Eller</p>
+            <div class="string"></div>
+        </div>
+
         <form action="https://formspree.io/f/mpwvnyej" method="POST" class="contact-component__form">
             <input placeholder="Fulde navn" type="text" name="Fullname" required>
             <input placeholder="Email" type="email" name="email" required>
@@ -30,6 +40,8 @@ $darkGreen:#778873;
     grid-template-columns: 1fr;
     grid-template-areas: 
         "header"
+        "book"
+        "divider"
         "form"
         "map";
     margin-top: 50px;
@@ -39,6 +51,8 @@ $darkGreen:#778873;
         grid-template-columns: 60% 40%;
         grid-template-areas: 
             "header header"
+            "book book"
+            "divider divider"
             "form map";
     }
 
@@ -54,6 +68,28 @@ $darkGreen:#778873;
             font-size: 1.5rem;
             width: 100%;
             text-align: center;
+        }
+    }
+
+    &__book {
+        grid-area: book;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__divider {
+        grid-area: divider;
+        text-align: center;
+        font-size: 1.2rem;
+
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 1fr;
+
+        .string {
+            width: 100%;
+            height: 1px;
+            background-color: black;
+            align-self: center;
         }
     }
 

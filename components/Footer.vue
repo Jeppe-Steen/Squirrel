@@ -1,41 +1,38 @@
 <template>
     <footer class="footer-component">
-      <section class="footer-component__section">
-        <article class="links">
-          <h3>Links</h3>
-          <ul>
-            <li><NuxtLink to="/">Forside</NuxtLink></li>
-            <li><NuxtLink to="/behandlinger">Behandlinger jeg tilbyder</NuxtLink></li>
-            <li><NuxtLink to="/priser">Priser</NuxtLink></li>
-            <li><NuxtLink to="/kontakt">Kontakt</NuxtLink></li>
-            <li><NuxtLink to="/om">Om klinikken</NuxtLink></li>
-            <li><NuxtLink to="/anmeldelser">Anmeldelser</NuxtLink></li>
-            <li><NuxtLink to="/#faq">Ofte stillede spørgsmål</NuxtLink></li>
-          </ul>
-        </article>
+      
+      <div class="footer-logo">
+        <img src="../assets/svg/egernbo_logo_svg.svg" alt="Logo" />
+      </div>
 
-        <address class="contact">
-          <h3>Kontakt</h3>
+      <div class="footer-contact">
+        <h2>Kontakt</h2>
+        <adress>
           <p>Sandmosevej 11, 9440 Aabybro</p>
           <p>Tlf: 22 31 39 69</p>
           <p>Mail: info@klinikegernboakupunktur.dk</p>
           <p>CVR: 46094417</p>
-          <br />
-          <p>Mandag: 8:00 - 15:00</p>
-          <p>Tirsdag: 8:00 - 18:30</p>
-          <p>Onsdag - Torsdag: 8:00 - 15:00</p>
-          <p>Fredag: 8:00 - 12:30</p>
-          <p>Lørdag - Søndag: Lukket</p>
-        </address>
+        </adress>
+      </div>
 
-        <article class="map">
-          <iframe title="google_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2163.6064533883787!2d9.696345913228498!3d57.160883503077045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464925c8a65bab49%3A0xb1b741175a25d19e!2sSandmosevej%2011%2C%209440%20Aabybro!5e0!3m2!1sda!2sdk!4v1768941476115!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="false" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </article>
+      <div class="footer-general">
+        <h2>Links</h2>
+        <NuxtLink to="/">Forside</NuxtLink>
+        <NuxtLink to="/behandlinger">Behandlinger</NuxtLink>
+        <NuxtLink to="/priser">Priser</NuxtLink>
+        <NuxtLink to="/kontakt">Kontakt</NuxtLink>
+        <NuxtLink to="/om">Om klinikken</NuxtLink>
+        <NuxtLink to="/anmeldelser">Anmeldelser</NuxtLink>
+        <NuxtLink to="/#faq">Ofte stillede spørgsmål</NuxtLink>
+      </div>
 
-        <article class="logos">
-          <img src="../assets/image/RAB.png" alt="RAB" />
-        </article>
-    </section>
+      <div class="footer-rab">
+        <img src="../assets/image/RAB.png" alt="RAB" />
+      </div>
+
+      <div class="footer-by">
+        <p>Klinik Egernbo Akupunktur | CVR: 46094417</p>
+      </div>
   </footer>
 </template>
 
@@ -48,82 +45,82 @@ $darkGreen:#778873;
 
 .footer-component {
   height: fit-content;
-  padding: 50px;
+  padding: 50px 10px;
   background-color: $lightGreen;
   margin-top: 50px;
   width: 100%;
 
-  // large screens
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: 
+    "logo" "contact" "general" "rab" "by";
+
+  gap: 20px;
+  
   @media (min-width: 1200px) {
+    height: 500px;
     padding: 50px;
-  };
-
-  &__section {
-    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 10px;
     grid-template-areas: 
-      "links"
-      "contact"
-      "."
-      "map"
-      "logos";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 0.2fr auto auto;
-    gap: 20px;
+      "logo contact general"
+      "rab rab rab"
+      "by by by";
+  }
 
-     // large screens
-    @media (min-width: 1200px) {
-      grid-template-areas: 
-      "links contact . map"
-      "logos logos logos logos";
-      grid-template-columns: 1fr 1fr 0.5fr 1.5fr;
-      grid-template-rows: 1fr auto;
-    };
-    
-    .links {
-      grid-area: links;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column; 
+    text-align: center;
 
-      li {
-        list-style: circle;
-        &:hover {
-          list-style: unset;
-        }
-        a {
-          color: black;
-          text-decoration: none;
-        }
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .footer-logo {
+    grid-area: logo;
+    justify-content: center !important;
+
+    img {
+      width: 40%;
+    }
+  }
+
+  .footer-contact {
+    width: 100%;
+    grid-area: contact;
+  }
+
+  .footer-general {
+    width: 100%;
+    grid-area: general;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+  }
+
+  .footer-rab {
+    grid-area: rab;
+
+    img {
+      width: 100%;
+
+      @media (min-width: 1200px) {
+      width: 30%;
       }
     }
+  }
 
-    .contact {
-      grid-area: contact;
-    }
-
-    .map {
-      grid-area: map;
-
-      iframe {
-        height: unset;
-        width: 100%;
-
-        @media (min-width: 1200px) {
-          height: 300px;
-        }
-      }
-    }
-
-    .logos {
-      grid-area: logos;
-
-      img {
-        width: 100%;
-        height: unset;
-
-        @media (min-width: 1200px) {
-          height: 130px;
-          width: unset;
-        }
-      }
-    }
+  .footer-by {
+    grid-area: by;
+    text-align: center;
   }
 }
 </style>

@@ -63,7 +63,7 @@ const toggleMenu = (value) => {
   </div>
 
   <div class="mobile_contact">
-    <a href="tel:22312969">Ring op</a>
+    <a href="https://klinik-egernbo-akupunktur.planway.com/">Bestil tid</a>
   </div>
 
 </div>
@@ -203,9 +203,8 @@ $darkGreen:#778873;
     background-color: $lightGreen;
     box-shadow: 0 0 10px 5px #00000030;
 
-    // large screens
     @media (min-width: 1200px) {
-      display: none;
+      right: 100px;
     }
 
     a {
