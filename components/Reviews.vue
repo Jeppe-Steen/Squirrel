@@ -55,7 +55,7 @@ const handleClick = (data, bool) => {
             <source type="video/mp4">
         </video> -->
 
-        <iframe v-if="showVideo" class="reviews-component__video" src="https://www.youtube.com/embed/ZsqNsdmy29c?controls=1"></iframe>
+        <iframe v-if="showVideo" class="reviews-component__video" src="https://www.youtube.com/embed/ZsqNsdmy29c?controls=1" title="youtube_video"></iframe>
     </section>
 </template>
 

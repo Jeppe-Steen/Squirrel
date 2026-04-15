@@ -86,7 +86,7 @@ const handleClick = (data, bool) => {
                 </article>
             </div>
 
-            <iframe class="video" src="https://www.youtube.com/embed/ZsqNsdmy29c?controls=1"></iframe>
+            <iframe class="video" src="https://www.youtube.com/embed/ZsqNsdmy29c?controls=1" title="youtube_video"></iframe>
         </section>
     </main>
 </template>

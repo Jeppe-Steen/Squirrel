@@ -59,7 +59,7 @@ $darkGreen:#778873;
   gap: 20px;
   
   @media (min-width: 1200px) {
-    height: 500px;
+    height: 550px;
     padding: 50px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 10px;
@@ -102,6 +102,7 @@ $darkGreen:#778873;
     a {
       color: black;
       text-decoration: none;
+      margin-bottom: 10px;
     }
 
   }
