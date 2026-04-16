@@ -17,6 +17,20 @@
           media: "(prefers-color-scheme: light)"
         }
     ],
+    script: [
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-824FESYFJL",
+        async: true
+      },
+      {
+        children: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-824FESYFJL');
+        `
+      }
+    ]
   }); 
 </script>
 
