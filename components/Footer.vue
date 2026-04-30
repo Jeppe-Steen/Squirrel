@@ -24,6 +24,7 @@
         <NuxtLink to="/om">Om klinikken</NuxtLink>
         <NuxtLink to="/anmeldelser">Anmeldelser</NuxtLink>
         <NuxtLink to="/#faq">Ofte stillede spørgsmål</NuxtLink>
+        <NuxtLink to="/priser">Handelsbetingelser</NuxtLink>
       </div>
 
       <div class="footer-rab">
