@@ -21,6 +21,16 @@ onMounted(() => {
     getPrices();
 })
 
+const treatments = [
+    { header: 'Første Konsultation', includes: [ 'Individuel Samtale', 'Behandling', 'Varighed ca. 80 min' ], price: '600 kr', show: true },
+    { header: 'Alm. behandling', includes: ['Individuel Samtale', 'Varighed ca. 50 min' ], price: '600 kr', show: true },
+    { header: 'Klippekort - 5 klip', includes: ['Sparre: 450 kr', '* Kan ikke købes i forbindelse med et forløb igennem sundhedsforsikring ' ], price: '2550 kr', show: true },
+    { header: 'Klippekort - 10 klip', includes: ['Sparre: 900 kr', '* Kan ikke købes i forbindelse med et forløb igennem sundhedsforsikring ' ], price: '4800 kr', show: true },
+    { header: 'Cupping - 30 min', price: '300 kr', show: true },
+    { header: 'Cupping - 45 min', price: '500 kr', show: true },
+    { header: 'Allergipakke - 5 gange', price: '2500 kr', show: new Date().getMonth() >= 7 ? true : false},
+]
+
 </script>
 
 <template>
@@ -40,30 +50,23 @@ onMounted(() => {
             <p>Her kan du læse handelsbetingelserne. <a href="/priser#handelsbetingelser">Se handelsbetingelser</a></p>
         </div>
 
+        <header class="prices-component__header">
+            <h3>Dette tilbydes</h3>
+            <h1>Behandlinger</h1>
+        </header>
 
-
-
-        <h2 class="prices-component__subheading">Behandlinger</h2>
-        <div class="price-container">
-            <PriceShell v-for="price in allPrices.filter(price => price.type === 'general')" :key="price.id" v-bind="price" />
-        </div> 
-
-        <h2 class="prices-component__subheading">Klippekort</h2>
-        <div class="price-container">
-            <PriceShell v-for="price in allPrices.filter(price => price.type === 'klippekort').reverse()" :key="price.id" v-bind="price" />
-            <p>*Kan ikke købes i forbindelse med et forløb igennem sundhedsforsikring</p>
+        <div class="text-section">
+            <ul>
+                <li v-for="(treatment, index) in treatments" :key="index" v-show="treatment.show">
+                    <div>
+                        <h3> {{ treatment.header }} - {{ treatment.price }}  </h3>
+                        <p v-if="treatment.includes">Inkluderer:</p>
+                        <p v-for="(include, idx) in treatment.includes" :key="idx"> {{ include }} </p>
+                    </div>
+                </li>
+            </ul>
         </div>
 
-        <h2 class="prices-component__subheading">Cupping</h2>
-        <div class="price-container">
-            <PriceShell v-for="price in allPrices.filter(price => price.type === 'cupping').reverse()" :key="price.id" v-bind="price" />
-        </div>
-
-        <h2 class="prices-component__subheading">Rygestop</h2>
-        <div class="price-container">
-            <PriceShell v-for="price in allPrices.filter(price => price.type === 'rygestop').reverse()" :key="price.id" v-bind="price" />
-        </div>
-        
         <header class="prices-component__header">
             <ancor path="handelsbetingelser"></ancor>
             <h3> Betingelser ved booking af akupunkturbehandling</h3>
@@ -115,13 +118,31 @@ $darkGreen:#778873;
     &__subheading {
         width: 100%;
         text-align: left;
-        padding: 10px;
         margin-top: 10px;
     }
 
     .text-section {
         width: 100%;
         margin: 20px 0;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            li {
+                width: 100%;
+                background-color: $lightestGreen;
+                padding: 10px;
+                list-style-type: none;
+
+                div {
+                    h3 {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
     }
 
     .price-container {
