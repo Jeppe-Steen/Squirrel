@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/google-fonts',
+    '@jrs/core',
     '@nuxtjs/robots',
     '@nuxtjs/sitemap'],
   googleFonts: {
