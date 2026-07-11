@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+
+const reviewCards = [{}, {}]
+
 </script>
 
 <template>
@@ -31,7 +34,100 @@
         </UiHeader>
 
         <article class="reviews--content">
-            <UiCard title="test"></UiCard>
+            <div class="reviews--content__cards">
+                <div class="reviews--content__cards--card" v-for="(review, index) in reviewCards" :key="index">
+                    <UiHeader description="trustpilot">
+                        <template #header>
+                            <h3>Navn op kunde</h3>
+                        </template>
+                    </UiHeader>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et obcaecati facere molestiae, sunt magnam incidunt reprehenderit quibusdam autem nesciunt. Quam ipsam in inventore incidunt temporibus, ea saepe tenetur dolorem quaerat.</p>
+                    <UiButton label="læs mere her"/>
+                </div>
+            </div>
+
+            <UiButton label="Læs flere anmeldelser" styling="cta" size="large"/>
+        </article>
+    </section>
+
+    <section class="description">
+        <UiHeader description="Klassisk Kinesisk Medicin">
+            <template #header>
+                <h2>Hvad er akupunktur?</h2>
+            </template>
+        </UiHeader>
+
+        <p>Akupunktur er en af verdens ældste behandlingsformer og anvendes i dag bredt som en effektiv, naturlig og holistisk tilgang til både fysiske og mentale udfordringer. I klinikken arbejder jeg ud fra et helhedsorienteret perspektiv, hvor vi ser kroppen som en samlet enhed. Når der opstår ubalance – fysisk, følelsesmæssigt eller mentalt – viser det sig ofte i form af smerter, uro, stress eller andre symptomer.</p>
+        <p>Med akupunktur stimuleres kroppens energisystem via udvalgte punkter, hvilket fremmer blodcirkulation, dæmper inflammation, reducerer spændinger og hjælper nervesystemet tilbage i en mere rolig og reguleret tilstand. For mange giver behandlingen både øjeblikkelig afspænding og langsigtet forandring.</p>
+        <p>I klinikken tilbydes trygge, professionelle og individuelt tilpassede behandlingsforløb, hvor vi sammen arbejder på at skabe balance i både krop og sind — uanset om du søger smertelindring, mental ro eller støtte til kroppens hormonelle og indre funktioner.</p>
+    </section>
+
+    <section class="treatments">
+        <UiHeader description="Hvad kan jeg behandle?">
+            <template #header>
+                <h2>Behandlinger</h2>
+            </template>
+        </UiHeader>
+
+        <article class="treatments--content">
+            <ul class="treatments--content__text">
+                <li>Stress, tankemylder og overtænkning</li>
+                <li>Vrede og irritabilitet</li>
+                <li>Depression og lavt energiniveau</li>
+                <li>Symptomer i forbindelse med overgangsalderen</li>
+                <li>Uro i sind og krop</li>
+                <li>Smerter i nakke, skuldre og ryg (både kroniske og akutte)</li>
+                <li>Iskiassmerter og lændesmerter</li>
+                <li>Ledsmerter, herunder tennisalbue</li>
+                <li>Dystonier og kropslige skævheder</li>
+                <li>Forstoppelse og diarré</li>
+                <li>Infertilitet og hormonelle ubalancer</li>
+                <li>Og meget mere…</li>
+            </ul>
+
+            <img class="treatments--content__img" src="../assets/image/treatments/hand.webp" alt="akupunktur i håneden">
+        </article>
+    </section>
+
+    <section class="clinik">
+        <UiHeader description="En behandling der tager udgangspunkt i dig">
+            <template #header>
+                <h2>Klienten i centrum</h2>
+            </template>
+        </UiHeader>
+
+        <p>I klinikken sættes der god tid af til hver session. Før første behandling gennemgår vi dine symptomer, din hverdag og din generelle sundhedstilstand, så forløbet kan målrettes netop dig. Selve behandlingen foregår i rolige omgivelser, hvor du kan slappe af og give kroppen plads til at arbejde.</p>
+        <p>Uanset om du kommer for at få hjælp til smerter, stress, hormonelle forandringer eller kroniske ubalancer, er målet altid det samme: at skabe varig forbedring, øget velvære og en stærkere indre balance.</p>
+        <UiButton label="Kontakt mig idag" size="large" styling="cta" />
+    </section>
+
+    <section class="gallery">
+        <img src="../assets//image/treatments/ear.webp" alt="Øre akupunktur">
+        <img src="../assets/image/treatments/foot.webp" alt="Fod akuprasur">
+        <img src="../assets/image/treatments/fireCupping_1.webp" alt="">
+        <img src="../assets/image/treatments/head.webp" alt="">
+        <img src="../assets/image/treatments/hand.webp" alt="">
+        <img src="../assets/image/treatments/stomach_1.webp" alt="">
+        <img src="../assets/image/treatments/Pulse.webp" alt="">
+        <img src="../assets/image/treatments/klinic_1.webp" alt="">
+        <img src="../assets/image/treatments/klinic_2.webp" alt="">
+        <img src="../assets/image/treatments/klinic_3.webp" alt="">
+    </section>
+
+    <section class="faq">
+        <UiHeader description="Ofte stillede spørgsmål">
+            <template #header><h2>FAQ</h2></template>
+        </UiHeader>
+
+        <article class="faq--content">
+            <div class="faq--content__card">
+                <UiHeader description="">
+                    <template #header><h3>Test</h3></template>
+                </UiHeader>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ab dolorem eligendi dolorum repudiandae hic quibusdam officia esse qui fugiat adipisci ratione, quia expedita possimus ducimus similique assumenda reprehenderit veritatis!</p>
+                <UiButton label="test knap" />
+            </div>
         </article>
     </section>
 </template>
@@ -57,7 +153,6 @@
 
             &__img {
                 width: 100%;
-                border-radius: 20px;
             }
         }
     }
@@ -70,9 +165,95 @@
         &--content {
             width: 100%;
             height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            &__cards {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+
+
+                &--card {
+                    width: 100%;
+                    height: fit-content;
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+
+                    box-shadow: 0px 0px 20px #00000050;
+                }
+            }
+        }
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .treatments {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &--content {
+            width: 100%;
+            height: fit-content;
+            display: grid;
+            grid-template-columns: 1fr .8fr;
+            gap: 2rem;
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__img {
+                width: 100%;
+            }
+        }
+    }
+
+    .clinik {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .faq {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &--content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
+
+            &__card {
+                width: 100%;
+                height: fit-content;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                box-shadow: 0px 0px 20px #00000050;
+            }
         }
     }
 </style>
