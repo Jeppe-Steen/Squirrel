@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@jrs/core':
         specifier: github:Jeppe-Steen/jrs-core
-        version: https://codeload.github.com/Jeppe-Steen/jrs-core/tar.gz/c9c7e00932443684cb2a4d93f5fcc4f19e3346c3(nuxt@4.4.8(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.7))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.7))(@parcel/watcher@2.5.6)(@vue/compiler-sfc@3.5.39)(cac@6.7.14)(db0@0.3.4)(esbuild@0.28.1)(ioredis@5.11.1)(magicast@0.5.3)(rollup-plugin-visualizer@7.0.1(rollup@4.62.2))(rollup@4.62.2)(sass@1.101.0)(srvx@0.11.21)(terser@5.48.0)(vite@7.3.6(jiti@2.7.0)(sass@1.101.0)(terser@5.48.0)(yaml@2.9.0))(yaml@2.9.0))
+        version: https://codeload.github.com/Jeppe-Steen/jrs-core/tar.gz/7430cd4f63e05cf8a0fc42e863bd4c401b4d8d6e(nuxt@4.4.8(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.7))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.7))(@parcel/watcher@2.5.6)(@vue/compiler-sfc@3.5.39)(cac@6.7.14)(db0@0.3.4)(esbuild@0.28.1)(ioredis@5.11.1)(magicast@0.5.3)(rollup-plugin-visualizer@7.0.1(rollup@4.62.2))(rollup@4.62.2)(sass@1.101.0)(srvx@0.11.21)(terser@5.48.0)(vite@7.3.6(jiti@2.7.0)(sass@1.101.0)(terser@5.48.0)(yaml@2.9.0))(yaml@2.9.0))
       '@nuxtjs/robots':
         specifier: ^5.7.1
         version: 5.7.1(magicast@0.5.3)(vite@7.3.6(jiti@2.7.0)(sass@1.101.0)(terser@5.48.0)(yaml@2.9.0))(vue@3.5.39)
@@ -416,9 +416,9 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@jrs/core@https://codeload.github.com/Jeppe-Steen/jrs-core/tar.gz/c9c7e00932443684cb2a4d93f5fcc4f19e3346c3':
-    resolution: {gitHosted: true, integrity: sha512-f9MOZ1HHV1UqE1peV80W56sde1+QAXhQW7U5phrz42PZ7IYOw8f5F+mJ5Eew8vFa0PMPFoKV7yrrHTLOEWiPYw==, tarball: https://codeload.github.com/Jeppe-Steen/jrs-core/tar.gz/c9c7e00932443684cb2a4d93f5fcc4f19e3346c3}
-    version: 0.2.4
+  '@jrs/core@https://codeload.github.com/Jeppe-Steen/jrs-core/tar.gz/7430cd4f63e05cf8a0fc42e863bd4c401b4d8d6e':
+    resolution: {gitHosted: true, integrity: sha512-tWsT+5decHtnDierOGJS4g/dqrICeBNG74h8/Y0af38NXRDep4y3jjpNPfO+CALcDKthGf/rDScvhM5IA8LeCQ==, tarball: https://codeload.github.com/Jeppe-Steen/jrs-core/tar.gz/7430cd4f63e05cf8a0fc42e863bd4c401b4d8d6e}
+    version: 0.3.1
     peerDependencies:
       nuxt: ^4.0.0
 
@@ -3838,7 +3838,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@jrs/core@https://codeload.github.com/Jeppe-Steen/jrs-core/tar.gz/c9c7e00932443684cb2a4d93f5fcc4f19e3346c3(nuxt@4.4.8(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.7))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.7))(@parcel/watcher@2.5.6)(@vue/compiler-sfc@3.5.39)(cac@6.7.14)(db0@0.3.4)(esbuild@0.28.1)(ioredis@5.11.1)(magicast@0.5.3)(rollup-plugin-visualizer@7.0.1(rollup@4.62.2))(rollup@4.62.2)(sass@1.101.0)(srvx@0.11.21)(terser@5.48.0)(vite@7.3.6(jiti@2.7.0)(sass@1.101.0)(terser@5.48.0)(yaml@2.9.0))(yaml@2.9.0))':
+  '@jrs/core@https://codeload.github.com/Jeppe-Steen/jrs-core/tar.gz/7430cd4f63e05cf8a0fc42e863bd4c401b4d8d6e(nuxt@4.4.8(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.7))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.7))(@parcel/watcher@2.5.6)(@vue/compiler-sfc@3.5.39)(cac@6.7.14)(db0@0.3.4)(esbuild@0.28.1)(ioredis@5.11.1)(magicast@0.5.3)(rollup-plugin-visualizer@7.0.1(rollup@4.62.2))(rollup@4.62.2)(sass@1.101.0)(srvx@0.11.21)(terser@5.48.0)(vite@7.3.6(jiti@2.7.0)(sass@1.101.0)(terser@5.48.0)(yaml@2.9.0))(yaml@2.9.0))':
     dependencies:
       nuxt: 4.4.8(@babel/plugin-syntax-jsx@7.29.7(@babel/core@7.29.7))(@babel/plugin-syntax-typescript@7.29.7(@babel/core@7.29.7))(@parcel/watcher@2.5.6)(@vue/compiler-sfc@3.5.39)(cac@6.7.14)(db0@0.3.4)(esbuild@0.28.1)(ioredis@5.11.1)(magicast@0.5.3)(rollup-plugin-visualizer@7.0.1(rollup@4.62.2))(rollup@4.62.2)(sass@1.101.0)(srvx@0.11.21)(terser@5.48.0)(vite@7.3.6(jiti@2.7.0)(sass@1.101.0)(terser@5.48.0)(yaml@2.9.0))(yaml@2.9.0)
 

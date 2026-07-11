@@ -1,0 +1,10 @@
+/* $lightestGreen:#F1F3E0;
+$lightGreen:#D2DCB6;
+$green:#A1BC98;
+$darkGreen:#778873; */
+
+:root {
+    --ui-navigation: #778873 !important;
+
+    --ui-btn-5: #a1bc98 !important;
+}

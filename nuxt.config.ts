@@ -22,10 +22,7 @@ export default defineNuxtConfig({
     url: 'https://klinikegernboakupunktur.dk', 
     name: 'Akupunktur i Aabybro | Klinik Egernbo Akupunktur – Nordjylland' 
   },
-  runtimeConfig: {
-    public: {
-      supabaseUrl: "https://jubotmfetssmyrqgvstl.supabase.co",
-      supabasePublishableKey: "sb_publishable_SSMguEfCHmT0in20XuWNfQ_bts9oYOV",
-    }
-  }
+  css: [
+    '~/assets/scss/theme.css'
+  ]
 })

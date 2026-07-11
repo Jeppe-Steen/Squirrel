@@ -1,29 +1,31 @@
 <script setup>
 const navlinks = [
+    { name: 'Bestil tid', styling: 'primary' },
     { name: 'Forside', styling: 'link' },
     { name: 'Behandlinger', styling: 'link' },
     { name: 'Priser', styling: 'link' },
     { name: 'Kontakt', styling: 'link' },
     { name: 'Om klinikken', styling: 'link' },
     { name: 'Anmeldelser', styling: 'link' },
-    { name: 'Bestil tid', styling: 'primary' },
 ]
 </script>
 
 <template>
-    <UiNavigation> 
-      <template #logo>
-        <h2>LOGO</h2>
-      </template>
+    <UiNavigation extra> 
+        <template #extra>
+            <UiButton
+                label="Bestil tid"
+            />
+        </template>
 
-      <template #links>
-          <UiButton 
-            label="test"
-          />
-          <UiButton 
-            label="test"
-          />
-      </template>
+        <template #links>
+            <UiButton
+                v-for="(link, index) in navlinks" 
+                :key="index"
+                :label="link.name"
+                :styling="link.styling"
+            />
+        </template>
     </UiNavigation>
 
     <main class="content-container">
@@ -32,19 +34,16 @@ const navlinks = [
         </div>
     </main>
 
-    <UiFooter />
+    <UiFooter>
+
+    </UiFooter>
 </template>
 
 <style lang="scss" scoped>
-.logo {
-    height: 70%;
-    width: auto;
-}
-
 .content-container {
     width: 100%;
     min-height: 100vh;
-    background-color: var(--background-color);
+    background-color: var(--ui-background-1);
     padding: 2rem;
 
     display: grid;
@@ -56,8 +55,7 @@ const navlinks = [
         grid-area: content;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem;
     }
-
 }
 </style>
