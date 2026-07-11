@@ -1,0 +1,51 @@
+{
+    "prices": [
+        { 
+            "title": "Første Konsultation",
+            "price": "600 kr",
+            "includes": [
+                "Individuel Samtale",
+                "Behandling",
+                "Varighed ca. 80 min"
+            ],
+            "nb": ""
+        },
+        { 
+            "title": "Alm. behandling",
+            "price": "600 kr",
+            "includes": [
+                "Individuel Samtale",
+                "Varighed ca. 50 min"
+            ],
+            "nb": ""
+        },
+        { 
+            "title": "Klippekort - 5 klip",
+            "price": "2550 kr",
+            "includes": [
+                "Sparre: 450 kr"
+            ],
+            "nb": "Kan ikke købes i forbindelse med et forløb igennem sundhedsforsikring"
+        },
+        { 
+            "title": "Klippekort - 10 klip",
+            "price": "4800 kr",
+            "includes": [
+                "Sparre: 900 kr"
+            ],
+            "nb": "Kan ikke købes i forbindelse med et forløb igennem sundhedsforsikring"
+        },
+        { 
+            "title": "Cupping - 30 min",
+            "price": "300 kr",
+            "includes": [],
+            "nb": ""
+        },
+        { 
+            "title": "Cupping - 45 min",
+            "price": "500 kr",
+            "includes": [],
+            "nb": ""
+        }
+    ]
+}

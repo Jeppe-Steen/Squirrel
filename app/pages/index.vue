@@ -228,6 +228,7 @@ const reviewCards = [{}, {}]
             &__text {
                 display: flex;
                 flex-direction: column;
+                list-style-position: inside;
             }
 
             &__img {

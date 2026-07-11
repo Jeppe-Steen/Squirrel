@@ -1,9 +1,18 @@
 <script setup>
+const booking = async () => {
+    await navigateTo('https://klinik-egernbo-akupunktur.planway.com/', {
+    external: true,
+    open: {
+        target: '_blank'
+    }
+    })
+}
+
 const navlinks = [
-    { name: 'Bestil tid', styling: 'primary' },
-    { name: 'Forside', styling: 'link' },
-    { name: 'Behandlinger', styling: 'link' },
-    { name: 'Priser', styling: 'link' },
+    { name: 'Booking', action: booking },
+    { name: 'Forside', to: "/", styling: 'link' },
+    { name: 'Behandlinger', to: "/behandlinger", styling: 'link' },
+    { name: 'Priser', to: "/priser", styling: 'link' },
     { name: 'Kontakt', styling: 'link' },
     { name: 'Om klinikken', styling: 'link' },
     { name: 'Anmeldelser', styling: 'link' },
@@ -14,7 +23,8 @@ const navlinks = [
     <UiNavigation extra> 
         <template #extra>
             <UiButton
-                label="Bestil tid"
+                label="Booking"
+                @click="booking"
             />
         </template>
 
@@ -24,6 +34,8 @@ const navlinks = [
                 :key="index"
                 :label="link.name"
                 :styling="link.styling"
+                :to="link.to"
+                @click="link.action?.()"
             />
         </template>
     </UiNavigation>
