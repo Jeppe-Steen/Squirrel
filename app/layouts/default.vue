@@ -44,12 +44,18 @@ const navlinks = [
     width: 100%;
     min-height: 100vh;
     background-color: var(--ui-background-1);
-    padding: 2rem;
+    padding: 1rem;
 
     display: grid;
-    grid-template-columns: 1fr minmax(0, 60%) 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
-    grid-template-areas: '. content .';
+    grid-template-areas: 'content';
+
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr minmax(0, 60%) 1fr;
+        grid-template-areas: '. content .';
+        padding: 2rem;
+    }
 
     &--content {
         grid-area: content;

@@ -1,0 +1,85 @@
+{
+    "reviews": [
+        {
+            "name": "Line",
+            "stars": "5",
+            "featured": "false",
+            "treatments": ["Stress", "Tankemylder"],
+            "text": [
+                "Jeg har haft et virkelig godt forløb hos Frederikke, hvor hun har hjulpet mig med at få mere ro i hovedet og bedre styr på mit tankemylder. Det har været vildt at opleve effekten af nålene, og jeg har nydt at mærke min krop på en måde, jeg ikke har været vant til før.",
+                "Mens jeg har haft nålene i, har jeg fået mulighed for at mærke mig selv og være mere til stede i kroppen. På den måde har Frederikke hjulpet mig med at skabe en bedre forbindelse mellem mit hoved og min krop. Hun skaber et trygt og roligt rum, hvor man føler sig set og godt guidet gennem hele behandlingen. Jeg kan varmt anbefale hende."
+            ],
+            "from": "Trustpilot"
+        },
+        {
+            "name": "Per Jeppesen",
+            "stars": "5",
+            "featured": "false",
+            "treatments": ["Stress", "Tankemylder"],
+            "text": [
+                "Fantastisk dygtig akupunktør som forstå at løse de problemer man har"
+            ],
+            "from": "Trustpilot"
+        },
+        {
+            "name": "Jeppe",
+            "stars": "5",
+            "featured": "false",
+            "treatments": ["Stress", "Tankemylder"],
+            "text": [
+                "Virkelig dejlig oplevelse hvor man føler sig set og hørt. Jeg kom ind med en masse tankemylder. og efter en behandling kunne jeg allerede mærke forskel. Kan klart anbefales!"
+            ],
+            "from": "Trustpilot"
+        },
+        {
+            "name": "Per",
+            "stars": "5",
+            "featured": "false",
+            "treatments": ["Hoftesmerter", "Arbehandling"],
+            "text": [
+                "Jeg har fået 5 behandlinger hos Frederikke. Det er et godt sted at komme, rolige lokaler og omgivelser. Frederikke har behandlet muskler og ar i mit lår efter et brækket lårben og 2 operationer. Selv om jeg var skeptisk, har det gjort en forskel, og kan virkelig anbefales."
+            ],
+            "from": "Mail"
+        },
+        {
+            "name": "Celina og Anne-Marie",
+            "stars": "5",
+            "featured": "true",
+            "treatments": ["Skoliose"],
+            "text": [
+                "Jeg kontaktede Frederikke på baggrund af vores 16årige datter Celina. Celina har skoliose, som blev 'opdaget' for ca 3 år siden. Hun er efterskole elev og målvogter i håndbold på et ganske ok niveau.  Celina har det sidste halve år været præget af smerter i sin venstre lænd/ nedre ryg samt venstre ben. Flere besøg hos Celinas faste fysioterapeut resulterede i, at han via lægen sendte Celina til ekstra MR og CT scanning.",
+                "I memmeltiden havde Celina mødt Frederikke første gang. Af Frederikke blev vi allerede via beskeder imødekommet på en positiv og varm måde, som gjorde, at både Celina og vi som forældre følte os trygge. Dette blev vi blot bekræftet i ved det første møde. Frederikke formåede at skabe en rigtig dejlig atmosfære, hvor Celina følte sig i centrum og hørt.",
+                "MR og CT scanning vidste, at Celina havde en diskusprolaps i venstre side. Sundhedsvæsenet i Nordjylland er ikke gearet til, at en 16årig får diskusprolaps. Celina blev derfor i en periode på mere end 4 uger afvist flere steder på diverse sygehus grundet sin alder og at det ikke var en diskusprolaps forudsaget af gigt eller lign.",
+                "Forløbet hos Frederikke var med til, at Celina i en rigtig træls periode oplevede at være i centrum og blive hørt og kunne koble af under behandlingerne. Smerterne var i dagene efter besøgene aftagende af større eller mindre grad. Frederikke var undervejs rigtig dygtig til at skabe rum og var lydhør over for, hvordan Celina tog imod behandlingen og justerede ved behov.",
+                "Frederikke vil vi helt sikkert besøge igen og vores største anbefaling herfra - både som modtager af behandlinger og som forældre. Altid har vi følt os trygge"
+            ],
+            "from": "Mail"
+        },
+        {
+            "name": "Nikita Andrea",
+            "stars": "5",
+            "featured": "true",
+            "treatments": ["Infertilitet"],
+            "text": [
+                "Efter 7 år med håb, skuffelser og utallige forsøg på at blive gravid, fandt jeg modet til at starte et infertilitetsforløb hos Frederikke på Klinik Egernbo Akupunktur. Jeg gik ind til det med et stille håb, men også med en tunghed, som kun mange års uvished kan skabe. Allerede efter de første behandlinger stod det klart for mig, at dette forløb ville blive noget helt særligt.",
+                "Jeg modtog fem behandlinger, og hver eneste gang kunne jeg mærke en forandring i min krop. Kombinationen af akupunktur og moxa (varmebehandling) gjorde noget dybt og uventet. Ved første konsultation fortalte Frederikke mig, at min nedre del af kroppen var “kold”. Dengang forstod jeg det ikke helt, men efter allerede første behandling mærkede jeg en varme omkring mine reproduktive organer, som jeg aldrig før havde følt. Det var som om, der blev tændt et lys et sted, der længe havde været slukket.",
+                "Gennem forløbet – og også efter det – har jeg mærket dele af min krop, som jeg aldrig før har haft kontakt til. Det føles som om, der er kommet liv i områder, der før var stille og lukkede. Det har været både livsændrende og livsbekræftende på en måde, jeg næsten har svært ved at sætte ord på.",
+                "Den psykiske ro, der fulgte med behandlingerne, har ændret mit liv. Jeg har sluppet følelsen af pres i forhold til at skulle undfange, og det har givet mig en frihed, jeg ikke vidste, jeg manglede. Min partner kan mærke en stor forskel i mig – både i min energi og i min måde at være til stede på. Mine PMS-symptomer, som jeg har kæmpet med i 16 år, er blevet markant mindre. Senest kunne jeg slet ikke mærke, at min menstruation var på vej, fordi jeg ingen humørsvingninger havde. Det er en befrielse, jeg næsten ikke troede var mulig, og det har skabt en ny ro og et stærkere partnerskab derhjemme.",
+                "Frederikke er en helt særlig behandler. Hun er imødekommende, varm, sympatisk og samtidig dybt professionel. Hun formår at møde én præcis dér, hvor man er – både fysisk og følelsesmæssigt. Klinikken har en rolig og tryg atmosfære, hvor man føler sig set og holdt fra det øjeblik, man træder ind ad døren.",
+                "Vi går nu og venter spændt på at finde ud af, om jeg allerede er blevet gravid. Uanset hvad udfaldet bliver, har dette forløb givet mig noget uvurderligt: ro, håb, kontakt til min egen krop og en følelse af at være hel igen.",
+                "Min største respekt og dybeste taknemmelighed går til Frederikke. Jeg kan ikke give en større eller varmere anbefaling end denne!"
+            ],
+            "from": "Trustpilot"
+        },
+        {
+            "name": "Peter Andersen",
+            "stars": "5",
+            "featured": "true",
+            "treatments": ["Ankelgigt"],
+            "text": [
+                "Har fået 5 behandlinger hos Frederikke.klinik Egernbo i åbybro.har været super godt sted at komme og har fået masser af akupunktur i min venstre fod for ankel gigt..har været meget hævet i ankel og aldrig fået at vide at jeg skulle prøve vand drivende piller Frederikke sagde hun troede det kunne være godt for min ankel og det skal jeg da lige love for at det gjorde, synes virkelig at jeg fik god forklaring hvis jeg spurte til noget, så kan helt klart anbefale at tage kontakt og give det en chance"
+            ],
+            "from": "Trustpilot"
+        }
+    ] 
+}

@@ -47,6 +47,8 @@ const reviewCards = [{}, {}]
                 </div>
             </div>
 
+            <iframe class="reviews--content__video" src="https://www.youtube.com/embed/ZsqNsdmy29c?controls=1" title="youtube_video"></iframe>
+
             <UiButton label="Læs flere anmeldelser" styling="cta" size="large"/>
         </article>
     </section>
@@ -103,16 +105,16 @@ const reviewCards = [{}, {}]
     </section>
 
     <section class="gallery">
-        <img src="../assets//image/treatments/ear.webp" alt="Øre akupunktur">
-        <img src="../assets/image/treatments/foot.webp" alt="Fod akuprasur">
-        <img src="../assets/image/treatments/fireCupping_1.webp" alt="">
-        <img src="../assets/image/treatments/head.webp" alt="">
-        <img src="../assets/image/treatments/hand.webp" alt="">
-        <img src="../assets/image/treatments/stomach_1.webp" alt="">
-        <img src="../assets/image/treatments/Pulse.webp" alt="">
-        <img src="../assets/image/treatments/klinic_1.webp" alt="">
-        <img src="../assets/image/treatments/klinic_2.webp" alt="">
-        <img src="../assets/image/treatments/klinic_3.webp" alt="">
+        <img src="../assets//image/treatments/ear.webp" alt="Akupunktur i øret">
+        <img src="../assets/image/treatments/foot.webp" alt="Akuprasur på foden">
+        <img src="../assets/image/treatments/fireCupping_1.webp" alt="Fire cupping">
+        <img src="../assets/image/treatments/head.webp" alt="Aupunktur i hovedet">
+        <img src="../assets/image/treatments/hand.webp" alt="Akupunktur i hånden">
+        <img src="../assets/image/treatments/stomach_1.webp" alt="Akupunktur i maven">
+        <img src="../assets/image/treatments/Pulse.webp" alt="Pulsdiagnose">
+        <img src="../assets/image/treatments/klinic_1.webp" alt="Klinikken">
+        <img src="../assets/image/treatments/klinic_2.webp" alt="Klinikken">
+        <img src="../assets/image/treatments/klinic_3.webp" alt="Klinikken">
     </section>
 
     <section class="faq">
@@ -142,8 +144,12 @@ const reviewCards = [{}, {}]
             width: 100%;
             height: fit-content;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 2rem;
+
+            @media (min-width: 1200px) {
+                grid-template-columns: 1fr 1fr;
+            }
 
             &__text {
                 display: flex;
@@ -171,8 +177,12 @@ const reviewCards = [{}, {}]
 
             &__cards {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
                 gap: 2rem;
+
+                @media (min-width: 1200px) {
+                    grid-template-columns: 1fr 1fr;
+                }
 
 
                 &--card {
@@ -185,6 +195,10 @@ const reviewCards = [{}, {}]
 
                     box-shadow: 0px 0px 20px #00000050;
                 }
+            }
+
+            &__video {
+                height: 450px;
             }
         }
     }
@@ -204,8 +218,12 @@ const reviewCards = [{}, {}]
             width: 100%;
             height: fit-content;
             display: grid;
-            grid-template-columns: 1fr .8fr;
+            grid-template-columns: 1fr;
             gap: 2rem;
+
+            @media (min-width: 1200px) {
+                grid-template-columns: 1fr .8fr;
+            }
 
             &__text {
                 display: flex;
@@ -226,8 +244,12 @@ const reviewCards = [{}, {}]
 
     .gallery {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
+
+        @media (min-width: 1200px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
 
         img {
             width: 100%;
@@ -241,8 +263,12 @@ const reviewCards = [{}, {}]
 
         &--content {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 2rem;
+
+            @media (min-width: 1200px) {
+                grid-template-columns: 1fr 1fr;
+            }
 
             &__card {
                 width: 100%;
