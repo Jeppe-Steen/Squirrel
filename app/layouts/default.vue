@@ -47,7 +47,7 @@ const navlinks = [
     padding: 2rem;
 
     display: grid;
-    grid-template-columns: 1fr minmax(0, 70%) 1fr;
+    grid-template-columns: 1fr minmax(0, 60%) 1fr;
     gap: 1rem;
     grid-template-areas: '. content .';
 
