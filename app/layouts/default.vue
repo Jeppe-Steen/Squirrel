@@ -13,9 +13,9 @@ const navlinks = [
     { name: 'Forside', to: "/", styling: 'link' },
     { name: 'Behandlinger', to: "/behandlinger", styling: 'link' },
     { name: 'Priser', to: "/priser", styling: 'link' },
-    { name: 'Kontakt', styling: 'link' },
-    { name: 'Om klinikken', styling: 'link' },
-    { name: 'Anmeldelser', styling: 'link' },
+    { name: 'Kontakt', to: "/kontakt", styling: 'link' },
+    { name: 'Om klinikken', to: "/om", styling: 'link' },
+    { name: 'Anbefalinger', to: "/anbefalinger", styling: 'link' },
 ]
 </script>
 
