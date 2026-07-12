@@ -4,6 +4,8 @@ $green:#A1BC98;
 $darkGreen:#778873; */
 
 :root {
+    scroll-behavior: smooth;
+    
     --ui-navigation: #778873 !important;
     --ui-footer: #778873 !important;
 
