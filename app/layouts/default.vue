@@ -47,7 +47,35 @@ const navlinks = [
     </main>
 
     <UiFooter>
-
+        <section class="footer-wrapper">
+            <div class="footer-wrapper--images">
+                <img id="rab" src="../assets/image/RAB.png" alt="rab">
+            </div>
+            <div class="footer-wrapper--information">
+                <UiHeader centered>
+                    <template #title><h2>Kontakt</h2></template>
+                </UiHeader>
+                <a href="22313969">+45 22 31 39 69</a>
+                <a href="mailto:info@klinikegernboakupunktur.dk">info@klinikegernboakupunktur.dk</a>
+                <p>Sandmosevej 11, 9440 Aabybro</p>
+                <p>CVR 46094417</p>
+            </div>
+            <div class="footer-wrapper--links">
+                <UiHeader centered>
+                    <template #title><h2>Links</h2></template>
+                </UiHeader>
+                <a href="/">Forside</a>
+                <a href="/behandlinger">Behandlinger</a>
+                <a href="/priser">Priser</a>
+                <a href="/kontakt">Kontakt</a>
+                <a href="/om">Om klinikken</a>
+                <a href="/anbefalinger">Anbefalinger</a>
+                <a href="/priser#betingelser">Handelsbetingelser</a>
+            </div>
+            <div class="footer-wrapper--copyright">
+                <strong>Klinik Egernbo Akupunktur | CVR: 46094417</strong>
+            </div>
+        </section>
     </UiFooter>
 </template>
 
@@ -74,6 +102,79 @@ const navlinks = [
         display: flex;
         flex-direction: column;
         gap: 2rem;
+    }
+}
+
+.footer-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1fr 1fr .5fr;
+    grid-template-areas: 
+        'images'
+        'information'
+        'links'
+        'copyright';
+    padding: 2rem;
+
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr .5fr;
+        grid-template-areas: 
+            'images information links'
+            'copyright copyright copyright';
+    }
+    
+    a {
+        color: var(--ui-text-color-primary);
+        text-decoration: none;
+    }
+
+    &--images {
+        grid-area: images;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+
+        #rab {
+            width: 80%;
+        }
+    }
+
+    &--information {
+        grid-area: information;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: .5rem;
+    }
+
+    &--links {
+        grid-area: links;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: .5rem;
+    }
+
+    &--copyright {
+        grid-area: copyright;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-wrap: wrap;
+
+        text-align: center;
     }
 }
 </style>

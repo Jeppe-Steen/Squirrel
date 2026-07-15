@@ -1,6 +1,36 @@
 <script lang="ts" setup>
 import data from '../content/reviews.json';
+
+const expanded = ref<Record<number, boolean>>({})
+
+const toggleExpanded = (index: number) => {
+  expanded.value[index] = !expanded.value[index]
+}
+
+const isExpanded = (index: number) => {
+  return !!expanded.value[index]
+}
+
+const visibleText = (review: any, index: number) => {
+  if (isExpanded(index)) {
+    return review.text
+  }
+
+    return review.text
+    .slice(0, 1)
+    .map((text: string) =>
+        text.length > 200
+        ? text.slice(0, 200) + '...'
+        : text
+    );
+}
+
+const canExpand = (review: any) => {
+  return review.text.length > 1 ||
+         review.text[0]?.length > 200
+}
 </script>
+
 <template>
     <UiHeader>
         <template #subtitle>
@@ -14,7 +44,7 @@ import data from '../content/reviews.json';
     <iframe class="video" src="https://www.youtube.com/embed/ZsqNsdmy29c?controls=1" title="youtube_video"></iframe>
 
     <section class="content">
-        <div class="content--card" v-for="(review, index) in data.reviews" :key="index">
+        <UiCard shadow rounded v-for="(review, index) in data.reviews" :key="index">
             <UiHeader :icon="{name: 'star', count: review.stars, size: 20, color: '#FFD700'}">
                 <template #subtitle>
                     <strong>{{ review.from }}</strong>
@@ -24,8 +54,12 @@ import data from '../content/reviews.json';
                 </template>
             </UiHeader>
 
-            <p v-for="(text, index) in review.text" :key="index">{{ text }}</p>
-        </div>
+            <p v-for="(text, i) in visibleText(review, index)" :key="i">
+                {{ text }}
+            </p>
+
+            <UiButton v-if="canExpand(review)" :label="isExpanded(index) ? 'Vis mindre' : 'Læs mere'" @click="toggleExpanded(index)"/>
+        </UiCard>
     </section>
 </template>
 

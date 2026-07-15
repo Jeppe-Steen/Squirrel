@@ -11,7 +11,7 @@
         </template>
     </UiHeader>
 
-    <UiButton label="Book tid online her!" size="large" type="cta" />
+    <UiButton to="https://klinik-egernbo-akupunktur.planway.com/" label="Book tid online her!" size="large" type="cta" />
 
     <div class="divider">
         <div></div>

@@ -14,7 +14,7 @@
         </UiHeader>
 
         <p>Akupunktur kan være en hjælp ved mange forskellige smerter og lidelser. Den mest optimale behandling afhænger dog af dine symptomer og behov. Læs mere om de forskellige behandlingsformer nedenfor for at finde den løsning, der passer bedst til dig.</p>
-        <UiButton label="Book tid" type="cta" size="large" />
+        <UiButton to="https://klinik-egernbo-akupunktur.planway.com/" label="Book tid" type="cta" size="large" />
     </section>
 
     <section class="treatment-type">

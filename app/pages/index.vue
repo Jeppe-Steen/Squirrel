@@ -4,6 +4,36 @@ import faqData from '../content/faq.json';
 
 const featuredReviews = reviewData.reviews.filter(review => review.featured === true)
 const featuredFaq = faqData.faqs.filter(faq => faq.featured)
+
+
+const expanded = ref<Record<number, boolean>>({})
+
+const toggleExpanded = (index: number) => {
+  expanded.value[index] = !expanded.value[index]
+}
+
+const isExpanded = (index: number) => {
+  return !!expanded.value[index]
+}
+
+const visibleText = (review: any, index: number) => {
+    if (isExpanded(index)) {
+        return review.text
+    }
+
+    return review.text
+    .slice(0, 1)
+    .map((text: string) =>
+        text.length > 200
+        ? text.slice(0, 200) + '...'
+        : text
+    );
+}
+
+const canExpand = (review: any) => {
+  return review.text.length > 1 ||
+         review.text[0]?.length > 200
+}
 </script>
 
 <template>
@@ -28,8 +58,8 @@ const featuredFaq = faqData.faqs.filter(faq => faq.featured)
         </article>
 
         <span class="hero--btns">
-            <UiButton label="Se hvilke behandlinger jeg tilbyder" size="large" type="cta" />
-            <UiButton label="Se priser" size="large" type="cta" />
+            <UiButton to="/behandlinger" label="Se hvilke behandlinger jeg tilbyder" size="large" type="cta" />
+            <UiButton to="/priser" label="Se priser" size="large" type="cta" />
         </span>
     </section>
 
@@ -52,16 +82,16 @@ const featuredFaq = faqData.faqs.filter(faq => faq.featured)
                         </template>
                     </UiHeader>
 
-                    <p v-for="text in review.text">
+                    <p v-for="(text, i) in visibleText(review, index)" :key="i">
                         {{ text }}
                     </p>
-                    <UiButton label="læs mere her" />
+                    <UiButton v-if="canExpand(review)" :label="isExpanded(index) ? 'Vis mindre' : 'Læs mere'" @click="toggleExpanded(index)"/>
                 </UiCard>
             </div>
 
             <iframe class="reviews--content__video" src="https://www.youtube.com/embed/ZsqNsdmy29c?controls=1" title="youtube_video"></iframe>
 
-            <UiButton label="Læs flere anmeldelser" type="cta" size="large"/>
+            <UiButton to="/anbefalinger" label="Læs flere anbefalinger" type="cta" size="large"/>
         </article>
     </section>
 
@@ -122,7 +152,7 @@ const featuredFaq = faqData.faqs.filter(faq => faq.featured)
 
         <p>I klinikken sættes der god tid af til hver session. Før første behandling gennemgår vi dine symptomer, din hverdag og din generelle sundhedstilstand, så forløbet kan målrettes netop dig. Selve behandlingen foregår i rolige omgivelser, hvor du kan slappe af og give kroppen plads til at arbejde.</p>
         <p>Uanset om du kommer for at få hjælp til smerter, stress, hormonelle forandringer eller kroniske ubalancer, er målet altid det samme: at skabe varig forbedring, øget velvære og en stærkere indre balance.</p>
-        <UiButton label="Kontakt mig idag" size="large" type="cta" />
+        <UiButton to="/kontakt" label="Kontakt mig idag" size="large" type="cta" />
     </section>
 
     <section class="gallery">
@@ -153,6 +183,8 @@ const featuredFaq = faqData.faqs.filter(faq => faq.featured)
                 <UiButton :label="faq.link_text" :to="faq.to" />
             </UiCard>
         </article>
+
+        <UiButton to="/kontakt" label="Flere sprøgsmål - kontakt mig her" type="cta" size="large"/>
     </section>
 </template>
 
