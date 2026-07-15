@@ -1,4 +1,18 @@
 <script lang="ts" setup>
+useSeoMeta({
+  title: 'Anbefalinger',
+  description:
+    'Professionel akupunktur i Aabybro og Nordjylland. Behandling mod smerter, stress, migræne og meget mere.',
+  ogTitle: 'Klinik Egernbo Akupunktur',
+  ogDescription:
+    'Professionel akupunktur i Aabybro.',
+  ogUrl: 'https://klinikegernboakupunktur.dk/',
+  ogType: 'website',
+
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Klinik Egernbo Akupunktur',
+  twitterDescription: 'Professionel akupunktur i Aabybro.',
+})
 import data from '../content/reviews.json';
 
 const expanded = ref<Record<number, boolean>>({})
