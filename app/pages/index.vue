@@ -1,13 +1,18 @@
 <script lang="ts" setup>
+import reviewData from '../content/reviews.json';
+import faqData from '../content/faq.json';
 
-const reviewCards = [{}, {}]
-
+const featuredReviews = reviewData.reviews.filter(review => review.featured === true)
+const featuredFaq = faqData.faqs.filter(faq => faq.featured)
 </script>
 
 <template>
     <section class="hero">
-        <UiHeader description="Velkommen til Klinik Egernbo Akupunktur">
-            <template #header>
+        <UiHeader centered>
+            <template #subtitle>
+                <strong>Velkommen til Klinik Egernbo Akupunktur</strong>
+            </template>
+            <template #title>
                 <h1>Din lokale akupunktør i Aabybro.</h1>
             </template>
         </UiHeader>
@@ -22,8 +27,10 @@ const reviewCards = [{}, {}]
             <img class="hero--content__img" src="../assets/image/treatments/fireCupping_1.webp" alt="cupping" />
         </article>
 
-        <UiButton label="Se hvilke behandlinger jeg tilbyder" size="large" styling="cta" />
-        <UiButton label="Se priser" size="large" styling="cta" />
+        <span class="hero--btns">
+            <UiButton label="Se hvilke behandlinger jeg tilbyder" size="large" type="cta" />
+            <UiButton label="Se priser" size="large" type="cta" />
+        </span>
     </section>
 
     <section class="reviews">
@@ -35,27 +42,35 @@ const reviewCards = [{}, {}]
 
         <article class="reviews--content">
             <div class="reviews--content__cards">
-                <div class="reviews--content__cards--card" v-for="(review, index) in reviewCards" :key="index">
-                    <UiHeader description="trustpilot">
-                        <template #header>
-                            <h3>Navn op kunde</h3>
+                <UiCard v-for="(review, index) in featuredReviews" :key="index" shadow rounded>
+                    <UiHeader description="trustpilot" :icon="{name: 'star', count: review.stars, size: 20, color: '#FFD700'}">
+                        <template #subtitle>
+                            <strong>{{review.from}}</strong>
+                        </template>
+                        <template #title>
+                            <h3>{{review.name}}</h3>
                         </template>
                     </UiHeader>
 
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et obcaecati facere molestiae, sunt magnam incidunt reprehenderit quibusdam autem nesciunt. Quam ipsam in inventore incidunt temporibus, ea saepe tenetur dolorem quaerat.</p>
-                    <UiButton label="læs mere her"/>
-                </div>
+                    <p v-for="text in review.text">
+                        {{ text }}
+                    </p>
+                    <UiButton label="læs mere her" />
+                </UiCard>
             </div>
 
             <iframe class="reviews--content__video" src="https://www.youtube.com/embed/ZsqNsdmy29c?controls=1" title="youtube_video"></iframe>
 
-            <UiButton label="Læs flere anmeldelser" styling="cta" size="large"/>
+            <UiButton label="Læs flere anmeldelser" type="cta" size="large"/>
         </article>
     </section>
 
     <section class="description">
-        <UiHeader description="Klassisk Kinesisk Medicin">
-            <template #header>
+        <UiHeader>
+            <template #subtitle>
+                <p>Klassisk Kinesisk Medicin</p>
+            </template>
+            <template #title>
                 <h2>Hvad er akupunktur?</h2>
             </template>
         </UiHeader>
@@ -66,8 +81,11 @@ const reviewCards = [{}, {}]
     </section>
 
     <section class="treatments">
-        <UiHeader description="Hvad kan jeg behandle?">
-            <template #header>
+        <UiHeader>
+            <template #subtitle>
+                <strong>Hvad kan jeg behandle?</strong>
+            </template>
+            <template #title>
                 <h2>Behandlinger</h2>
             </template>
         </UiHeader>
@@ -93,15 +111,18 @@ const reviewCards = [{}, {}]
     </section>
 
     <section class="clinik">
-        <UiHeader description="En behandling der tager udgangspunkt i dig">
-            <template #header>
+        <UiHeader>
+            <template #subtitle>
+                <strong>En behandling der tager udgangspunkt i dig</strong>
+            </template>
+            <template #title>
                 <h2>Klienten i centrum</h2>
             </template>
         </UiHeader>
 
         <p>I klinikken sættes der god tid af til hver session. Før første behandling gennemgår vi dine symptomer, din hverdag og din generelle sundhedstilstand, så forløbet kan målrettes netop dig. Selve behandlingen foregår i rolige omgivelser, hvor du kan slappe af og give kroppen plads til at arbejde.</p>
         <p>Uanset om du kommer for at få hjælp til smerter, stress, hormonelle forandringer eller kroniske ubalancer, er målet altid det samme: at skabe varig forbedring, øget velvære og en stærkere indre balance.</p>
-        <UiButton label="Kontakt mig idag" size="large" styling="cta" />
+        <UiButton label="Kontakt mig idag" size="large" type="cta" />
     </section>
 
     <section class="gallery">
@@ -119,17 +140,18 @@ const reviewCards = [{}, {}]
 
     <section class="faq">
         <UiHeader description="Ofte stillede spørgsmål">
-            <template #header><h2>FAQ</h2></template>
+            <template #subtitle><strong>Ofte stillede spørgsmål</strong></template>
+            <template #title><h2>FAQ</h2></template>
         </UiHeader>
 
         <article class="faq--content">
-            <div class="faq--content__card">
-                <UiHeader description="">
-                    <template #header><h3>Test</h3></template>
+            <UiCard shadow rounded v-for="(faq, index) in featuredFaq" :key="index">
+                <UiHeader>
+                    <template #title><h3>{{faq.title}}</h3></template>
                 </UiHeader>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ab dolorem eligendi dolorum repudiandae hic quibusdam officia esse qui fugiat adipisci ratione, quia expedita possimus ducimus similique assumenda reprehenderit veritatis!</p>
-                <UiButton label="test knap" />
-            </div>
+                <p v-for="text in faq.text">{{ text }}</p>
+                <UiButton :label="faq.link_text" :to="faq.to" />
+            </UiCard>
         </article>
     </section>
 </template>
@@ -138,7 +160,7 @@ const reviewCards = [{}, {}]
     .hero {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem;
 
         &--content {
             width: 100%;
@@ -160,6 +182,12 @@ const reviewCards = [{}, {}]
             &__img {
                 width: 100%;
             }
+        }
+
+        &--btns {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
         }
     }
 

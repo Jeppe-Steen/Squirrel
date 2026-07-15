@@ -4,26 +4,33 @@
 
 <template>
     <section class="hero">
-        <UiHeader description="Her kan du se havd jeg tilbyder af behandlinger">
-            <template #header>
+        <UiHeader>
+            <template #subtitle>
+                <strong>Her kan du se havd jeg tilbyder af behandlinger</strong>
+            </template>
+            <template #title>
                 <h1>Behandlinger</h1>
             </template>
         </UiHeader>
 
         <p>Akupunktur kan være en hjælp ved mange forskellige smerter og lidelser. Den mest optimale behandling afhænger dog af dine symptomer og behov. Læs mere om de forskellige behandlingsformer nedenfor for at finde den løsning, der passer bedst til dig.</p>
-        <UiButton label="Book tid" styling="cta" size="large" />
+        <UiButton label="Book tid" type="cta" size="large" />
     </section>
 
     <section class="treatment-type">
-         <UiHeader description="Hvad arbejder jeg med?">
-            <template #header>
+         <UiHeader>
+            <template #subtitle>
+                <strong>Hvad arbejder jeg med?</strong>
+            </template>
+            <template #title>
                 <h2>Behandlingsformer</h2>
             </template>
         </UiHeader>
 
         <article class="treatment-type__type" v-for="(type, index) in data.treatmentTypes" :key="index">
-            <UiHeader :description="type.subtitle">
-                <template #header><h3>{{ type.title }}</h3></template>
+            <UiHeader>
+                <template #subtitle><strong>{{ type.subtitle }}</strong></template>
+                <template #title><h3>{{ type.title }}</h3></template>
             </UiHeader>
             
             <template v-for="text in type.text">

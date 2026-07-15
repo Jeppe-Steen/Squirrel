@@ -13,8 +13,11 @@ const terms = [
 
 <template>
     <section class="hero">
-        <UiHeader description="Kontakt mig for yderligere spørgsmål">
-            <template #header>
+        <UiHeader>
+            <template #subtitle>
+                <strong>Kontakt mig for yderligere spørgsmål</strong>
+            </template>
+            <template #title>
                 <h1>Priser for behandlinger</h1>
             </template>
         </UiHeader>
@@ -26,8 +29,11 @@ const terms = [
     </section>
 
     <section class="prices">
-        <UiHeader description="Dette tilbydes">
-            <template #header>
+        <UiHeader>
+            <template #subtitle>
+                <strong>Dette tilbydes</strong>
+            </template>
+            <template #title>
                 <h2>Priser</h2>
             </template>
         </UiHeader>
@@ -49,8 +55,11 @@ const terms = [
     </section>
 
     <section class="terms" id="betingelser">
-        <UiHeader description="Betingelser ved booking af behandling">
-            <template #header>
+        <UiHeader>
+            <template #subtitle>
+                <strong>Betingelser ved booking af behandling</strong>
+            </template>
+            <template #title>
                 <h2>Handelsbetingelser</h2>
             </template>
         </UiHeader>
@@ -59,7 +68,7 @@ const terms = [
             <h3>{{ term.title }}</h3>
             <p>{{ term.text }}</p>
         </article>
-        <p><strong>Tak fordi du respekterer min tid og mit arbejde – jeg glæder mig til at tage imod dig 🌿</strong></p>
+        <h2>Tak fordi du respekterer min tid og mit arbejde – jeg glæder mig til at tage imod dig 🌿</h2>
     </section>
 </template>
 

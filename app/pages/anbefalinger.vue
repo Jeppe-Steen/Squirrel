@@ -2,8 +2,11 @@
 import data from '../content/reviews.json';
 </script>
 <template>
-    <UiHeader description="Hvad siger mine kunder?">
-        <template #header>
+    <UiHeader>
+        <template #subtitle>
+            <strong>Hvad siger mine kunder?</strong>
+        </template>
+        <template #title>
             <h1>Anbefalinger</h1>
         </template>
     </UiHeader>
@@ -12,8 +15,11 @@ import data from '../content/reviews.json';
 
     <section class="content">
         <div class="content--card" v-for="(review, index) in data.reviews" :key="index">
-            <UiHeader description="trustpilot">
-                <template #header>
+            <UiHeader :icon="{name: 'star', count: review.stars, size: 20, color: '#FFD700'}">
+                <template #subtitle>
+                    <strong>{{ review.from }}</strong>
+                </template>
+                <template #title>
                     <h3>{{ review.name }}</h3>
                 </template>
             </UiHeader>

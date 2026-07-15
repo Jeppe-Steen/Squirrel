@@ -2,21 +2,21 @@
     "faqs": [
         {
             "title": "Hvad er CCM?",
-            "text": "Klassisk Kinesisk Medicin (CCM), er den oprindelige akupunkturlære, hvor Traditionel Kinesisk Medicin (TCM), som de fleste akupunktører praktiserer, er tilpasset mere den vestlige tilgang til sygdom, som vi kender den i vores sunhedssystem, udviklet i 1950’erne i Kina som en moderne, statslig standardisering af de gamle kinesiske metoder.",
+            "text": ["Klassisk Kinesisk Medicin (CCM), er den oprindelige akupunkturlære, hvor Traditionel Kinesisk Medicin (TCM), som de fleste akupunktører praktiserer, er tilpasset mere den vestlige tilgang til sygdom, som vi kender den i vores sunhedssystem, udviklet i 1950’erne i Kina som en moderne, statslig standardisering af de gamle kinesiske metoder."],
             "to": "/behandlinger",
             "link_text": "Se behandlinger her",
             "featured": "true"
         },
         {
             "title": "Er auriculoterapi det samme som NADA-behandling?",
-            "text": "Nej, det er ikke det samme, NADA er en behandlingsform som har fokus på 5 primærpunkter, som har til formål at reducere stress, angst, uro, søvnproblemer og abstinenser. Som oftes anvendt i psykiatrien. Auriculoterapi dækker bl.a. disse punkter, men derudover er der mere specifikke punkter til behandling af smerter, overgangsalder, fertilitet, etc.",
+            "text": ["Nej, det er ikke det samme, NADA er en behandlingsform som har fokus på 5 primærpunkter, som har til formål at reducere stress, angst, uro, søvnproblemer og abstinenser. Som oftes anvendt i psykiatrien. Auriculoterapi dækker bl.a. disse punkter, men derudover er der mere specifikke punkter til behandling af smerter, overgangsalder, fertilitet, etc."],
             "to": "/behandlinger/auriculoterapi",
             "link_text": "Læs mere her",
             "featured": "true"
         },
         {
             "title": "Kan man få tilskud fra Danmark og andre forsikringer?",
-            "text": "Ja, det er muligt at få tilskud gennem Danmark og andre sundhedsforsikringer, da jeg er registreret alternativ behandler ",
+            "text": ["Ja, det er muligt at få tilskud gennem Danmark og andre sundhedsforsikringer, da jeg er registreret alternativ behandler"],
             "to": "/kontakt",
             "link_text": "Kontakt mig her",
             "featured": "true"

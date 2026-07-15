@@ -2,9 +2,12 @@
     <section class="content">
         <img src="../assets//image/treatments/me_1.webp" alt="mig">
         <div class="content--text">
-            <UiHeader description="">
-                <template #header>
-                    <h1>Lidt om mig!</h1>
+            <UiHeader>
+                <template #subtitle>
+                    <strong>Personen bag klinikken</strong>
+                </template>
+                <template #title>
+                    <h1>Om mig</h1>
                 </template>
             </UiHeader>
             <p>Mit navn er Frederikke, jeg er uddannet akupunktør fra Danmarks Akupunktur Uddannelse i Odder, den eneste skole i Danmark som underviser og uddanner indenfor Klassisk Kinesisk Medicin (CCM).</p>

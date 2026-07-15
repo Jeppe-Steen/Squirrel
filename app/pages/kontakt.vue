@@ -2,13 +2,16 @@
 </script>
 
 <template>
-    <UiHeader description="Lyder dette som noget for som dig?">
-        <template #header>
-            <h1>Kontakt mig idag!</h1>
+    <UiHeader centered>
+        <template #subtitle>
+            <strong>Lyder dette som noget for som dig?</strong>
+        </template>
+        <template #title>
+            <h1>Tøv ikke med at kontakte mig idag!</h1>
         </template>
     </UiHeader>
 
-    <UiButton label="Book tid online her!" size="large" styling="cta" />
+    <UiButton label="Book tid online her!" size="large" type="cta" />
 
     <div class="divider">
         <div></div>

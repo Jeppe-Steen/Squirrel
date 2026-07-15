@@ -33,7 +33,7 @@ const navlinks = [
                 v-for="(link, index) in navlinks" 
                 :key="index"
                 :label="link.name"
-                :styling="link.styling"
+                :type="link.styling"
                 :to="link.to"
                 @click="link.action?.()"
             />
@@ -55,7 +55,7 @@ const navlinks = [
 .content-container {
     width: 100%;
     min-height: 100vh;
-    background-color: var(--ui-background-1);
+    background-color: var(--ui-background-primary);
     padding: 1rem;
 
     display: grid;

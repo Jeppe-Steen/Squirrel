@@ -6,8 +6,8 @@ $darkGreen:#778873; */
 :root {
     scroll-behavior: smooth;
     
-    --ui-navigation: #778873 !important;
-    --ui-footer: #778873 !important;
+    --ui-navigation-background: #778873 !important;
+    --ui-footer-background: #778873 !important;
 
-    --ui-btn-5: #a1bc98 !important;
+    --ui-btn-cta-background: #a1bc98 !important;
 }
