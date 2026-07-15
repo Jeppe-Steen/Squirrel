@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import reviewData from '../content/reviews.json';
+import faqData from '../content/faq.json';
+
 useSeoMeta({
   title: 'Akupunktur i Aabybro',
   description:
@@ -14,9 +17,28 @@ useSeoMeta({
   twitterDescription: 'Professionel akupunktur i Aabybro.',
 })
 
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      textContent: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
 
-import reviewData from '../content/reviews.json';
-import faqData from '../content/faq.json';
+        mainEntity: faqData.faqs.map(item => ({
+          "@type": "Question",
+
+          name: item.title,
+
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.text
+          }
+        }))
+      })
+    }
+  ]
+})
 
 const featuredReviews = reviewData.reviews.filter(review => review.featured === true)
 const featuredFaq = faqData.faqs.filter(faq => faq.featured)

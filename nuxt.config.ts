@@ -20,7 +20,8 @@ export default defineNuxtConfig({
   },
   site: { 
     url: 'https://klinikegernboakupunktur.dk', 
-    name: 'Akupunktur i Aabybro | Klinik Egernbo Akupunktur – Nordjylland' 
+    name: 'Klinik Egernbo Akupunktur',
+    defaultLocale: "da"
   },
   css: [
     '~/assets/scss/theme.css'

@@ -1,5 +1,44 @@
 <script lang="ts" setup>
     import data from "../content/treatmentTypes.json";
+
+    useSeoMeta({
+        title: 'Behandlinger',
+        description: 'Læs om vores behandlinger med akupunktur, moxa, cupping og andre behandlingsformer hos Klinik Egernbo Akupunktur i Aabybro.',
+        ogTitle: 'Behandlinger | Klinik Egernbo Akupunktur',
+        ogDescription: 'Få et overblik over vores behandlingsformer.',
+        ogUrl: 'https://klinikegernboakupunktur.dk/behandlinger',
+        twitterTitle: 'Behandlinger | Klinik Egernbo Akupunktur',
+        twitterDescription: 'Få et overblik over vores behandlingsformer.'
+    })
+
+    useHead({
+        link: [
+            {
+            rel: 'canonical',
+            href: 'https://klinikegernboakupunktur.dk/behandlinger'
+            }
+        ],
+        script: [
+            {
+                key: 'treatments-schema',
+                type: 'application/ld+json',
+                textContent: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "ItemList",
+                    name: "Behandlinger",
+                    itemListElement: data.treatmentTypes.map((item, index) => ({
+                        "@type": "ListItem",
+                        position: index + 1,
+                        item: {
+                            "@type": "Thing",
+                            name: item.title,
+                            description: item.text[0]
+                        }
+                    }))
+                })
+            }
+        ]
+    })
 </script>
 
 <template>

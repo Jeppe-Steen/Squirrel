@@ -1,4 +1,22 @@
 <script lang="ts" setup>
+useSeoMeta({
+  title: 'Kontakt',
+  description: 'Kontakt Klinik Egernbo Akupunktur i Aabybro. Ring, skriv eller book en tid online. Klinikken ligger centralt i Nordjylland.',
+  ogTitle: 'Kontakt | Klinik Egernbo Akupunktur',
+  ogDescription: 'Kontakt Klinik Egernbo Akupunktur eller book din næste behandling.',
+  ogUrl: 'https://klinikegernboakupunktur.dk/kontakt',
+  twitterTitle: 'Kontakt | Klinik Egernbo Akupunktur',
+  twitterDescription: 'Kontakt Klinik Egernbo Akupunktur eller book en tid online.'
+})
+
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://klinikegernboakupunktur.dk/kontakt'
+    }
+  ]
+})
 </script>
 
 <template>

@@ -1,13 +1,33 @@
+<script setup>
+useSeoMeta({
+  title: 'Om klinikken',
+  description: 'Læs mere om Klinik Egernbo Akupunktur i Aabybro, behandlingsfilosofi og den erfaring, der ligger bag klinikken.',
+  ogTitle: 'Om Klinik Egernbo Akupunktur',
+  ogDescription: 'Lær klinikken og behandlingsfilosofien bedre at kende.',
+  ogUrl: 'https://klinikegernboakupunktur.dk/om',
+  twitterTitle: 'Om Klinik Egernbo Akupunktur',
+  twitterDescription: 'Læs mere om klinikken og behandlingsfilosofien.'
+})
+
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://klinikegernboakupunktur.dk/om'
+    }
+  ]
+})
+</script>
 <template>
     <section class="content">
-        <img src="../assets//image/treatments/me_1.webp" alt="mig">
+        <img src="../assets//image/treatments/me_1.webp" alt="Behandler hos Klinik Egernbo Akupunktur">
         <div class="content--text">
             <UiHeader>
                 <template #subtitle>
                     <strong>Personen bag klinikken</strong>
                 </template>
                 <template #title>
-                    <h1>Om mig</h1>
+                    <h1>Om Klinik Egernbo Akupunktur</h1>
                 </template>
             </UiHeader>
             <p>Mit navn er Frederikke, jeg er uddannet akupunktør fra Danmarks Akupunktur Uddannelse i Odder, den eneste skole i Danmark som underviser og uddanner indenfor Klassisk Kinesisk Medicin (CCM).</p>

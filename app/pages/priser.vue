@@ -1,5 +1,24 @@
 <script lang="ts" setup>
 import data from '../content/prices.json'
+useSeoMeta({
+  title: 'Priser',
+  description: 'Se priser på akupunktur og behandlinger hos Klinik Egernbo Akupunktur i Aabybro. Få et overblik over vores behandlingstilbud og priser.',
+  ogTitle: 'Priser | Klinik Egernbo Akupunktur',
+  ogDescription: 'Se priser på akupunktur og vores øvrige behandlinger.',
+  ogUrl: 'https://klinikegernboakupunktur.dk/priser',
+  twitterTitle: 'Priser | Klinik Egernbo Akupunktur',
+  twitterDescription: 'Se priser på akupunktur og vores øvrige behandlinger.'
+})
+
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://klinikegernboakupunktur.dk/priser'
+    }
+  ]
+})
+
 const terms = [
     { title: "Afbud og udeblivelse", text: "Afbud skal meldes senest 24 timer før din aftalte tid. Ved afbud senere end dette – opkræves 50% af behandlingsprisen. Ved udeblivelse – opkræves det fulde beløb for behandlingen." },
     { title: "Ændring af tid", text: "Ønsker du at ændre din tid, skal dette ligeledes ske senest 24 timer før." },

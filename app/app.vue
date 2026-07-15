@@ -1,4 +1,4 @@
-<script>
+<script setup>
   useHead({
     titleTemplate: (title) => {
       return title
@@ -26,7 +26,7 @@
     script: [
       {
         type: 'application/ld+json',
-        children: JSON.stringify({
+        textContent: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "MedicalBusiness",
           "name": "Klinik Egernbo Akupunktur",
@@ -42,13 +42,16 @@
           },
           geo: {
             "@type": "GeoCoordinates",
-            latitude: "",
-            longitude: ""
+            latitude: "57.161144",
+            longitude: "9.699206"
           },
           openingHoursSpecification: [
             {
               "@type": "OpeningHoursSpecification",
               dayOfWeek: [
+                "Monday",
+                "Thursday",
+                "Wednesday",
                 "Thursday",
                 "Friday"
               ],
@@ -68,7 +71,6 @@
     robots: 'index, follow',
     ogSiteName: 'Klinik Egernbo Akupunktur',
     ogType: 'website',
-    twitterCard: 'summary_large_image'
   })
 </script>
 <template>
