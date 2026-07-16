@@ -142,6 +142,7 @@ const navlinks = [
 
         #rab {
             width: 80%;
+            height: auto;
         }
     }
 

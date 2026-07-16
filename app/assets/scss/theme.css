@@ -4,11 +4,70 @@ $green:#A1BC98;
 $darkGreen:#778873; */
 
 :root {
+    color-scheme: light;
     scroll-behavior: smooth;
     
     --ui-navigation-background: #778873 !important;
     --ui-footer-background: #778873 !important;
 
     --ui-btn-cta-background: #a1bc98 !important;
+}
 
+html.dark {
+    color-scheme: dark;
+    
+    --ui-background-primary: #0D0E10; /* DONE */
+    --ui-background-secondary:  #FAFAFA; /* DONE */
+
+    --ui-text-primary: #FAFAFA; /* DONE */
+    --ui-text-secondary: #0D0E10; /* DONE */
+    --ui-text-custom: #ff00d0;
+
+    /* header */
+    --ui-header-color: #FAFAFA; /* DONE */
+    
+    /* inputfields */
+    --ui-input-border: #adadad;
+    --ui-input-background: #ededed;
+
+    /* navigation */
+    --ui-navigation-background: #778873 !important;
+    --ui-navigation-border: none;
+    --ui-navigation-menu-background: #0D0E10;
+
+    /* footer */
+    --ui-footer-background: #778873;
+    --ui-footer-color: #0D0E10;
+    --ui-footer-border: none;
+
+    /* buttons */
+    --ui-btn-primary-background: #FAFAFA; /* DONE */
+    --ui-btn-primary-color: #0D0E10; /* DONE */
+
+    --ui-btn-secondary-background: #FAFAFA;
+    --ui-btn-secondary-color: #0D0E10;
+    --ui-btn-secondary-border: #0D0E10;
+
+    --ui-btn-danger-background: #e23b3b;
+    --ui-btn-danger-color: #FAFAFA;
+
+    --ui-btn-caution-background: yellow;
+    --ui-btn-caution-color: 0D0E10;
+
+    --ui-btn-cta-background: #00BA34;
+    --ui-btn-cta-color: #0D0E10;
+
+    --ui-btn-transparent-background: transparent;
+    --ui-btn-transparent-color: #FAFAFA;
+
+    /* table */
+    --ui-table-1: #dcdcdc;
+    --ui-table-2: #c1c1c1;
+
+    /* cards */
+    --ui-card-background: #0D0E10 !important;
+    --ui-card-color: #FAFAFA;
+
+    /* dialog */
+    --ui-dialog-background: #FAFAFA;
 }

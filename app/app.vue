@@ -1,4 +1,11 @@
 <script setup>
+  import { useTheme } from './composable/useTheme';
+  const { init } = useTheme()
+
+  onMounted(() => {
+    init()
+  })
+
   useHead({
     titleTemplate: (title) => {
       return title
