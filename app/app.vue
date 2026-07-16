@@ -72,9 +72,10 @@
     ogSiteName: 'Klinik Egernbo Akupunktur',
     ogType: 'website',
     ogImage: 'https://klinikegernboakupunktur.dk/images/og-image.png',
-    twitterImage: 'https://klinikegernboakupunktur.dk/images/og-image.png',
     ogImageWidth: '1200',
-    ogImageHeight: '630'
+    ogImageHeight: '630',
+    twitterCard: 'summary_large_image',
+    twitterImage: 'https://klinikegernboakupunktur.dk/images/og-image.png'
   })
 </script>
 <template>
