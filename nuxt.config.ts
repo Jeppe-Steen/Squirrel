@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@nuxt/image'
   ],
   googleFonts: {
+    display: 'swap',
     families: {
       Roboto: true, // Basic usage
       Inter: [400, 700], // Specific weights

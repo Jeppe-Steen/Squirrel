@@ -92,7 +92,7 @@ const canExpand = (review: any) => {
                 <p>Jeg tilbyder akupunktur, moxa, auriculoterapi, TENS og cupping, alle med fokus på professionalisme, tryghed og resultater</p>
             </div>
 
-            <NuxtImg class="hero--content__img" src="/images/fireCupping_1.webp" alt="cupping" width="1800" height="1200" preload fetchpriority="high" />
+            <NuxtImg class="hero--content__img" src="/images/fireCupping_1.webp" alt="cupping" width="1800" height="1200" preload fetchpriority="high" loading="eager" />
         </article>
 
         <span class="hero--btns">
@@ -103,8 +103,11 @@ const canExpand = (review: any) => {
 
     <section class="reviews">
         <UiHeader description="Hvad siger mine kunder?">
-            <template #header>
-                <h2>Anmeldelser</h2>
+            <template #subtitle>
+                <strong>Hvad siger mine kunder?</strong>
+            </template>
+            <template #title>
+                <h2>Anbefalinger</h2>
             </template>
         </UiHeader>
 

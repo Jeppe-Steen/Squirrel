@@ -49,7 +49,7 @@ const navlinks = [
     <UiFooter>
         <section class="footer-wrapper">
             <div class="footer-wrapper--images">
-                <NuxtImg id="rab" src="/images/RAB.png" alt="registreret alternativ behandler" />
+                <NuxtImg id="rab" src="/images/RAB.png" alt="registreret alternativ behandler" width="845" height="224" loading="lazy"/>
             </div>
             <div class="footer-wrapper--information">
                 <UiHeader centered>
