@@ -1,5 +1,5 @@
 export const useTheme = () => {
-  const isDark = useState('theme-dark', () => true)
+  const isDark = useState('theme-dark', () => false)
 
   const init = () => {
     if (!import.meta.client) return
