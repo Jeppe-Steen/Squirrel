@@ -49,7 +49,7 @@ const navlinks = [
     <UiFooter>
         <section class="footer-wrapper">
             <div class="footer-wrapper--images">
-                <img id="rab" src="../assets/image/RAB.png" alt="rab">
+                <img id="rab" src="../assets/image/RAB.png" alt="registreret alternativ behandler">
             </div>
             <div class="footer-wrapper--information">
                 <UiHeader centered>

@@ -174,7 +174,7 @@ const canExpand = (review: any) => {
                 <li>Og meget mere…</li>
             </ul>
 
-            <img class="treatments--content__img" src="../assets/image/treatments/hand.webp" alt="akupunktur i håneden">
+            <img class="treatments--content__img" src="../assets/image/treatments/hand.webp" alt="akupunktur i hånden">
         </article>
     </section>
 
@@ -201,9 +201,9 @@ const canExpand = (review: any) => {
         <img src="../assets/image/treatments/hand.webp" alt="Akupunktur i hånden">
         <img src="../assets/image/treatments/stomach_1.webp" alt="Akupunktur i maven">
         <img src="../assets/image/treatments/Pulse.webp" alt="Pulsdiagnose">
-        <img src="../assets/image/treatments/klinic_1.webp" alt="Klinikken">
-        <img src="../assets/image/treatments/klinic_2.webp" alt="Klinikken">
-        <img src="../assets/image/treatments/klinic_3.webp" alt="Klinikken">
+        <img src="../assets/image/treatments/klinic_1.webp" alt="Billede af klinikken">
+        <img src="../assets/image/treatments/klinic_2.webp" alt="Billede af klinikken">
+        <img src="../assets/image/treatments/klinic_3.webp" alt="Billede af klinikken">
     </section>
 
     <section class="faq">
