@@ -7,7 +7,9 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@jrs/core',
     '@nuxtjs/robots',
-    '@nuxtjs/sitemap'],
+    '@nuxtjs/sitemap',
+    '@nuxt/image'
+  ],
   googleFonts: {
     families: {
       Roboto: true, // Basic usage

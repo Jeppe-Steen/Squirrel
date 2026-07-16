@@ -20,7 +20,7 @@ useHead({
 </script>
 <template>
     <section class="content">
-        <img src="../assets//image/treatments/me_1.webp" alt="Behandler hos Klinik Egernbo Akupunktur">
+        <NuxtImg src="/images/me_1.webp" alt="Behandler hos Klinik Egernbo Akupunktur" height="1800" width="1200" preload fetchpriority="high" />
         <div class="content--text">
             <UiHeader>
                 <template #subtitle>
@@ -52,6 +52,7 @@ useHead({
 
         img {
             width: 100%;
+            height: auto;
         }
 
         &--text {

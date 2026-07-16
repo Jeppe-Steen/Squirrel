@@ -92,7 +92,7 @@ const canExpand = (review: any) => {
                 <p>Jeg tilbyder akupunktur, moxa, auriculoterapi, TENS og cupping, alle med fokus på professionalisme, tryghed og resultater</p>
             </div>
 
-            <img class="hero--content__img" src="../assets/image/treatments/fireCupping_1.webp" alt="cupping" />
+            <NuxtImg class="hero--content__img" src="/images/fireCupping_1.webp" alt="cupping" width="1800" height="1200" preload fetchpriority="high" />
         </article>
 
         <span class="hero--btns">
@@ -174,7 +174,7 @@ const canExpand = (review: any) => {
                 <li>Og meget mere…</li>
             </ul>
 
-            <img class="treatments--content__img" src="../assets/image/treatments/hand.webp" alt="akupunktur i hånden">
+            <NuxtImg class="treatments--content__img" src="/images/hand.webp" alt="akupunktur i hånden" width="1800" height="1200" loading="lazy"/>
         </article>
     </section>
 
@@ -194,16 +194,16 @@ const canExpand = (review: any) => {
     </section>
 
     <section class="gallery">
-        <img src="../assets//image/treatments/ear.webp" alt="Akupunktur i øret">
-        <img src="../assets/image/treatments/foot.webp" alt="Akuprasur på foden">
-        <img src="../assets/image/treatments/fireCupping_1.webp" alt="Fire cupping">
-        <img src="../assets/image/treatments/head.webp" alt="Aupunktur i hovedet">
-        <img src="../assets/image/treatments/hand.webp" alt="Akupunktur i hånden">
-        <img src="../assets/image/treatments/stomach_1.webp" alt="Akupunktur i maven">
-        <img src="../assets/image/treatments/Pulse.webp" alt="Pulsdiagnose">
-        <img src="../assets/image/treatments/klinic_1.webp" alt="Billede af klinikken">
-        <img src="../assets/image/treatments/klinic_2.webp" alt="Billede af klinikken">
-        <img src="../assets/image/treatments/klinic_3.webp" alt="Billede af klinikken">
+        <NuxtImg src="/images/ear.webp" alt="Akupunktur i øret" width="1800" height="1200" loading="lazy" />
+        <NuxtImg src="/images/foot.webp" alt="Akuprasur på foden" width="1800" height="1200" loading="lazy" />
+        <NuxtImg src="/images/fireCupping_1.webp" alt="Fire cupping" width="1800" height="1200" loading="lazy" />
+        <NuxtImg src="/images/head.webp" alt="Aupunktur i hovedet" width="1800" height="1200" loading="lazy" />
+        <NuxtImg src="/images/hand.webp" alt="Akupunktur i hånden" width="1800" height="1200" loading="lazy" />
+        <NuxtImg src="/images/stomach_1.webp" alt="Akupunktur i maven" width="1800" height="1200" loading="lazy" />
+        <NuxtImg src="/images/Pulse.webp" alt="Pulsdiagnose" width="1800" height="1200" loading="lazy" />
+        <NuxtImg src="/images/klinic_1.webp" alt="Billede af klinikken" width="1800" height="1200" loading="lazy" />
+        <NuxtImg src="/images/klinic_2.webp" alt="Billede af klinikken" width="1800" height="1200" loading="lazy" />
+        <NuxtImg src="/images/klinic_3.webp" alt="Billede af klinikken" width="1800" height="1200" loading="lazy" />
     </section>
 
     <section class="faq">
@@ -251,6 +251,7 @@ const canExpand = (review: any) => {
 
             &__img {
                 width: 100%;
+                height: auto;
             }
         }
 
@@ -331,6 +332,7 @@ const canExpand = (review: any) => {
 
             &__img {
                 width: 100%;
+                height: auto;
             }
         }
     }
@@ -352,6 +354,7 @@ const canExpand = (review: any) => {
 
         img {
             width: 100%;
+            height: auto;
         }
     }
 
