@@ -4,7 +4,7 @@ $green:#A1BC98;
 $darkGreen:#778873; */
 
 :root {
-    color-scheme: light;
+    color-scheme: light !important;
     scroll-behavior: smooth;
     
     --ui-navigation-background: #778873 !important;
@@ -14,8 +14,6 @@ $darkGreen:#778873; */
 }
 
 html.dark {
-    color-scheme: dark;
-    
     --ui-background-primary: #0D0E10; /* DONE */
     --ui-background-secondary:  #FAFAFA; /* DONE */
 
