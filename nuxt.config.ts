@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@jrs/core',
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
+    '@nuxt/content',
     '@nuxt/image'
   ],
   googleFonts: {
@@ -28,5 +29,10 @@ export default defineNuxtConfig({
   },
   css: [
     '~/assets/scss/theme.css'
-  ]
+  ],
+  content: {
+    renderer: {
+      anchorLinks: false,
+    },
+  },
 })

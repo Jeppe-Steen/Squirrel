@@ -1,7 +1,7 @@
 {
     "prices": [
         { 
-            "title": "Første Konsultation",
+            "title": "Første konsultation",
             "price": "600 kr",
             "includes": [
                 "Individuel Samtale",
@@ -45,6 +45,14 @@
             "title": "Cupping - 45 min",
             "price": "500 kr",
             "includes": [],
+            "nb": ""
+        },
+        {
+            "title": "Myggestik behandling",
+            "price": "400 kr",
+            "includes": [
+                "Varighed ca. 20 - 30 min"
+            ],
             "nb": ""
         }
     ]

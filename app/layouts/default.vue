@@ -16,6 +16,7 @@ const navlinks = [
     { name: 'Kontakt', to: "/kontakt", styling: 'link' },
     { name: 'Om klinikken', to: "/om", styling: 'link' },
     { name: 'Anbefalinger', to: "/anbefalinger", styling: 'link' },
+    { name: 'Viden', to: "/viden", styling: 'link' },
 ]
 </script>
 
@@ -71,6 +72,7 @@ const navlinks = [
                 <a href="/om">Om klinikken</a>
                 <a href="/anbefalinger">Anbefalinger</a>
                 <a href="/priser#betingelser">Handelsbetingelser</a>
+                <a href="/viden">Viden</a>
             </div>
             <div class="footer-wrapper--copyright">
                 <strong>Klinik Egernbo Akupunktur | CVR: 46094417</strong>
