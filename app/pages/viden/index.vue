@@ -1,7 +1,44 @@
 <script setup>
+useSeoMeta({
+  title: 'Viden om akupunktur, smerter og behandlinger',
+  description: 'Læs vores artikler om akupunktur, hovedpine, smerter, stress, myggestik og andre emner. Få viden om behandlinger, forskning og gode råd fra Klinik Egernbo Akupunktur.',
+  ogTitle: 'Viden om akupunktur og behandlinger',
+  ogDescription: 'Artikler om akupunktur, smerter, stress, forskning og gode råd fra Klinik Egernbo Akupunktur.',
+  ogType: 'website',
+  ogUrl: 'https://klinikegernboakupunktur.dk/viden',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Viden om akupunktur og behandlinger',
+  twitterDescription: 'Læs artikler om akupunktur, behandlinger og sundhed.',
+})
+
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://klinikegernboakupunktur.dk/viden',
+    },
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: 'Viden om akupunktur',
+        description:
+          'Artikler om akupunktur, behandlinger og sundhed.',
+        url: 'https://klinikegernboakupunktur.dk/viden',
+      }),
+    },
+  ],
+})
+
 const { data: articles } = await useAsyncData(() =>
-  queryCollection('viden').all()
+  queryCollection('viden')
+    .order('publishedAt', 'DESC') 
+    .all()
 )
+
 </script>
 
 <template>
@@ -12,23 +49,25 @@ const { data: articles } = await useAsyncData(() =>
 
     <ul class="article-list">
         <li v-for="(article, index) in articles" :key="index">
-            <UiCard shadow rounded>
-                <span class="card">
-                    <span class="card--content">
-                        <UiHeader>
-                            <template #subtitle>
-                                <p>{{ article.meta.publishedAt }}</p>
-                            </template>
-                            <template #title>
-                                <h2>{{ article.title }}</h2>
-                            </template>
-                        </UiHeader>
-                        <p>{{ article.description }}</p>
-                        <UiButton label="Læs mere" :to="article.path" />
+            <article>
+                <UiCard shadow rounded>
+                    <span class="card">
+                        <span class="card--content">
+                            <UiHeader>
+                                <template #subtitle>
+                                    <p>{{ article.publishedAt }}</p>
+                                </template>
+                                <template #title>
+                                    <h2>{{ article.title }}</h2>
+                                </template>
+                            </UiHeader>
+                            <p>{{ article.description }}</p>
+                            <UiButton label="Læs mere" :to="article.path" />
+                        </span>
+                        <NuxtImg :src="article.image" height="1200" width="1000"/>
                     </span>
-                    <NuxtImg :src="article.meta.image" height="1200" width="1000"/>
-                </span>
-            </UiCard>
+                </UiCard>
+            </article>
         </li>
     </ul>
 </template>

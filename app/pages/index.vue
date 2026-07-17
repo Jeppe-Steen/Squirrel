@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import reviewData from '../content/reviews.json';
-import faqData from '../content/faq.json';
+import reviewData from '../../content/reviews.json';
+import faqData from '../../content/faq.json';
 
 useSeoMeta({
   title: 'Akupunktur i Aabybro',
