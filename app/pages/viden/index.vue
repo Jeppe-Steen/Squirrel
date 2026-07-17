@@ -35,10 +35,38 @@ useHead({
 
 const { data: articles } = await useAsyncData(() =>
   queryCollection('viden')
-    .order('publishedAt', 'DESC') 
     .all()
 )
 
+const sortedArticles = computed(() =>
+  [...(articles.value ?? [])].sort(
+    (a, b) =>
+      new Date(b.publishedAt).getTime() -
+      new Date(a.publishedAt).getTime()
+  )
+)
+
+const selectedCategory = ref('Alle')
+
+const filteredArticles = computed(() => {
+  if (selectedCategory.value === 'Alle') {
+    return sortedArticles.value
+  }
+
+  return sortedArticles.value.filter(
+    article => article.category === selectedCategory.value
+  )
+})
+
+const page = ref(1)
+const pageSize = 12
+
+const visibleArticles = computed(() => {
+  return filteredArticles.value.slice(
+    0,
+    page.value * pageSize
+  )
+})
 </script>
 
 <template>
@@ -48,7 +76,7 @@ const { data: articles } = await useAsyncData(() =>
     </UiHeader>
 
     <ul class="article-list">
-        <li v-for="(article, index) in articles" :key="index">
+        <li v-for="(article, index) in visibleArticles" :key="index">
             <article>
                 <UiCard shadow rounded>
                     <span class="card">

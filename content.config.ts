@@ -8,7 +8,16 @@ export default defineContentConfig({
       schema: z.object({
         publishedAt: z.string(),
         image: z.string(),
-        category: z.string(),
+        category: z.enum([
+          'Hovedpine',
+          'Smerter',
+          'Stress',
+          'Søvn',
+          'Graviditet',
+          'Allergi',
+          'Spørgsmål',
+          'Forskning'
+        ]),
         tags: z.array(z.string()),
       }),
     }),

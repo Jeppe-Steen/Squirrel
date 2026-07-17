@@ -3,6 +3,13 @@ title: Kan akupunktur hjælpe mod myggestik?
 description: Læs om myggestiksbehandling med akupunktur, hvad behandlingen indebærer, og hvorfor vi hos Klinik Egernbo arbejder med en helhedsorienteret tilgang.
 publishedAt: 2026-07-13
 image: /images/articles/myggestik.webp
+category: Allergi
+tags:
+    - allergi
+    - kløe
+    - udslæt
+    - hævelse
+    - myggestik
 ---
 
 ::UiHeader
