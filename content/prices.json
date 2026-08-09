@@ -54,6 +54,24 @@
                 "Varighed ca. 20 - 30 min"
             ],
             "nb": ""
+        },
+        {
+            "title": "Allergipakke",
+            "price": "2500 kr",
+            "includes": [
+                "Forløbet er over 5 uger med 1 ugentlig behandling, efterfulgt af vedligeholdelsesgange ifbm. Pollensæsonen.",
+                "Svarende til 500 kr pr. Behandlling"
+            ],
+            "nb": ""
+        },
+        {
+           "title": "Børne behandling",
+            "price": "500 kr",
+            "includes": [
+                "Behandling",
+                "Varighed ca. 50 min"
+            ],
+            "nb": "Gælder børn under 15 år" 
         }
     ]
 }
