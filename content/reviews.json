@@ -1,6 +1,20 @@
 {
     "reviews": [
         {
+            "name": "Annonymiseret af hensyn til forældrende",
+            "stars": 5,
+            "featured": true,
+            "treatments": ["afhængighed", "udadreagerende adfærd"],
+            "text": [
+                "Vi har været så tilfredse og overraskede! Det er vores første møde med akupunktur, og flere i vores omgangskreds er chokerede over hvor stor effekt det har haft på vores søn!",
+                "Vores søn har haft meget udadreagerende adfærd i flere år nu og det er blevet tiltagende værre.. Det har påvirket os meget, også at kunne se hvordan vores søn har haft det.. Vi havde så booket tid hos Frederikke til en myggestiksbehandling uden nåle.",
+                "Det var intet problem og Frederikke havde kendskab til vores søns vredesproblemer forinden, så da vi kommer til behandling tilbyder hun en omgang øreakupressur (behandling uden nåle), for at hjælpe vores søn til at bedre kunne håndtere hvordan han reagerer. Og jeg må sige at det har haft rigtig stor effekt, vi hører også fra andre familiemedlemmer at de virkeligt kan mærke at han har fået mere ro på🥹 og hans Ipad afhængighed som han havde er nærmest forsvundet, han bruger den ikke mere som 'afkobling', men er tilstede.",
+                "Her næsten 4 uger efter behandlingen er effekterne fra behandlingen der stadigvæk - efter bare ÉN behandling! Klar anbefaling herfra til alle forældre der har børn med udadreagerende adfærd - Klinik Egernbo er et besøg værd!",
+                "Vi kommer i hvert fald igen!❤️"  
+            ],
+            "from": "Mail"
+        },
+        {
             "name": "Line",
             "stars": 5,
             "featured": false,
@@ -58,7 +72,7 @@
         {
             "name": "Nikita Andrea",
             "stars": 5,
-            "featured": true,
+            "featured": false,
             "treatments": ["Infertilitet"],
             "text": [
                 "Efter 7 år med håb, skuffelser og utallige forsøg på at blive gravid, fandt jeg modet til at starte et infertilitetsforløb hos Frederikke på Klinik Egernbo Akupunktur. Jeg gik ind til det med et stille håb, men også med en tunghed, som kun mange års uvished kan skabe. Allerede efter de første behandlinger stod det klart for mig, at dette forløb ville blive noget helt særligt.",
